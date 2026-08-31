@@ -1,6 +1,6 @@
 # Iber-STRategia · Pendientes antes de publicar
 
-Estado tras la segunda revisión. Lo del primer bloque conviene resolverlo
+Estado tras la tercera revisión. Lo del primer bloque conviene resolverlo
 **antes** de que la web sea pública; el resto puede esperar sin bloquear la
 salida.
 
@@ -86,24 +86,45 @@ tráfico HTTP redirige a HTTPS.
 
 ---
 
-## 3. Formulario de contacto
+## 3. Formulario de contacto: ATENCIÓN
 
-Sigue **sin enviar a un servidor**. Como solución provisional,
-`assets/js/contacto.js` abre el programa de correo del visitante con el mensaje
-ya redactado. Funciona sin servidor, pero no deja registro de las solicitudes.
-Para dejarlo definitivo:
+Tal como pediste, el formulario **simula el envío**: valida los campos, muestra
+una confirmación con el texto «Nos pondremos en contacto próximamente con usted»
+y oculta el formulario.
+
+> **Lo que escriba el visitante no llega a ningún sitio. Se pierde.**
+
+Es la consecuencia de simular el envío sin servidor detrás, y conviene tenerlo
+muy presente: alguien puede escribiros interesado en un servicio, quedarse
+tranquilo pensando que le vais a llamar, y no recibir nunca respuesta. Para un
+comercial es peor que no tener formulario.
+
+Por eso he dejado el teléfono y el correo directos **dentro del propio mensaje
+de confirmación**, para que quien escriba tenga siempre una vía real de
+contacto. Aun así, esto debería ser lo primero que se arregle después de los
+datos legales.
+
+Para conectarlo de verdad (es cosa de una tarde):
 
 1. Dar de alta un endpoint de formularios (el del hosting, un servicio de
-   formularios o un script en el servidor).
+   formularios o un pequeño script en el servidor).
 2. En `contacto.html`, poner ese endpoint en `action` y `method="post"`.
-3. Quitar la línea `<script src="assets/js/contacto.js"></script>`.
+3. En `assets/js/contacto.js`, sustituir `simularEnvio()` por la llamada real
+   y mostrar la confirmación solo cuando la respuesta sea correcta.
 4. Añadir protección antispam (captcha o campo trampa).
 5. Firmar el contrato de encargado de tratamiento con ese proveedor y añadirlo
    al apartado 5 de `privacidad.html`.
 
-Mientras tanto, el correo y el teléfono de la página de contacto sí funcionan.
+**Un detalle de redacción:** el texto de la confirmación está en «usted», tal
+como me lo pasaste, mientras que el resto de la web trata al visitante de «tú».
+Si prefieres unificarlo, la frase sería «Nos pondremos en contacto contigo
+próximamente» y está en `contacto.html`.
 
----
+**Un fallo corregido de paso:** la plantilla dibuja las casillas de verificación
+sobre la etiqueta y deja el `<input>` invisible. Como un control invisible no es
+enfocable, el navegador bloqueaba el envío en silencio cuando alguien olvidaba
+marcar el consentimiento de privacidad: se pulsaba «Enviar mensaje» y no pasaba
+absolutamente nada. Ahora sale un aviso en rojo explicando qué falta.
 
 ## 4. Logos de Microsoft y Google Workspace
 
@@ -213,9 +234,10 @@ Esto es lo que echo en falta, por orden de impacto:
 | `robots.txt`, `sitemap.xml` | Indexación en buscadores (20 URL) |
 | `assets/css/iber.css` | Estilos propios. **La plantilla original no se ha modificado** |
 | `assets/js/contacto.js` | Envío provisional del formulario |
-| `images/ilustracion-*.svg` | Sala técnica, montaje de equipos, red de oficina, consola de administración, nube híbrida y ciclo de soporte |
+| `images/ilustracion-*.svg` | Diez ilustraciones: sala técnica, montaje de equipos, red de oficina, consola de administración, nube híbrida, ciclo de soporte, capas de seguridad, maquetación de puestos, esquema de copias e integraciones de software |
 | `images/diagrama-*.svg` | Directorio activo, fases de despliegue y ciclo de desarrollo |
-| `images/blog-*.svg` | Cabeceras de los artículos |
+| `images/blog-*.svg` | Cabeceras de los artículos, cada una con el motivo de su tema |
+| `images/fondo-*.svg` | Fondos de las secciones de portada: sala técnica, red corporativa y circuitería |
 
 **Qué lleva cada página para posicionar:** título y descripción propios,
 etiqueta canónica, Open Graph, un único `<h1>`, migas de pan y datos

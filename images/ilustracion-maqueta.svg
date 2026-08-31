@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-label="Una imagen maestra de puesto de trabajo desplegada de forma desatendida sobre varios equipos idénticos">
+<title>Una imagen maestra de puesto de trabajo desplegada de forma desatendida sobre varios equipos idénticos</title>
+<defs>
+<linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#23242f"/><stop offset="1" stop-color="#14151d"/></linearGradient>
+<marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" fill-opacity="0.5"/></marker>
+<pattern id="malla" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/></pattern>
+<radialGradient id="brillo"><stop offset="0" stop-color="#5480f1" stop-opacity="0.22"/><stop offset="1" stop-color="#5480f1" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="480" fill="url(#fondo)"/>
+<rect width="1200" height="480" fill="url(#malla)"/>
+<ellipse cx="864" cy="96" rx="540" ry="264" fill="url(#brillo)"/>
+<text x="40" y="44" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#ffffff" fill-opacity="0.38" letter-spacing="2">UNA MAQUETA, TODOS LOS EQUIPOS IGUALES</text>
+<rect x="60" y="110" width="300" height="250" rx="8" fill="#ffffff" fill-opacity="0.05" stroke="#39c088" stroke-opacity="0.55" stroke-width="2.5"/>
+<rect x="60" y="110" width="300" height="4" rx="2" fill="#39c088"/>
+<text x="210" y="146" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#ffffff" fill-opacity="0.55" letter-spacing="1.5">IMAGEN MAESTRA</text>
+<rect x="84" y="176" width="252" height="34" rx="4" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"/>
+<text x="210" y="198" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#ffffff" fill-opacity="0.75">Sistema operativo</text>
+<rect x="84" y="220" width="252" height="34" rx="4" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"/>
+<text x="210" y="242" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#ffffff" fill-opacity="0.75">Aplicaciones de la empresa</text>
+<rect x="84" y="264" width="252" height="34" rx="4" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"/>
+<text x="210" y="286" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#ffffff" fill-opacity="0.75">Directivas y seguridad</text>
+<rect x="84" y="308" width="252" height="34" rx="4" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.16" stroke-width="1.5"/>
+<text x="210" y="330" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#ffffff" fill-opacity="0.75">Impresoras y unidades</text>
+<path d="M 372 235 L 452 235" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="3" marker-end="url(#flecha)"/>
+<text x="470" y="214" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="300" fill="#ffffff" fill-opacity="0.8">Despliegue</text>
+<text x="470" y="238" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="300" fill="#ffffff" fill-opacity="0.8">desatendido por red</text>
+<text x="470" y="268" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.45">Sin tocar equipo por equipo</text>
+<path d="M 700 235 L 780 235" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="3" marker-end="url(#flecha)"/>
+<rect x="800" y="138" width="104" height="68" rx="5" fill="#ffffff" fill-opacity="0.06" stroke="#5480f1" stroke-opacity="0.45" stroke-width="2"/>
+<rect x="844" y="206" width="16" height="12" fill="#5480f1" fill-opacity="0.45"/>
+<rect x="832" y="218" width="40" height="6" rx="3" fill="#5480f1" fill-opacity="0.45"/>
+<circle cx="888" cy="194" r="4" fill="#39c088" fill-opacity="0.8"/>
+<rect x="928" y="138" width="104" height="68" rx="5" fill="#ffffff" fill-opacity="0.06" stroke="#5480f1" stroke-opacity="0.45" stroke-width="2"/>
+<rect x="972" y="206" width="16" height="12" fill="#5480f1" fill-opacity="0.45"/>
+<rect x="960" y="218" width="40" height="6" rx="3" fill="#5480f1" fill-opacity="0.45"/>
+<circle cx="1016" cy="194" r="4" fill="#39c088" fill-opacity="0.8"/>
+<rect x="1056" y="138" width="104" height="68" rx="5" fill="#ffffff" fill-opacity="0.06" stroke="#5480f1" stroke-opacity="0.45" stroke-width="2"/>
+<rect x="1100" y="206" width="16" height="12" fill="#5480f1" fill-opacity="0.45"/>
+<rect x="1088" y="218" width="40" height="6" rx="3" fill="#5480f1" fill-opacity="0.45"/>
+<circle cx="1144" cy="194" r="4" fill="#39c088" fill-opacity="0.8"/>
+<rect x="800" y="256" width="104" height="68" rx="5" fill="#ffffff" fill-opacity="0.06" stroke="#5480f1" stroke-opacity="0.45" stroke-width="2"/>
+<rect x="844" y="324" width="16" height="12" fill="#5480f1" fill-opacity="0.45"/>
+<rect x="832" y="336" width="40" height="6" rx="3" fill="#5480f1" fill-opacity="0.45"/>
+<circle cx="888" cy="312" r="4" fill="#39c088" fill-opacity="0.8"/>
+<rect x="928" y="256" width="104" height="68" rx="5" fill="#ffffff" fill-opacity="0.06" stroke="#5480f1" stroke-opacity="0.45" stroke-width="2"/>
+<rect x="972" y="324" width="16" height="12" fill="#5480f1" fill-opacity="0.45"/>
+<rect x="960" y="336" width="40" height="6" rx="3" fill="#5480f1" fill-opacity="0.45"/>
+<circle cx="1016" cy="312" r="4" fill="#39c088" fill-opacity="0.8"/>
+<rect x="1056" y="256" width="104" height="68" rx="5" fill="#ffffff" fill-opacity="0.06" stroke="#5480f1" stroke-opacity="0.45" stroke-width="2"/>
+<rect x="1100" y="324" width="16" height="12" fill="#5480f1" fill-opacity="0.45"/>
+<rect x="1088" y="336" width="40" height="6" rx="3" fill="#5480f1" fill-opacity="0.45"/>
+<circle cx="1144" cy="312" r="4" fill="#39c088" fill-opacity="0.8"/>
+<text x="600" y="424" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="300" fill="#ffffff" fill-opacity="0.5">Todos los equipos con la misma configuración, el mismo software y las mismas reglas</text>
+</svg>

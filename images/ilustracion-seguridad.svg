@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="1200" height="500" role="img" aria-label="Las cinco capas de seguridad de una empresa, del perímetro al dato: perímetro, red, identidad, puesto de trabajo y datos">
+<title>Las cinco capas de seguridad de una empresa, del perímetro al dato: perímetro, red, identidad, puesto de trabajo y datos</title>
+<defs>
+<linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#23242f"/><stop offset="1" stop-color="#14151d"/></linearGradient>
+<marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" fill-opacity="0.5"/></marker>
+<pattern id="malla" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/></pattern>
+<radialGradient id="brillo"><stop offset="0" stop-color="#5480f1" stop-opacity="0.22"/><stop offset="1" stop-color="#5480f1" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="500" fill="url(#fondo)"/>
+<rect width="1200" height="500" fill="url(#malla)"/>
+<ellipse cx="864" cy="100" rx="540" ry="275" fill="url(#brillo)"/>
+<text x="40" y="44" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#ffffff" fill-opacity="0.38" letter-spacing="2">LA SEGURIDAD VA POR CAPAS</text>
+<rect x="130.0" y="118.0" width="400" height="300" rx="14" fill="#e44c65" fill-opacity="0.055" stroke="#e44c65" stroke-opacity="0.65" stroke-width="2.5"/>
+<rect x="169.0" y="147.0" width="322" height="242" rx="14" fill="#e0a34a" fill-opacity="0.055" stroke="#e0a34a" stroke-opacity="0.65" stroke-width="2.5"/>
+<rect x="208.0" y="176.0" width="244" height="184" rx="14" fill="#5480f1" fill-opacity="0.055" stroke="#5480f1" stroke-opacity="0.65" stroke-width="2.5"/>
+<rect x="247.0" y="205.0" width="166" height="126" rx="14" fill="#39c088" fill-opacity="0.055" stroke="#39c088" stroke-opacity="0.65" stroke-width="2.5"/>
+<rect x="286.0" y="234.0" width="88" height="68" rx="14" fill="#8f93a8" fill-opacity="0.055" stroke="#8f93a8" stroke-opacity="0.65" stroke-width="2.5"/>
+<text x="330" y="274" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="400" fill="#ffffff" fill-opacity="0.8" letter-spacing="2">DATOS</text>
+<path d="M 60 268 L 116 268" fill="none" stroke="#e44c65" stroke-opacity="0.6" stroke-width="3" marker-end="url(#flecha)"/>
+<text x="60" y="234" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#e44c65" fill-opacity="0.85">Amenaza</text>
+<circle cx="130" cy="268" r="17" fill="#e44c65" fill-opacity="0.15" stroke="#e44c65" stroke-opacity="0.9" stroke-width="3"/>
+<line x1="123" y1="261" x2="137" y2="275" stroke="#e44c65" stroke-width="4" stroke-linecap="round"/>
+<line x1="137" y1="261" x2="123" y2="275" stroke="#e44c65" stroke-width="4" stroke-linecap="round"/>
+<text x="640" y="118" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#ffffff" fill-opacity="0.4" letter-spacing="1.8">DE FUERA HACIA DENTRO</text>
+<rect x="640" y="146" width="14" height="14" rx="3" fill="#e44c65" fill-opacity="0.85"/>
+<text x="670" y="158" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Perímetro</text>
+<text x="670" y="180" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Cortafuegos, VPN y correo filtrado</text>
+<rect x="640" y="200" width="14" height="14" rx="3" fill="#e0a34a" fill-opacity="0.85"/>
+<text x="670" y="212" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Red</text>
+<text x="670" y="234" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Segmentación, wifi de invitados</text>
+<rect x="640" y="254" width="14" height="14" rx="3" fill="#5480f1" fill-opacity="0.85"/>
+<text x="670" y="266" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Identidad</text>
+<text x="670" y="288" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Contraseñas y doble factor</text>
+<rect x="640" y="308" width="14" height="14" rx="3" fill="#39c088" fill-opacity="0.85"/>
+<text x="670" y="320" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Puesto</text>
+<text x="670" y="342" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Cifrado, antivirus y actualizaciones</text>
+<rect x="640" y="362" width="14" height="14" rx="3" fill="#8f93a8" fill-opacity="0.85"/>
+<text x="670" y="374" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Datos</text>
+<text x="670" y="396" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Permisos mínimos y copias probadas</text>
+<text x="600" y="470" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="300" fill="#ffffff" fill-opacity="0.5">Ninguna capa basta por sí sola: el objetivo es que un fallo en una no deje el resto al descubierto</text>
+</svg>

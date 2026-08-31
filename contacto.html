@@ -212,7 +212,10 @@
 											Para dejarlo definitivo: poner el endpoint real en action/method,
 											quitar la carga de contacto.js y añadir protección antispam.
 										-->
-										<form id="formulario-contacto" method="post" action="#">
+										<!-- novalidate: la validación se hace desde assets/js/contacto.js. Sin esto el
+										     navegador bloquea el envío antes de que se dispare el evento y no hay
+										     forma de avisar de que falta marcar el consentimiento. -->
+										<form id="formulario-contacto" method="post" action="#" novalidate>
 											<div class="row gtr-uniform">
 												<div class="col-6 col-12-xsmall">
 													<label for="nombre">Nombre y apellidos *</label>
@@ -260,14 +263,23 @@
 														<li><input type="submit" value="Enviar mensaje" class="primary" /></li>
 														<li><input type="reset" value="Borrar" /></li>
 													</ul>
-													<p id="aviso-formulario" hidden></p>
+													<p id="error-formulario" class="error-formulario" role="alert" hidden></p>
 													<noscript><p>Tu navegador tiene JavaScript desactivado. Escríbenos
 													directamente a <a href="mailto:Iber-STRategia@gmail.com">Iber-STRategia@gmail.com</a> o llámanos al
 													<a href="tel:+34911122334">911 122 334</a>.</p></noscript>
+													<p class="actualizacion">Los campos marcados con * son obligatorios.</p>
 												</div>
 											</div>
 										</form>
-										<p class="actualizacion">Los campos marcados con * son obligatorios.</p>
+
+										<div id="confirmacion-contacto" class="confirmacion" role="status" hidden>
+											<span class="icon solid fa-check-circle"></span>
+											<h3>Mensaje enviado</h3>
+											<p>Nos pondremos en contacto próximamente con usted.</p>
+											<p class="alternativa">Si prefiere no esperar, puede llamarnos al
+											<a href="tel:+34911122334">911 122 334</a> o escribirnos directamente a
+											<a href="mailto:Iber-STRategia@gmail.com">Iber-STRategia@gmail.com</a>.</p>
+										</div>
 									</section>
 
 							</div>
