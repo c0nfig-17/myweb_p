@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="1200" height="460" role="img" aria-label="Esquema de un entorno híbrido: servicios en la oficina sincronizados con la suite de productividad en la nube mediante una identidad única">
+<title>Esquema de un entorno híbrido: servicios en la oficina sincronizados con la suite de productividad en la nube mediante una identidad única</title>
+<defs>
+<linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#23242f"/><stop offset="1" stop-color="#14151d"/></linearGradient>
+<marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" fill-opacity="0.5"/></marker>
+<pattern id="malla" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/></pattern>
+<radialGradient id="brillo"><stop offset="0" stop-color="#5480f1" stop-opacity="0.22"/><stop offset="1" stop-color="#5480f1" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="460" fill="url(#fondo)"/>
+<rect width="1200" height="460" fill="url(#malla)"/>
+<ellipse cx="864" cy="92" rx="540" ry="253" fill="url(#brillo)"/>
+<text x="40" y="44" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#ffffff" fill-opacity="0.38" letter-spacing="2">TU OFICINA Y LA NUBE, CON UNA SOLA IDENTIDAD</text>
+<rect x="70" y="100" width="420" height="330" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#39c088" stroke-opacity="0.35" stroke-width="2"/>
+<text x="280" y="136" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#ffffff" fill-opacity="0.45" letter-spacing="2">EN TUS OFICINAS</text>
+<rect x="102" y="170" width="356" height="68" rx="6" fill="#ffffff" fill-opacity="0.055" stroke="#39c088" stroke-opacity="0.5" stroke-width="1.5"/>
+<rect x="102" y="170" width="356" height="3.5" rx="2" fill="#39c088"/>
+<text x="280.0" y="200.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Active Directory</text>
+<text x="280.0" y="224.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Usuarios, equipos y permisos</text>
+<rect x="102" y="254" width="356" height="68" rx="6" fill="#ffffff" fill-opacity="0.055" stroke="#39c088" stroke-opacity="0.5" stroke-width="1.5"/>
+<rect x="102" y="254" width="356" height="3.5" rx="2" fill="#39c088"/>
+<text x="280.0" y="284.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Servidor de ficheros</text>
+<text x="280.0" y="308.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Carpetas departamentales</text>
+<rect x="102" y="338" width="356" height="68" rx="6" fill="#ffffff" fill-opacity="0.055" stroke="#39c088" stroke-opacity="0.5" stroke-width="1.5"/>
+<rect x="102" y="338" width="356" height="3.5" rx="2" fill="#39c088"/>
+<text x="280.0" y="368.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Impresión y aplicaciones</text>
+<text x="280.0" y="392.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Programas de gestión</text>
+<rect x="710" y="100" width="420" height="330" rx="8" fill="#ffffff" fill-opacity="0.03" stroke="#5480f1" stroke-opacity="0.35" stroke-width="2"/>
+<text x="920" y="136" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#ffffff" fill-opacity="0.45" letter-spacing="2">EN LA NUBE</text>
+<rect x="742" y="170" width="356" height="68" rx="6" fill="#ffffff" fill-opacity="0.055" stroke="#5480f1" stroke-opacity="0.5" stroke-width="1.5"/>
+<rect x="742" y="170" width="356" height="3.5" rx="2" fill="#5480f1"/>
+<text x="920.0" y="200.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Correo corporativo</text>
+<text x="920.0" y="224.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Buzones y calendarios</text>
+<rect x="742" y="254" width="356" height="68" rx="6" fill="#ffffff" fill-opacity="0.055" stroke="#5480f1" stroke-opacity="0.5" stroke-width="1.5"/>
+<rect x="742" y="254" width="356" height="3.5" rx="2" fill="#5480f1"/>
+<text x="920.0" y="284.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Archivos compartidos</text>
+<text x="920.0" y="308.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Acceso desde cualquier sitio</text>
+<rect x="742" y="338" width="356" height="68" rx="6" fill="#ffffff" fill-opacity="0.055" stroke="#5480f1" stroke-opacity="0.5" stroke-width="1.5"/>
+<rect x="742" y="338" width="356" height="3.5" rx="2" fill="#5480f1"/>
+<text x="920.0" y="368.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Reuniones y mensajería</text>
+<text x="920.0" y="392.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Trabajo en remoto</text>
+<path d="M 494 240 L 700 240" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="2" marker-end="url(#flecha)"/>
+<path d="M 700 300 L 494 300" fill="none" stroke="#ffffff" stroke-opacity="0.4" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="516" y="196" width="168" height="148" rx="8" fill="#ffffff" fill-opacity="0.06" stroke="#e44c65" stroke-opacity="0.5" stroke-width="1.5"/>
+<text x="600" y="232" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="300" fill="#ffffff" fill-opacity="0.92">Identidad</text>
+<text x="600" y="258" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="300" fill="#ffffff" fill-opacity="0.92">única</text>
+<text x="600" y="292" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="300" fill="#ffffff" fill-opacity="0.5">Una contraseña</text>
+<text x="600" y="312" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="300" fill="#ffffff" fill-opacity="0.5">para todo</text>
+</svg>

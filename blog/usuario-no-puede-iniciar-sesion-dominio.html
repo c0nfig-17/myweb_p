@@ -1,0 +1,374 @@
+<!DOCTYPE HTML>
+<!--
+	Iber-STRategia — Finalizar un proyecto, comenzar una historia
+	Diseño base: plantilla «Landed» de HTML5 UP (html5up.net | @ajlkn),
+	utilizada bajo licencia Creative Commons Attribution 3.0 (html5up.net/license).
+	La atribución figura además en el aviso legal del sitio.
+-->
+<html lang="es">
+	<head>
+		<title>Un usuario no puede iniciar sesión en el dominio | Blog de Iber-STRategia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Guía paso a paso para diagnosticar por qué un usuario no puede iniciar sesión en el dominio: bloqueos de cuenta, caducidad, horarios, perfiles y problemas de red." />
+		<meta name="author" content="Iber-STRategia" />
+		<meta name="robots" content="index, follow" />
+		<!-- PENDIENTE: revisar que el dominio de las etiquetas canónica y Open Graph sea el definitivo. -->
+		<link rel="canonical" href="https://www.iber-strategia.es/blog/usuario-no-puede-iniciar-sesion-dominio.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Iber-STRategia" />
+		<meta property="og:title" content="Un usuario no puede iniciar sesión en el dominio | Blog de Iber-STRategia" />
+		<meta property="og:description" content="Guía paso a paso para diagnosticar por qué un usuario no puede iniciar sesión en el dominio: bloqueos de cuenta, caducidad, horarios, perfiles y problemas de red." />
+		<meta property="og:url" content="https://www.iber-strategia.es/blog/usuario-no-puede-iniciar-sesion-dominio.html" />
+		<meta property="og:image" content="https://www.iber-strategia.es/images/blog-02.svg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../images/favicon.svg" />
+		<meta name="theme-color" content="#1c1d26" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/iber.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<script type="application/ld+json">
+		{
+		 "@context": "https://schema.org",
+		 "@graph": [
+		  {
+		   "@type": "ProfessionalService",
+		   "@id": "https://www.iber-strategia.es/#empresa",
+		   "name": "Iber-STRategia",
+		   "legalName": "Iber-STRategia, S.L.",
+		   "slogan": "Finalizar un proyecto, comenzar una historia",
+		   "description": "Consultora tecnológica española especializada en soporte informático para pequeñas y medianas empresas: Active Directory, consultoría estratégica, despliegue de infraestructura y desarrollo de software.",
+		   "url": "https://www.iber-strategia.es/",
+		   "logo": "https://www.iber-strategia.es/images/logo.svg",
+		   "image": "https://www.iber-strategia.es/images/banner.jpg",
+		   "telephone": "+34911122334",
+		   "email": "Iber-STRategia@gmail.com",
+		   "priceRange": "€€",
+		   "address": {
+		    "@type": "PostalAddress",
+		    "streetAddress": "Plaza Carlos Trías Bertrán, 4",
+		    "postalCode": "28020",
+		    "addressLocality": "Madrid",
+		    "addressRegion": "Madrid",
+		    "addressCountry": "ES"
+		   },
+		   "areaServed": {
+		    "@type": "Country",
+		    "name": "España"
+		   },
+		   "openingHoursSpecification": [
+		    {
+		     "@type": "OpeningHoursSpecification",
+		     "dayOfWeek": [
+		      "Monday",
+		      "Tuesday",
+		      "Wednesday",
+		      "Thursday",
+		      "Friday"
+		     ],
+		     "opens": "09:00",
+		     "closes": "18:00"
+		    }
+		   ],
+		   "knowsAbout": [
+		    "Active Directory",
+		    "Soporte informático para pymes",
+		    "Microsoft 365",
+		    "Google Workspace",
+		    "Windows Server",
+		    "Directivas de grupo",
+		    "Copias de seguridad",
+		    "Redes corporativas",
+		    "Desarrollo de software a medida",
+		    "Consultoría tecnológica"
+		   ],
+		   "hasOfferCatalog": {
+		    "@type": "OfferCatalog",
+		    "name": "Servicios de Iber-STRategia",
+		    "itemListElement": [
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Soporte informático gestionado"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Active Directory y administración de sistemas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Consultoría estratégica"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Diseño y maquetado de puestos"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Despliegue funcional de empresas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Desarrollo de software a medida"
+		      }
+		     }
+		    ]
+		   }
+		  },
+		  {
+		   "@type": "BlogPosting",
+		   "@id": "https://www.iber-strategia.es/blog/usuario-no-puede-iniciar-sesion-dominio.html#articulo",
+		   "headline": "Un usuario no puede iniciar sesión en el dominio: guía de diagnóstico ordenada",
+		   "description": "Guía paso a paso para diagnosticar por qué un usuario no puede iniciar sesión en el dominio: bloqueos de cuenta, caducidad, horarios, perfiles y problemas de red.",
+		   "image": "https://www.iber-strategia.es/images/blog-02.svg",
+		   "datePublished": "2026-08-17",
+		   "dateModified": "2026-08-17",
+		   "inLanguage": "es-ES",
+		   "articleSection": "Active Directory",
+		   "author": {
+		    "@type": "Organization",
+		    "name": "Iber-STRategia",
+		    "url": "https://www.iber-strategia.es/"
+		   },
+		   "publisher": {
+		    "@id": "https://www.iber-strategia.es/#empresa"
+		   },
+		   "mainEntityOfPage": {
+		    "@type": "WebPage",
+		    "@id": "https://www.iber-strategia.es/blog/usuario-no-puede-iniciar-sesion-dominio.html"
+		   }
+		  },
+		  {
+		   "@type": "BreadcrumbList",
+		   "itemListElement": [
+		    {
+		     "@type": "ListItem",
+		     "position": 1,
+		     "name": "Inicio",
+		     "item": "https://www.iber-strategia.es/"
+		    },
+		    {
+		     "@type": "ListItem",
+		     "position": 2,
+		     "name": "Blog",
+		     "item": "https://www.iber-strategia.es/blog.html"
+		    },
+		    {
+		     "@type": "ListItem",
+		     "position": 3,
+		     "name": "Un usuario no puede iniciar sesión en el dominio",
+		     "item": "https://www.iber-strategia.es/blog/usuario-no-puede-iniciar-sesion-dominio.html"
+		    }
+		   ]
+		  }
+		 ]
+		}
+		</script>
+	</head>
+	<body class="is-preload">
+		<a class="salto-contenido" href="#main">Ir al contenido principal</a>
+		<div id="page-wrapper">
+
+			<!-- Cabecera -->
+				<header id="header">
+					<div id="logo"><a href="../index.html"><img src="../images/logo.svg" alt="" width="40" height="40" /><span>Iber-STRategia</span></a></div>
+					<nav id="nav">
+						<ul>
+							<li><a href="../index.html">Inicio</a></li>
+							<li>
+								<a href="../servicios.html">Servicios</a>
+								<ul>
+									<li><a href="../servicios.html#soporte">Soporte informático gestionado</a></li>
+									<li><a href="../servicios.html#directorio-activo">Active Directory y sistemas</a></li>
+									<li><a href="../servicios.html#consultoria">Consultoría estratégica</a></li>
+									<li><a href="../servicios.html#maquetado">Diseño y maquetado</a></li>
+									<li><a href="../servicios.html#despliegue">Despliegue de empresas</a></li>
+									<li><a href="../servicios.html#desarrollo">Desarrollo de software</a></li>
+									<li><a href="../faq.html">Preguntas frecuentes</a></li>
+								</ul>
+							</li>
+							<li><a href="../blog.html">Blog</a></li>
+							<li><a href="../talento.html">Talento</a></li>
+							<li><a href="../nosotros.html">Nosotros</a></li>
+							<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Contenido principal -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<nav class="migas" aria-label="Ruta de navegación">
+							<ol>
+								<li><a href="../index.html">Inicio</a></li>
+								<li><a href="../blog.html">Blog</a></li>
+								<li aria-current="page">Un usuario no puede iniciar sesión en el dominio</li>
+							</ol>
+						</nav>
+						<header class="major">
+							<h1>Un usuario no puede iniciar sesión en el dominio: guía de diagnóstico ordenada</h1>
+							<p class="meta-entrada"><span class="categoria">Active Directory</span> · Publicado el 17 de agosto de 2026 · Lectura de 7 min</p>
+						</header>
+
+						<!-- Artículo -->
+							<article id="content" class="articulo">
+								<span class="image fit"><img src="../images/blog-02.svg" alt="" /></span>
+								<nav class="sumario" aria-label="Contenido del artículo">
+									<h4>En este artículo</h4>
+									<ol>
+										<li><a href="#leer-el-mensaje">Lo primero: leer el mensaje exacto</a></li>
+										<li><a href="#bloqueos">Si la cuenta está bloqueada, busca quién la bloquea</a></li>
+										<li><a href="#sin-controlador">Si el mensaje habla de servidores de inicio de sesión</a></li>
+										<li><a href="#perfil">Cuando entra pero le aparece un escritorio vacío</a></li>
+										<li><a href="#orden">El orden que seguimos nosotros</a></li>
+									</ol>
+								</nav>
+								<p class="entradilla">Son las nueve menos cuarto, alguien no entra en su equipo y hay una cola formándose detrás. La tentación es probar cosas al azar hasta que algo funcione. Merece mucho más la pena dedicar dos minutos a mirar en el orden correcto, porque el propio mensaje de error suele decir dónde está el problema.</p>
+								<h3 id="leer-el-mensaje">Lo primero: leer el mensaje exacto</h3>
+								<p>«No puedo entrar» no es un diagnóstico. Windows distingue con bastante precisión entre situaciones muy distintas y cada mensaje apunta a un sitio diferente:</p>
+								<ul>
+									<li><strong>«El nombre de usuario o la contraseña son incorrectos»:</strong> credenciales, teclado en otro idioma o bloqueo de mayúsculas. Lo más común y lo más tonto.</li>
+									<li><strong>«La cuenta ha sido bloqueada»:</strong> se ha superado el número de intentos fallidos. Ojo, no siempre los ha hecho el usuario.</li>
+									<li><strong>«La cuenta está deshabilitada»:</strong> alguien la desactivó, normalmente en un proceso de baja o por una limpieza.</li>
+									<li><strong>«Su contraseña ha caducado»:</strong> el usuario lleva tiempo sin cambiarla y le toca renovarla.</li>
+									<li><strong>«No hay servidores de inicio de sesión disponibles»:</strong> el equipo no está hablando con ningún controlador de dominio. Esto ya no es del usuario, es de red.</li>
+									<li><strong>«Restricción de cuenta»:</strong> hay horarios de acceso o restricción de equipos configurada en la cuenta.</li>
+								</ul>
+								<h3 id="bloqueos">Si la cuenta está bloqueada, busca quién la bloquea</h3>
+								<p>Desbloquear y seguir con el día es lo cómodo, pero si vuelve a bloquearse a media mañana el problema no era el usuario. Casi siempre hay una contraseña antigua guardada en algún sitio que reintenta sola: el móvil con el correo configurado, una unidad de red mapeada con credenciales viejas, una tarea programada o un servicio corriendo con esa cuenta.</p>
+								<pre><code># Estado de la cuenta y motivo del bloqueo
+Get-ADUser jperez -Properties LockedOut, LastBadPasswordAttempt, `
+    BadLogonCount, PasswordExpired, PasswordLastSet | Format-List
+
+# Desde qué controlador se originó el bloqueo
+Search-ADAccount -LockedOut | Select-Object Name, SamAccountName
+
+# Desbloquear
+Unlock-ADAccount -Identity jperez</code></pre>
+								<p>El registro de seguridad del controlador de dominio guarda el evento 4740, que indica desde qué equipo llegó el intento fallido. Ese dato es el que resuelve el caso de verdad.</p>
+								<h3 id="sin-controlador">Si el mensaje habla de servidores de inicio de sesión</h3>
+								<p>Aquí el usuario es inocente: el equipo no encuentra el dominio. Las causas suelen ser cuatro y se descartan rápido:</p>
+								<ol>
+									<li><strong>Sin red.</strong> Cable suelto, puerto del switch caído o wifi sin asociar. Parece obvio y sigue siendo la causa más frecuente.</li>
+									<li><strong>DNS mal configurado.</strong> El equipo debe apuntar al DNS del dominio, no al del router ni a un DNS público. Sin eso, no localiza los controladores.</li>
+									<li><strong>El controlador de dominio no responde.</strong> Comprueba que el servicio está arriba y que nadie lo ha apagado o reiniciado.</li>
+									<li><strong>El portátil está fuera de la oficina</strong> sin VPN. Entrará con credenciales en caché, salvo que se hayan deshabilitado por directiva.</li>
+								</ol>
+								<pre><code>nltest /dsgetdc:midominio.local
+nslookup -type=SRV _ldap._tcp.dc._msdcs.midominio.local
+ipconfig /all    # revisar que el DNS sea el del dominio</code></pre>
+								<h3 id="perfil">Cuando entra pero le aparece un escritorio vacío</h3>
+								<p>Ese caso es distinto: la autenticación ha funcionado y lo que ha fallado es la carga del perfil. Windows suele avisar de que ha iniciado sesión con un perfil temporal. Si se trabaja sobre ese perfil temporal, todo lo que el usuario haga durante el día se perderá al cerrar sesión, así que conviene resolverlo antes de dejarle trabajar.</p>
+								<p>Las causas más habituales son un perfil móvil que no se puede descargar, permisos incorrectos sobre la carpeta del perfil o, sencillamente, que el disco del equipo está lleno.</p>
+								<h3 id="orden">El orden que seguimos nosotros</h3>
+								<ol>
+									<li>Leer el mensaje exacto y anotarlo.</li>
+									<li>Probar la misma cuenta en otro equipo: separa el problema del usuario del problema del equipo.</li>
+									<li>Probar otra cuenta en el mismo equipo: confirma la separación.</li>
+									<li>Revisar el estado de la cuenta en el directorio.</li>
+									<li>Comprobar conectividad y DNS contra el dominio.</li>
+									<li>Revisar la hora del equipo.</li>
+									<li>Solo entonces, tocar el perfil.</li>
+								</ol>
+								<p>Con esos siete pasos se resuelve la inmensa mayoría de los casos en menos de diez minutos, y lo más importante: se sabe por qué ha pasado, que es lo que evita que vuelva.</p>
+								<aside class="cta-articulo">
+									<h4>¿Prefieres que se ocupe alguien y que tu gente siga trabajando?</h4>
+									<p>Damos soporte a los usuarios de más de cincuenta pymes españolas con tiempos de respuesta acordados por contrato. Atendemos en remoto en minutos y nos desplazamos cuando hace falta estar delante de la máquina.</p>
+									<ul class="actions">
+										<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+										<li><a href="../servicios.html#soporte" class="button">Ver el servicio de soporte</a></li>
+									</ul>
+								</aside>
+
+								<div class="relacionados">
+									<h4>Seguir leyendo</h4>
+									<ul>
+								<li><a href="error-relacion-confianza-dominio.html">Error de relación de confianza con el dominio</a></li>
+								<li><a href="directivas-gpo-no-se-aplican.html">Las directivas de grupo (GPO) no se aplican</a></li>
+								<li><a href="ordenador-lento-empresa.html">El ordenador va lento: qué revisar antes de comprar</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="../blog.html" class="button">Volver al blog</a></li>
+									</ul>
+								</div>
+							</article>
+
+					</div>
+				</div>
+
+			<!-- Llamada a la acción -->
+				<section class="wrapper style2 special">
+					<div class="container">
+						<header>
+							<h2>Esto lo resolvemos nosotros todos los días</h2>
+							<p>Somos el departamento de informática de más de cincuenta pymes en toda España. Cuéntanos tu caso y te decimos con franqueza si podemos ayudarte.</p>
+						</header>
+						<ul class="actions special">
+							<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+							<li><a href="../servicios.html" class="button">Ver servicios</a></li>
+						</ul>
+						<p class="marcas-aviso">O llámanos directamente al
+						<a href="tel:+34911122334">911 122 334</a>,
+						de lunes a viernes de 9:00 a 18:00.</p>
+					</div>
+				</section>
+
+			<!-- Pie -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="mailto:Iber-STRategia@gmail.com" class="icon solid alt fa-envelope"><span class="label">Correo electrónico</span></a></li>
+						<li><a href="tel:+34911122334" class="icon solid alt fa-phone"><span class="label">Teléfono</span></a></li>
+						<li><a href="../contacto.html" class="icon solid alt fa-map-marker-alt"><span class="label">Dónde estamos</span></a></li>
+						<li><a href="../servicios.html" class="icon solid alt fa-headset"><span class="label">Servicios</span></a></li>
+						<li><a href="../blog.html" class="icon solid alt fa-rss"><span class="label">Blog</span></a></li>
+						<!-- PENDIENTE: sustituir "#" por las URL reales de los perfiles y descomentar.
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						-->
+					</ul>
+					<ul class="pie-datos">
+						<li>Plaza Carlos Trías Bertrán, 4 · 28020 Madrid · Tetuán</li>
+						<li><a href="tel:+34911122334">911 122 334</a></li>
+						<li><a href="mailto:Iber-STRategia@gmail.com">Iber-STRategia@gmail.com</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; 2026 Iber-STRategia, S.L.. Todos los derechos reservados.</li>
+						<li><a href="../aviso-legal.html">Aviso legal</a></li>
+						<li><a href="../privacidad.html">Privacidad</a></li>
+						<li><a href="../cookies.html">Cookies</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

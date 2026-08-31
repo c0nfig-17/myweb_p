@@ -1,203 +1,520 @@
 <!DOCTYPE HTML>
 <!--
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	Iber-STRategia — Finalizar un proyecto, comenzar una historia
+	Diseño base: plantilla «Landed» de HTML5 UP (html5up.net | @ajlkn),
+	utilizada bajo licencia Creative Commons Attribution 3.0 (html5up.net/license).
+	La atribución figura además en el aviso legal del sitio.
 -->
-<html>
+<html lang="es">
 	<head>
-		<title>Landed by HTML5 UP</title>
+		<title>Iber-STRategia | Consultora tecnológica y soporte informático para pymes</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Consultora tecnológica española especializada en soporte informático para pymes: Active Directory, consultoría estratégica, despliegue de infraestructura y desarrollo de software a medida. Más de 50 clientes en toda España." />
+		<meta name="author" content="Iber-STRategia" />
+		<meta name="robots" content="index, follow" />
+		<!-- PENDIENTE: revisar que el dominio de las etiquetas canónica y Open Graph sea el definitivo. -->
+		<link rel="canonical" href="https://www.iber-strategia.es/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Iber-STRategia" />
+		<meta property="og:title" content="Iber-STRategia | Consultora tecnológica y soporte informático para pymes" />
+		<meta property="og:description" content="Consultora tecnológica española especializada en soporte informático para pymes: Active Directory, consultoría estratégica, despliegue de infraestructura y desarrollo de software a medida. Más de 50 clientes en toda España." />
+		<meta property="og:url" content="https://www.iber-strategia.es/" />
+		<meta property="og:image" content="https://www.iber-strategia.es/images/banner.jpg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="images/favicon.svg" />
+		<meta name="theme-color" content="#1c1d26" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/iber.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="application/ld+json">
+		{
+		 "@context": "https://schema.org",
+		 "@graph": [
+		  {
+		   "@type": "ProfessionalService",
+		   "@id": "https://www.iber-strategia.es/#empresa",
+		   "name": "Iber-STRategia",
+		   "legalName": "Iber-STRategia, S.L.",
+		   "slogan": "Finalizar un proyecto, comenzar una historia",
+		   "description": "Consultora tecnológica española especializada en soporte informático para pequeñas y medianas empresas: Active Directory, consultoría estratégica, despliegue de infraestructura y desarrollo de software.",
+		   "url": "https://www.iber-strategia.es/",
+		   "logo": "https://www.iber-strategia.es/images/logo.svg",
+		   "image": "https://www.iber-strategia.es/images/banner.jpg",
+		   "telephone": "+34911122334",
+		   "email": "Iber-STRategia@gmail.com",
+		   "priceRange": "€€",
+		   "address": {
+		    "@type": "PostalAddress",
+		    "streetAddress": "Plaza Carlos Trías Bertrán, 4",
+		    "postalCode": "28020",
+		    "addressLocality": "Madrid",
+		    "addressRegion": "Madrid",
+		    "addressCountry": "ES"
+		   },
+		   "areaServed": {
+		    "@type": "Country",
+		    "name": "España"
+		   },
+		   "openingHoursSpecification": [
+		    {
+		     "@type": "OpeningHoursSpecification",
+		     "dayOfWeek": [
+		      "Monday",
+		      "Tuesday",
+		      "Wednesday",
+		      "Thursday",
+		      "Friday"
+		     ],
+		     "opens": "09:00",
+		     "closes": "18:00"
+		    }
+		   ],
+		   "knowsAbout": [
+		    "Active Directory",
+		    "Soporte informático para pymes",
+		    "Microsoft 365",
+		    "Google Workspace",
+		    "Windows Server",
+		    "Directivas de grupo",
+		    "Copias de seguridad",
+		    "Redes corporativas",
+		    "Desarrollo de software a medida",
+		    "Consultoría tecnológica"
+		   ],
+		   "hasOfferCatalog": {
+		    "@type": "OfferCatalog",
+		    "name": "Servicios de Iber-STRategia",
+		    "itemListElement": [
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Soporte informático gestionado"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Active Directory y administración de sistemas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Consultoría estratégica"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Diseño y maquetado de puestos"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Despliegue funcional de empresas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Desarrollo de software a medida"
+		      }
+		     }
+		    ]
+		   }
+		  }
+		 ]
+		}
+		</script>
 	</head>
 	<body class="is-preload landing">
+		<a class="salto-contenido" href="#banner">Ir al contenido principal</a>
 		<div id="page-wrapper">
 
-			<!-- Header -->
+			<!-- Cabecera -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">Landed</a></h1>
+					<div id="logo"><a href="index.html"><img src="images/logo.svg" alt="" width="40" height="40" /><span>Iber-STRategia</span></a></div>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html">Inicio</a></li>
 							<li>
-								<a href="#">Layouts</a>
+								<a href="servicios.html">Servicios</a>
 								<ul>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li><a href="no-sidebar.html">No Sidebar</a></li>
-									<li>
-										<a href="#">Submenu</a>
-										<ul>
-											<li><a href="#">Option 1</a></li>
-											<li><a href="#">Option 2</a></li>
-											<li><a href="#">Option 3</a></li>
-											<li><a href="#">Option 4</a></li>
-										</ul>
-									</li>
+									<li><a href="servicios.html#soporte">Soporte informático gestionado</a></li>
+									<li><a href="servicios.html#directorio-activo">Active Directory y sistemas</a></li>
+									<li><a href="servicios.html#consultoria">Consultoría estratégica</a></li>
+									<li><a href="servicios.html#maquetado">Diseño y maquetado</a></li>
+									<li><a href="servicios.html#despliegue">Despliegue de empresas</a></li>
+									<li><a href="servicios.html#desarrollo">Desarrollo de software</a></li>
+									<li><a href="faq.html">Preguntas frecuentes</a></li>
 								</ul>
 							</li>
-							<li><a href="elements.html">Elements</a></li>
-							<li><a href="#" class="button primary">Sign Up</a></li>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="talento.html">Talento</a></li>
+							<li><a href="nosotros.html">Nosotros</a></li>
+							<li><a href="contacto.html" class="button primary">¡Contáctanos!</a></li>
 						</ul>
 					</nav>
 				</header>
 
-			<!-- Banner -->
+			<!-- Portada -->
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h2>The future has landed</h2>
-							<p>And there are no hoverboards or flying cars.<br />
-							Just apps. Lots of mother flipping apps.</p>
+							<h1>Finalizar un proyecto,<br />comenzar una historia</h1>
+							<p>Consultora tecnológica especializada en soporte informático<br />
+							para pequeñas y medianas empresas. Más de 50 clientes en toda España.</p>
 						</header>
-						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+						<span class="image"><img src="images/logo.svg" alt="Iber-STRategia" /></span>
 					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
+					<a href="#quienes-somos" class="goto-next scrolly">Siguiente</a>
 				</section>
 
-			<!-- One -->
-				<section id="one" class="spotlight style1 bottom">
-					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
+			<!-- Quiénes somos -->
+				<section id="quienes-somos" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="images/fondo-empresa.svg" alt="" /></span>
 					<div class="content">
 						<div class="container">
 							<div class="row">
 								<div class="col-4 col-12-medium">
 									<header>
-										<h2>Odio faucibus ipsum integer consequat</h2>
-										<p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+										<h2>La tecnología que sostiene tu empresa, sin que tengas que pensar en ella</h2>
+										<p>Somos el departamento de informática de más de cincuenta pymes españolas</p>
 									</header>
 								</div>
 								<div class="col-4 col-12-medium">
-									<p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-									Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-									nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-									augue varius tempus lobortis porttitor accumsan consequat
-									adipiscing lorem dolor.</p>
+									<p>Iber-STRategia nace de una idea sencilla: una pyme no necesita un catálogo
+									de productos, necesita que las cosas funcionen. Por eso no vendemos tecnología
+									suelta, sino un servicio continuo que va desde la red de la oficina hasta el
+									software que sostiene tu facturación, pasando por los servidores, las copias de
+									seguridad y las personas que lo usan cada mañana.</p>
 								</div>
 								<div class="col-4 col-12-medium">
-									<p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
-									adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-									Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-									mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-									ipsum dolor nullam.</p>
+									<p>Trabajamos para empresas de toda España, desde despachos de cinco personas
+									hasta compañías con varias sedes y turnos partidos. Cambia el tamaño y cambia
+									el sector, pero la petición siempre es la misma: alguien que entienda el negocio,
+									que dé la cara cuando algo falla y que hable en castellano y no en siglas.</p>
 								</div>
 							</div>
 						</div>
 					</div>
-					<a href="#two" class="goto-next scrolly">Next</a>
+					<a href="#servicios" class="goto-next scrolly">Siguiente</a>
 				</section>
 
-			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+			<!-- Servicios -->
+				<section id="servicios" class="spotlight style2 right">
+					<span class="image fit main"><img src="images/fondo-servicios.svg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Interdum amet non magna accumsan</h2>
-							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+							<h2>Un solo interlocutor para toda tu informática</h2>
+							<p>Soporte, sistemas, infraestructura y desarrollo bajo un mismo techo</p>
 						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<p>Administramos directorios Active Directory, diseñamos la arquitectura de tus
+						sistemas, maquetamos la solución antes de construirla, desplegamos oficinas
+						completas llave en mano y desarrollamos el software a medida que ningún producto
+						estándar te resuelve. Un único equipo, un único teléfono y un único responsable
+						del resultado.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="servicios.html" class="button">Ver todos los servicios</a></li>
 						</ul>
 					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
+					<a href="#talento" class="goto-next scrolly">Siguiente</a>
 				</section>
 
-			<!-- Three -->
-				<section id="three" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+			<!-- Talento -->
+				<section id="talento" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/fondo-talento.svg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Interdum felis blandit praesent sed augue</h2>
-							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+							<h2>Detrás de cada proyecto hay un equipo</h2>
+							<p>El talento es la única infraestructura que no se puede comprar hecha</p>
 						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<p>Un servidor se compra en una tarde y cien licencias se renuevan con un clic.
+						Lo que no aparece en ninguna factura es la capacidad de una persona para entender
+						un problema ajeno, imaginar una solución que nadie ha escrito todavía y sostenerla
+						cuando las cosas se tuercen. Esa capacidad se cultiva, y es la que decide si un
+						proyecto llega a alguna parte.</p>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="talento.html" class="button">Nuestra visión del talento</a></li>
 						</ul>
 					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
+					<a href="#que-hacemos" class="goto-next scrolly">Siguiente</a>
 				</section>
 
-			<!-- Four -->
-				<section id="four" class="wrapper style1 special fade-up">
+			<!-- Qué hacemos -->
+				<section id="que-hacemos" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2>Accumsan sed tempus adipiscing blandit</h2>
-							<p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+							<h2>Qué hacemos</h2>
+							<p>Cubrimos el ciclo completo: de la decisión estratégica al soporte del día a día</p>
 						</header>
 						<div class="box alt">
 							<div class="row gtr-uniform">
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-chart-area"></span>
-									<h3>Ipsum sed commodo</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major fa-headset"></span>
+									<h3>Soporte informático</h3>
+									<p>Atendemos las incidencias de tus usuarios con tiempos de respuesta
+									acordados por escrito, en remoto y presencialmente.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-comment"></span>
-									<h3>Eleifend lorem ornare</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major fa-sitemap"></span>
+									<h3>Active Directory</h3>
+									<p>Diseñamos, migramos y mantenemos tu directorio: usuarios, permisos,
+									directivas de grupo y servidores.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-flask"></span>
-									<h3>Cubilia cep lobortis</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major fa-lightbulb"></span>
+									<h3>Consultoría estratégica</h3>
+									<p>Ponemos orden en tu tecnología y trazamos un plan realista, priorizado
+									y con el coste sobre la mesa desde el principio.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-paper-plane"></span>
-									<h3>Non semper interdum</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major fa-drafting-compass"></span>
+									<h3>Diseño y maquetado</h3>
+									<p>Maquetamos la solución antes de construirla: esquemas, planos de red
+									y prototipos que evitan sorpresas caras.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-file"></span>
-									<h3>Odio laoreet accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major fa-server"></span>
+									<h3>Despliegue funcional</h3>
+									<p>Montamos oficinas completas llave en mano: red, servidores, puestos,
+									licencias y copias de seguridad.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-lock"></span>
-									<h3>Massa arcu accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major fa-code"></span>
+									<h3>Desarrollo de software</h3>
+									<p>Construimos las aplicaciones a medida que tu negocio necesita y que
+									ningún programa estándar termina de cubrir.</p>
 								</section>
 							</div>
 						</div>
 						<footer class="major">
 							<ul class="actions special">
-								<li><a href="#" class="button">Magna sed feugiat</a></li>
+								<li><a href="servicios.html" class="button">Conoce todos nuestros servicios</a></li>
 							</ul>
 						</footer>
 					</div>
 				</section>
 
-			<!-- Five -->
-				<section id="five" class="wrapper style2 special fade">
+			<!-- Cómo trabajamos -->
+				<section id="como-trabajamos" class="wrapper style3">
 					<div class="container">
-						<header>
-							<h2>Magna faucibus lorem diam</h2>
-							<p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+						<header class="major">
+							<h2>Cómo trabajamos</h2>
+							<p>El mismo recorrido en todos los proyectos, tengan el tamaño que tengan</p>
 						</header>
-						<form method="post" action="#" class="cta">
-							<div class="row gtr-uniform gtr-50">
-								<div class="col-8 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your Email Address" /></div>
-								<div class="col-4 col-12-xsmall"><input type="submit" value="Get Started" class="fit primary" /></div>
+						<div class="row gtr-150">
+							<div class="col-6 col-12-medium">
+								<ol class="proceso">
+									<li>
+										<h4>Nos cuentas qué te pasa</h4>
+										<p>Una llamada o un correo. No hace falta que sepas de informática ni que uses las palabras técnicas correctas: para eso estamos nosotros.</p>
+									</li>
+									<li>
+										<h4>Miramos antes de opinar</h4>
+										<p>Vamos a ver cómo trabaja la gente de verdad y qué hay montado. Casi todas las soluciones que fallan son correctas sobre el papel e imposibles en la práctica.</p>
+									</li>
+									<li>
+										<h4>Te damos un plan con precio</h4>
+										<p>Por escrito, con alcance, plazos y coste cerrado. Si hay varias opciones, te las explicamos con sus ventajas y sus pegas, incluida la de no hacer nada todavía.</p>
+									</li>
+									<li>
+										<h4>Lo ejecutamos sin parar tu negocio</h4>
+										<p>Trabajamos en la ventana horaria que menos moleste y avisamos de cada corte. Nadie se entera de que hemos estado, salvo porque las cosas van mejor.</p>
+									</li>
+									<li>
+										<h4>Documentamos y formamos</h4>
+										<p>Te entregamos esquemas, contraseñas y manuales, y nos sentamos con tu gente hasta que sepan usarlo. Todo es tuyo desde el primer día.</p>
+									</li>
+									<li>
+										<h4>Nos quedamos</h4>
+										<p>Aquí empieza la historia. El mantenimiento posterior es lo que hace que el proyecto siga teniendo sentido dentro de cinco años.</p>
+									</li>
+								</ol>
 							</div>
-						</form>
+							<div class="col-6 col-12-medium">
+								<figure class="ilustracion">
+									<img src="images/ilustracion-soporte.svg" alt="Recorrido de una incidencia de soporte: aviso, registro, diagnóstico, resolución y cierre con informe" />
+									<figcaption>Así viaja una incidencia desde que nos avisas hasta que te contamos qué ha pasado.</figcaption>
+								</figure>
+								<figure class="ilustracion">
+									<img src="images/ilustracion-datacenter.svg" alt="Racks de servidores de una sala técnica con servidores, cabina de discos, electrónica de red y sistema de alimentación ininterrumpida" />
+									<figcaption>Diseñamos, montamos y mantenemos la infraestructura completa.</figcaption>
+								</figure>
+							</div>
+						</div>
 					</div>
 				</section>
 
-			<!-- Footer -->
+			<!-- Tecnologías -->
+				<section id="tecnologias" class="wrapper style1 special">
+					<div class="container">
+						<header class="major">
+							<h2>Tecnologías con las que trabajamos</h2>
+							<p>Nos movemos con soltura en el ecosistema que ya usa tu empresa,
+							sin obligarte a cambiar de proveedor para poder ayudarte</p>
+						</header>
+						<ul class="tecnologias">
+							<li>
+								<span class="icon solid fa-window-restore"></span>
+								<span class="nombre">Microsoft 365</span>
+								<span class="categoria">Productividad</span>
+							</li>
+							<li>
+								<span class="icon brands fa-google"></span>
+								<span class="nombre">Google Workspace</span>
+								<span class="categoria">Productividad</span>
+							</li>
+							<li>
+								<span class="icon solid fa-server"></span>
+								<span class="nombre">Windows Server</span>
+								<span class="categoria">Servidores</span>
+							</li>
+							<li>
+								<span class="icon solid fa-sitemap"></span>
+								<span class="nombre">Active Directory</span>
+								<span class="categoria">Identidad</span>
+							</li>
+							<li>
+								<span class="icon solid fa-id-badge"></span>
+								<span class="nombre">Microsoft Entra ID</span>
+								<span class="categoria">Identidad</span>
+							</li>
+							<li>
+								<span class="icon brands fa-linux"></span>
+								<span class="nombre">Linux</span>
+								<span class="categoria">Servidores</span>
+							</li>
+							<li>
+								<span class="icon solid fa-cloud"></span>
+								<span class="nombre">Virtualización</span>
+								<span class="categoria">Infraestructura</span>
+							</li>
+							<li>
+								<span class="icon solid fa-shield-alt"></span>
+								<span class="nombre">Cortafuegos y VPN</span>
+								<span class="categoria">Seguridad</span>
+							</li>
+							<li>
+								<span class="icon solid fa-database"></span>
+								<span class="nombre">Copias y respaldo</span>
+								<span class="categoria">Continuidad</span>
+							</li>
+							<li>
+								<span class="icon solid fa-wifi"></span>
+								<span class="nombre">Redes y wifi</span>
+								<span class="categoria">Infraestructura</span>
+							</li>
+							<li>
+								<span class="icon solid fa-code"></span>
+								<span class="nombre">Desarrollo a medida</span>
+								<span class="categoria">Software</span>
+							</li>
+							<li>
+								<span class="icon solid fa-mobile-alt"></span>
+								<span class="nombre">Movilidad y MDM</span>
+								<span class="categoria">Puesto de trabajo</span>
+							</li>
+						</ul>
+						<p class="marcas-aviso">Todas las marcas y nombres comerciales citados son propiedad
+						de sus respectivos titulares. Su mención indica únicamente las tecnologías con las
+						que trabajamos habitualmente y no implica relación comercial, patrocinio ni
+						certificación oficial por parte de dichos titulares.</p>
+					</div>
+				</section>
+
+			<!-- Últimos artículos -->
+				<section id="del-blog" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Del blog</h2>
+							<p>Incidencias reales que nos encontramos en las pymes, explicadas en claro</p>
+						</header>
+						<ul class="entradas">
+							<li>
+								<a href="blog/error-relacion-confianza-dominio.html" class="imagen"><img src="images/blog-01.svg" alt="" /></a>
+								<div class="texto">
+									<p class="meta-entrada"><span class="categoria">Active Directory</span> · 24 de agosto de 2026</p>
+									<h3><a href="blog/error-relacion-confianza-dominio.html">Error de relación de confianza con el dominio</a></h3>
+									<p>Qué significa el error de relación de confianza entre la estación de trabajo y el dominio, por qué aparece y cómo repararlo sin sacar el equipo del dominio.</p>
+								</div>
+							</li>
+							<li>
+								<a href="blog/usuario-no-puede-iniciar-sesion-dominio.html" class="imagen"><img src="images/blog-02.svg" alt="" /></a>
+								<div class="texto">
+									<p class="meta-entrada"><span class="categoria">Active Directory</span> · 17 de agosto de 2026</p>
+									<h3><a href="blog/usuario-no-puede-iniciar-sesion-dominio.html">Un usuario no puede iniciar sesión en el dominio</a></h3>
+									<p>Guía paso a paso para diagnosticar por qué un usuario no puede iniciar sesión en el dominio: bloqueos de cuenta, caducidad, horarios, perfiles y problemas de red.</p>
+								</div>
+							</li>
+							<li>
+								<a href="blog/directivas-gpo-no-se-aplican.html" class="imagen"><img src="images/blog-03.svg" alt="" /></a>
+								<div class="texto">
+									<p class="meta-entrada"><span class="categoria">Active Directory</span> · 10 de agosto de 2026</p>
+									<h3><a href="blog/directivas-gpo-no-se-aplican.html">Las directivas de grupo (GPO) no se aplican</a></h3>
+									<p>Por qué una directiva de grupo no llega a los equipos: enlaces, ámbito, herencia, filtros de seguridad y bucle de procesamiento. Diagnóstico ordenado con gpresult.</p>
+								</div>
+							</li>
+						</ul>
+						<footer class="major">
+							<ul class="actions special">
+								<li><a href="blog.html" class="button">Ver todos los artículos</a></li>
+							</ul>
+						</footer>
+					</div>
+				</section>
+
+			<!-- Llamada a la acción -->
+				<section class="wrapper style2 special">
+					<div class="container">
+						<header>
+							<h2>¿Hablamos de tu proyecto?</h2>
+							<p>Cuéntanos qué necesitas y te respondemos en menos de 24 horas laborables. La primera conversación no cuesta nada y casi siempre aclara mucho.</p>
+						</header>
+						<ul class="actions special">
+							<li><a href="contacto.html" class="button primary">¡Contáctanos!</a></li>
+							<li><a href="servicios.html" class="button">Ver servicios</a></li>
+						</ul>
+						<p class="marcas-aviso">O llámanos directamente al
+						<a href="tel:+34911122334">911 122 334</a>,
+						de lunes a viernes de 9:00 a 18:00.</p>
+					</div>
+				</section>
+
+			<!-- Pie -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="mailto:Iber-STRategia@gmail.com" class="icon solid alt fa-envelope"><span class="label">Correo electrónico</span></a></li>
+						<li><a href="tel:+34911122334" class="icon solid alt fa-phone"><span class="label">Teléfono</span></a></li>
+						<li><a href="contacto.html" class="icon solid alt fa-map-marker-alt"><span class="label">Dónde estamos</span></a></li>
+						<li><a href="servicios.html" class="icon solid alt fa-headset"><span class="label">Servicios</span></a></li>
+						<li><a href="blog.html" class="icon solid alt fa-rss"><span class="label">Blog</span></a></li>
+						<!-- PENDIENTE: sustituir "#" por las URL reales de los perfiles y descomentar.
 						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+						-->
+					</ul>
+					<ul class="pie-datos">
+						<li>Plaza Carlos Trías Bertrán, 4 · 28020 Madrid · Tetuán</li>
+						<li><a href="tel:+34911122334">911 122 334</a></li>
+						<li><a href="mailto:Iber-STRategia@gmail.com">Iber-STRategia@gmail.com</a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; 2026 Iber-STRategia, S.L.. Todos los derechos reservados.</li>
+						<li><a href="aviso-legal.html">Aviso legal</a></li>
+						<li><a href="privacidad.html">Privacidad</a></li>
+						<li><a href="cookies.html">Cookies</a></li>
 					</ul>
 				</footer>
 

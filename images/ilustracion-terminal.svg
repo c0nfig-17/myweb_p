@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="Consola de administración de Active Directory mostrando la búsqueda de cuentas de usuario deshabilitadas y sin uso reciente">
+<title>Consola de administración de Active Directory mostrando la búsqueda de cuentas de usuario deshabilitadas y sin uso reciente</title>
+<defs>
+<linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#23242f"/><stop offset="1" stop-color="#14151d"/></linearGradient>
+<marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" fill-opacity="0.5"/></marker>
+<pattern id="malla" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/></pattern>
+<radialGradient id="brillo"><stop offset="0" stop-color="#5480f1" stop-opacity="0.22"/><stop offset="1" stop-color="#5480f1" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="520" fill="url(#fondo)"/>
+<rect width="1200" height="520" fill="url(#malla)"/>
+<ellipse cx="864" cy="104" rx="540" ry="286" fill="url(#brillo)"/>
+<rect x="60" y="60" width="1080" height="440" rx="8" fill="#0f1017" fill-opacity="0.92" stroke="#ffffff" stroke-opacity="0.22" stroke-width="1.5"/>
+<path d="M 60 68 a 8 8 0 0 1 8 -8 L 1132 60 a 8 8 0 0 1 8 8 L 1140 104 L 60 104 Z" fill="#ffffff" fill-opacity="0.06"/>
+<circle cx="92" cy="82" r="7" fill="#e44c65" fill-opacity="0.85"/>
+<circle cx="118" cy="82" r="7" fill="#e0a34a" fill-opacity="0.85"/>
+<circle cx="144" cy="82" r="7" fill="#39c088" fill-opacity="0.85"/>
+<text x="600" y="89" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="300" fill="#ffffff" fill-opacity="0.55">Administrador: Windows PowerShell</text>
+<text x="96" y="148" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#39c088" fill-opacity="0.85" xml:space="preserve">PS C:\&gt; </text>
+<text x="188.0" y="148" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#ffffff" fill-opacity="0.85" xml:space="preserve">Get-ADUser -Filter {Enabled -eq $false} -Properties LastLogonDate `</text>
+<text x="96" y="174" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#39c088" fill-opacity="0.85" xml:space="preserve">&gt;&gt;       </text>
+<text x="199.5" y="174" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#ffffff" fill-opacity="0.85" xml:space="preserve">| Select-Object Name, SamAccountName, LastLogonDate</text>
+<text x="96" y="200" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#8f93a8" fill-opacity="0.85" xml:space="preserve"></text>
+<text x="96" y="226" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#8f93a8" fill-opacity="0.85" xml:space="preserve">Name               SamAccountName    LastLogonDate</text>
+<text x="96" y="252" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#8f93a8" fill-opacity="0.85" xml:space="preserve">----               --------------    -------------</text>
+<text x="96" y="278" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#c9ccd8" fill-opacity="0.85" xml:space="preserve">Ana Ruiz Salas     a.ruiz            12/03/2025  9:41</text>
+<text x="96" y="304" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#c9ccd8" fill-opacity="0.85" xml:space="preserve">Carlos Méndez      c.mendez          03/11/2024 18:02</text>
+<text x="96" y="330" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#c9ccd8" fill-opacity="0.85" xml:space="preserve">Cuenta becario 3   becario3          21/07/2024 12:15</text>
+<text x="96" y="356" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#c9ccd8" fill-opacity="0.85" xml:space="preserve">Proveedor SAT      sat.externo       08/02/2024 16:30</text>
+<text x="96" y="382" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#8f93a8" fill-opacity="0.85" xml:space="preserve"></text>
+<text x="96" y="408" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#39c088" fill-opacity="0.85" xml:space="preserve">PS C:\&gt; </text>
+<text x="188.0" y="408" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#e0a34a" fill-opacity="0.85" xml:space="preserve"># 47 cuentas activas sin uso en más de 12 meses.</text>
+<text x="96" y="434" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#39c088" fill-opacity="0.85" xml:space="preserve">PS C:\&gt; </text>
+<text x="188.0" y="434" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#e0a34a" fill-opacity="0.85" xml:space="preserve"># Cada una es una puerta abierta que nadie vigila.</text>
+<text x="96" y="460" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#39c088" fill-opacity="0.85" xml:space="preserve">PS C:\&gt; </text>
+<text x="188.0" y="460" text-anchor="start" font-family="'Courier New', Consolas, monospace" font-size="19" font-weight="400" fill="#ffffff" fill-opacity="0.85" xml:space="preserve">_</text>
+</svg>

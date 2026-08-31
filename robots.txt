@@ -1,0 +1,20 @@
+# robots.txt — Iber-STRategia
+# Consultora tecnológica · https://www.iber-strategia.es
+#
+# PENDIENTE: si el dominio definitivo no es www.iber-strategia.es, corregir
+# la línea "Sitemap" de este archivo y las etiquetas <link rel="canonical">
+# y og:url de las páginas HTML.
+
+User-agent: *
+Allow: /
+
+# Los archivos fuente de Sass no aportan nada a los buscadores.
+Disallow: /assets/sass/
+
+# Las hojas de estilo, el JavaScript y las imágenes deben quedar accesibles:
+# Google los necesita para renderizar y evaluar correctamente las páginas.
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /images/
+
+Sitemap: https://www.iber-strategia.es/sitemap.xml

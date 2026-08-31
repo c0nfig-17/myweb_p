@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<!--
+	Iber-STRategia — Finalizar un proyecto, comenzar una historia
+	Diseño base: plantilla «Landed» de HTML5 UP (html5up.net | @ajlkn),
+	utilizada bajo licencia Creative Commons Attribution 3.0 (html5up.net/license).
+	La atribución figura además en el aviso legal del sitio.
+-->
+<html lang="es">
+	<head>
+		<title>Error de relación de confianza con el dominio | Blog de Iber-STRategia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Qué significa el error de relación de confianza entre la estación de trabajo y el dominio, por qué aparece y cómo repararlo sin sacar el equipo del dominio." />
+		<meta name="author" content="Iber-STRategia" />
+		<meta name="robots" content="index, follow" />
+		<!-- PENDIENTE: revisar que el dominio de las etiquetas canónica y Open Graph sea el definitivo. -->
+		<link rel="canonical" href="https://www.iber-strategia.es/blog/error-relacion-confianza-dominio.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Iber-STRategia" />
+		<meta property="og:title" content="Error de relación de confianza con el dominio | Blog de Iber-STRategia" />
+		<meta property="og:description" content="Qué significa el error de relación de confianza entre la estación de trabajo y el dominio, por qué aparece y cómo repararlo sin sacar el equipo del dominio." />
+		<meta property="og:url" content="https://www.iber-strategia.es/blog/error-relacion-confianza-dominio.html" />
+		<meta property="og:image" content="https://www.iber-strategia.es/images/blog-01.svg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../images/favicon.svg" />
+		<meta name="theme-color" content="#1c1d26" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/iber.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<script type="application/ld+json">
+		{
+		 "@context": "https://schema.org",
+		 "@graph": [
+		  {
+		   "@type": "ProfessionalService",
+		   "@id": "https://www.iber-strategia.es/#empresa",
+		   "name": "Iber-STRategia",
+		   "legalName": "Iber-STRategia, S.L.",
+		   "slogan": "Finalizar un proyecto, comenzar una historia",
+		   "description": "Consultora tecnológica española especializada en soporte informático para pequeñas y medianas empresas: Active Directory, consultoría estratégica, despliegue de infraestructura y desarrollo de software.",
+		   "url": "https://www.iber-strategia.es/",
+		   "logo": "https://www.iber-strategia.es/images/logo.svg",
+		   "image": "https://www.iber-strategia.es/images/banner.jpg",
+		   "telephone": "+34911122334",
+		   "email": "Iber-STRategia@gmail.com",
+		   "priceRange": "€€",
+		   "address": {
+		    "@type": "PostalAddress",
+		    "streetAddress": "Plaza Carlos Trías Bertrán, 4",
+		    "postalCode": "28020",
+		    "addressLocality": "Madrid",
+		    "addressRegion": "Madrid",
+		    "addressCountry": "ES"
+		   },
+		   "areaServed": {
+		    "@type": "Country",
+		    "name": "España"
+		   },
+		   "openingHoursSpecification": [
+		    {
+		     "@type": "OpeningHoursSpecification",
+		     "dayOfWeek": [
+		      "Monday",
+		      "Tuesday",
+		      "Wednesday",
+		      "Thursday",
+		      "Friday"
+		     ],
+		     "opens": "09:00",
+		     "closes": "18:00"
+		    }
+		   ],
+		   "knowsAbout": [
+		    "Active Directory",
+		    "Soporte informático para pymes",
+		    "Microsoft 365",
+		    "Google Workspace",
+		    "Windows Server",
+		    "Directivas de grupo",
+		    "Copias de seguridad",
+		    "Redes corporativas",
+		    "Desarrollo de software a medida",
+		    "Consultoría tecnológica"
+		   ],
+		   "hasOfferCatalog": {
+		    "@type": "OfferCatalog",
+		    "name": "Servicios de Iber-STRategia",
+		    "itemListElement": [
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Soporte informático gestionado"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Active Directory y administración de sistemas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Consultoría estratégica"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Diseño y maquetado de puestos"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Despliegue funcional de empresas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Desarrollo de software a medida"
+		      }
+		     }
+		    ]
+		   }
+		  },
+		  {
+		   "@type": "BlogPosting",
+		   "@id": "https://www.iber-strategia.es/blog/error-relacion-confianza-dominio.html#articulo",
+		   "headline": "«Error de relación de confianza entre esta estación de trabajo y el dominio principal»: qué significa y cómo se arregla",
+		   "description": "Qué significa el error de relación de confianza entre la estación de trabajo y el dominio, por qué aparece y cómo repararlo sin sacar el equipo del dominio.",
+		   "image": "https://www.iber-strategia.es/images/blog-01.svg",
+		   "datePublished": "2026-08-24",
+		   "dateModified": "2026-08-24",
+		   "inLanguage": "es-ES",
+		   "articleSection": "Active Directory",
+		   "author": {
+		    "@type": "Organization",
+		    "name": "Iber-STRategia",
+		    "url": "https://www.iber-strategia.es/"
+		   },
+		   "publisher": {
+		    "@id": "https://www.iber-strategia.es/#empresa"
+		   },
+		   "mainEntityOfPage": {
+		    "@type": "WebPage",
+		    "@id": "https://www.iber-strategia.es/blog/error-relacion-confianza-dominio.html"
+		   }
+		  },
+		  {
+		   "@type": "BreadcrumbList",
+		   "itemListElement": [
+		    {
+		     "@type": "ListItem",
+		     "position": 1,
+		     "name": "Inicio",
+		     "item": "https://www.iber-strategia.es/"
+		    },
+		    {
+		     "@type": "ListItem",
+		     "position": 2,
+		     "name": "Blog",
+		     "item": "https://www.iber-strategia.es/blog.html"
+		    },
+		    {
+		     "@type": "ListItem",
+		     "position": 3,
+		     "name": "Error de relación de confianza con el dominio",
+		     "item": "https://www.iber-strategia.es/blog/error-relacion-confianza-dominio.html"
+		    }
+		   ]
+		  }
+		 ]
+		}
+		</script>
+	</head>
+	<body class="is-preload">
+		<a class="salto-contenido" href="#main">Ir al contenido principal</a>
+		<div id="page-wrapper">
+
+			<!-- Cabecera -->
+				<header id="header">
+					<div id="logo"><a href="../index.html"><img src="../images/logo.svg" alt="" width="40" height="40" /><span>Iber-STRategia</span></a></div>
+					<nav id="nav">
+						<ul>
+							<li><a href="../index.html">Inicio</a></li>
+							<li>
+								<a href="../servicios.html">Servicios</a>
+								<ul>
+									<li><a href="../servicios.html#soporte">Soporte informático gestionado</a></li>
+									<li><a href="../servicios.html#directorio-activo">Active Directory y sistemas</a></li>
+									<li><a href="../servicios.html#consultoria">Consultoría estratégica</a></li>
+									<li><a href="../servicios.html#maquetado">Diseño y maquetado</a></li>
+									<li><a href="../servicios.html#despliegue">Despliegue de empresas</a></li>
+									<li><a href="../servicios.html#desarrollo">Desarrollo de software</a></li>
+									<li><a href="../faq.html">Preguntas frecuentes</a></li>
+								</ul>
+							</li>
+							<li><a href="../blog.html">Blog</a></li>
+							<li><a href="../talento.html">Talento</a></li>
+							<li><a href="../nosotros.html">Nosotros</a></li>
+							<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Contenido principal -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<nav class="migas" aria-label="Ruta de navegación">
+							<ol>
+								<li><a href="../index.html">Inicio</a></li>
+								<li><a href="../blog.html">Blog</a></li>
+								<li aria-current="page">Error de relación de confianza con el dominio</li>
+							</ol>
+						</nav>
+						<header class="major">
+							<h1>«Error de relación de confianza entre esta estación de trabajo y el dominio principal»: qué significa y cómo se arregla</h1>
+							<p class="meta-entrada"><span class="categoria">Active Directory</span> · Publicado el 24 de agosto de 2026 · Lectura de 6 min</p>
+						</header>
+
+						<!-- Artículo -->
+							<article id="content" class="articulo">
+								<span class="image fit"><img src="../images/blog-01.svg" alt="" /></span>
+								<nav class="sumario" aria-label="Contenido del artículo">
+									<h4>En este artículo</h4>
+									<ol>
+										<li><a href="#que-es">Qué es realmente la relación de confianza</a></li>
+										<li><a href="#causas">Las cinco causas habituales</a></li>
+										<li><a href="#solucion-habitual">La solución que casi todo el mundo aplica, y por qué no es la mejor</a></li>
+										<li><a href="#solucion-correcta">Cómo se repara sin sacar el equipo del dominio</a></li>
+										<li><a href="#prevencion">Cómo evitar que vuelva a pasar</a></li>
+									</ol>
+								</nav>
+								<p class="entradilla">Es uno de los errores más frecuentes en cualquier red con dominio y también uno de los peor explicados. El equipo arranca, el usuario escribe su contraseña de siempre y Windows responde que no existe relación de confianza. Ni la contraseña está mal ni el usuario ha hecho nada raro: lo que se ha roto es una contraseña que ni siquiera sabías que existía.</p>
+								<h3 id="que-es">Qué es realmente la relación de confianza</h3>
+								<p>Cada equipo unido a un dominio tiene su propia cuenta en Active Directory, con su propia contraseña. No la conoce ningún usuario: la genera Windows y la cambia sola cada treinta días de forma predeterminada. Cuando el equipo arranca, se identifica ante el controlador de dominio usando esa contraseña de máquina.</p>
+								<p>Si lo que el equipo cree que es su contraseña y lo que el directorio tiene guardado dejan de coincidir, el canal seguro entre ambos se rompe y aparece el mensaje. Por eso el error no se soluciona cambiando la contraseña del usuario: el problema está un nivel por debajo.</p>
+								<h3 id="causas">Las cinco causas habituales</h3>
+								<ul>
+									<li><strong>Se ha restaurado el equipo a un estado anterior.</strong> Es la causa número uno en entornos virtualizados: revertir una instantánea devuelve al equipo una contraseña de máquina que el dominio ya ha caducado.</li>
+									<li><strong>El equipo ha estado apagado mucho tiempo.</strong> Portátiles de reserva, equipos de personal de baja o máquinas guardadas en un armario durante meses.</li>
+									<li><strong>Hay dos equipos con el mismo nombre.</strong> Al unirse el segundo, sobrescribe la cuenta del primero y deja al original fuera de juego.</li>
+									<li><strong>La hora del equipo está desviada.</strong> Kerberos solo tolera cinco minutos de diferencia respecto al controlador de dominio; a partir de ahí, la autenticación falla.</li>
+									<li><strong>La cuenta de equipo se ha borrado o deshabilitado</strong> en una limpieza del directorio hecha con más entusiasmo que criterio.</li>
+								</ul>
+								<h3 id="solucion-habitual">La solución que casi todo el mundo aplica, y por qué no es la mejor</h3>
+								<p>Lo típico es sacar el equipo del dominio, pasarlo a un grupo de trabajo, reiniciar, volver a unirlo y reiniciar otra vez. Funciona, pero cuesta dos reinicios, deja al usuario sin equipo un buen rato y, si no se hace con cuidado, genera un perfil local nuevo y el usuario se encuentra el escritorio vacío. Ese susto es evitable.</p>
+								<h3 id="solucion-correcta">Cómo se repara sin sacar el equipo del dominio</h3>
+								<p>Desde una consola de PowerShell abierta como administrador en el equipo afectado, iniciando sesión con una cuenta local con privilegios y usando credenciales de dominio con permiso para unir equipos:</p>
+								<pre><code># 1. Comprobar el estado del canal seguro
+Test-ComputerSecureChannel -Verbose
+
+# 2. Restablecer la contraseña de la cuenta de equipo
+Reset-ComputerMachinePassword -Server DC01 -Credential (Get-Credential)
+
+# 3. Verificar que ha quedado reparado
+Test-ComputerSecureChannel -Repair -Credential (Get-Credential)</code></pre>
+								<p>En la mayoría de los casos no hace falta reiniciar y, sobre todo, el perfil del usuario queda intacto porque la cuenta de equipo en el directorio es la misma de siempre: solo se ha renovado su contraseña.</p>
+								<h4>Si el problema era la hora</h4>
+								<p>Antes de dar por bueno el arreglo conviene descartar el desfase horario, porque si la hora sigue desviada el error volverá en cuestión de días:</p>
+								<pre><code>w32tm /query /status
+w32tm /resync /force</code></pre>
+								<p>En un dominio bien montado, todos los equipos toman la hora del controlador que tiene el rol de emulador PDC, y ese controlador la toma de una fuente externa fiable. Si cada máquina va por su cuenta, los errores de autenticación son cuestión de tiempo.</p>
+								<h3 id="prevencion">Cómo evitar que vuelva a pasar</h3>
+								<ul>
+									<li>No revertir instantáneas de máquinas unidas al dominio sin saber qué contraseña de máquina llevaban; si hay que hacerlo, planificar el restablecimiento posterior.</li>
+									<li>No clonar equipos ya unidos al dominio: la maqueta debe prepararse y generalizarse antes de unir nada.</li>
+									<li>Sincronizar la hora de toda la red contra el mismo origen.</li>
+									<li>Revisar periódicamente el directorio en busca de cuentas de equipo duplicadas o inactivas, y darlas de baja con un procedimiento, no a mano y por impulso.</li>
+									<li>Encender de vez en cuando los equipos de reserva, o mantenerlos fuera del dominio hasta que se vayan a usar.</li>
+								</ul>
+								<aside class="cta-articulo">
+									<h4>¿Este error te aparece más de una vez al mes?</h4>
+									<p>Cuando se repite casi nunca es casualidad: suele haber un problema de fondo en el directorio, en la sincronización horaria o en cómo se maquetan los equipos. En Iber-STRategia auditamos tu Active Directory, localizamos la causa real y lo dejamos ordenado y documentado. Damos servicio a más de cincuenta pymes en toda España.</p>
+									<ul class="actions">
+										<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+										<li><a href="../servicios.html#directorio-activo" class="button">Ver el servicio</a></li>
+									</ul>
+								</aside>
+
+								<div class="relacionados">
+									<h4>Seguir leyendo</h4>
+									<ul>
+								<li><a href="usuario-no-puede-iniciar-sesion-dominio.html">Un usuario no puede iniciar sesión en el dominio</a></li>
+								<li><a href="directivas-gpo-no-se-aplican.html">Las directivas de grupo (GPO) no se aplican</a></li>
+								<li><a href="limpiar-cuentas-obsoletas-active-directory.html">Cuentas olvidadas en Active Directory</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="../blog.html" class="button">Volver al blog</a></li>
+									</ul>
+								</div>
+							</article>
+
+					</div>
+				</div>
+
+			<!-- Llamada a la acción -->
+				<section class="wrapper style2 special">
+					<div class="container">
+						<header>
+							<h2>Esto lo resolvemos nosotros todos los días</h2>
+							<p>Somos el departamento de informática de más de cincuenta pymes en toda España. Cuéntanos tu caso y te decimos con franqueza si podemos ayudarte.</p>
+						</header>
+						<ul class="actions special">
+							<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+							<li><a href="../servicios.html" class="button">Ver servicios</a></li>
+						</ul>
+						<p class="marcas-aviso">O llámanos directamente al
+						<a href="tel:+34911122334">911 122 334</a>,
+						de lunes a viernes de 9:00 a 18:00.</p>
+					</div>
+				</section>
+
+			<!-- Pie -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="mailto:Iber-STRategia@gmail.com" class="icon solid alt fa-envelope"><span class="label">Correo electrónico</span></a></li>
+						<li><a href="tel:+34911122334" class="icon solid alt fa-phone"><span class="label">Teléfono</span></a></li>
+						<li><a href="../contacto.html" class="icon solid alt fa-map-marker-alt"><span class="label">Dónde estamos</span></a></li>
+						<li><a href="../servicios.html" class="icon solid alt fa-headset"><span class="label">Servicios</span></a></li>
+						<li><a href="../blog.html" class="icon solid alt fa-rss"><span class="label">Blog</span></a></li>
+						<!-- PENDIENTE: sustituir "#" por las URL reales de los perfiles y descomentar.
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						-->
+					</ul>
+					<ul class="pie-datos">
+						<li>Plaza Carlos Trías Bertrán, 4 · 28020 Madrid · Tetuán</li>
+						<li><a href="tel:+34911122334">911 122 334</a></li>
+						<li><a href="mailto:Iber-STRategia@gmail.com">Iber-STRategia@gmail.com</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; 2026 Iber-STRategia, S.L.. Todos los derechos reservados.</li>
+						<li><a href="../aviso-legal.html">Aviso legal</a></li>
+						<li><a href="../privacidad.html">Privacidad</a></li>
+						<li><a href="../cookies.html">Cookies</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

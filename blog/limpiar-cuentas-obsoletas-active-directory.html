@@ -1,0 +1,377 @@
+<!DOCTYPE HTML>
+<!--
+	Iber-STRategia — Finalizar un proyecto, comenzar una historia
+	Diseño base: plantilla «Landed» de HTML5 UP (html5up.net | @ajlkn),
+	utilizada bajo licencia Creative Commons Attribution 3.0 (html5up.net/license).
+	La atribución figura además en el aviso legal del sitio.
+-->
+<html lang="es">
+	<head>
+		<title>Cuentas olvidadas en Active Directory | Blog de Iber-STRategia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Cómo localizar y dar de baja cuentas de usuario y de equipo obsoletas en Active Directory sin romper nada, y por qué son uno de los principales riesgos de una pyme." />
+		<meta name="author" content="Iber-STRategia" />
+		<meta name="robots" content="index, follow" />
+		<!-- PENDIENTE: revisar que el dominio de las etiquetas canónica y Open Graph sea el definitivo. -->
+		<link rel="canonical" href="https://www.iber-strategia.es/blog/limpiar-cuentas-obsoletas-active-directory.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Iber-STRategia" />
+		<meta property="og:title" content="Cuentas olvidadas en Active Directory | Blog de Iber-STRategia" />
+		<meta property="og:description" content="Cómo localizar y dar de baja cuentas de usuario y de equipo obsoletas en Active Directory sin romper nada, y por qué son uno de los principales riesgos de una pyme." />
+		<meta property="og:url" content="https://www.iber-strategia.es/blog/limpiar-cuentas-obsoletas-active-directory.html" />
+		<meta property="og:image" content="https://www.iber-strategia.es/images/blog-04.svg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../images/favicon.svg" />
+		<meta name="theme-color" content="#1c1d26" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/iber.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<script type="application/ld+json">
+		{
+		 "@context": "https://schema.org",
+		 "@graph": [
+		  {
+		   "@type": "ProfessionalService",
+		   "@id": "https://www.iber-strategia.es/#empresa",
+		   "name": "Iber-STRategia",
+		   "legalName": "Iber-STRategia, S.L.",
+		   "slogan": "Finalizar un proyecto, comenzar una historia",
+		   "description": "Consultora tecnológica española especializada en soporte informático para pequeñas y medianas empresas: Active Directory, consultoría estratégica, despliegue de infraestructura y desarrollo de software.",
+		   "url": "https://www.iber-strategia.es/",
+		   "logo": "https://www.iber-strategia.es/images/logo.svg",
+		   "image": "https://www.iber-strategia.es/images/banner.jpg",
+		   "telephone": "+34911122334",
+		   "email": "Iber-STRategia@gmail.com",
+		   "priceRange": "€€",
+		   "address": {
+		    "@type": "PostalAddress",
+		    "streetAddress": "Plaza Carlos Trías Bertrán, 4",
+		    "postalCode": "28020",
+		    "addressLocality": "Madrid",
+		    "addressRegion": "Madrid",
+		    "addressCountry": "ES"
+		   },
+		   "areaServed": {
+		    "@type": "Country",
+		    "name": "España"
+		   },
+		   "openingHoursSpecification": [
+		    {
+		     "@type": "OpeningHoursSpecification",
+		     "dayOfWeek": [
+		      "Monday",
+		      "Tuesday",
+		      "Wednesday",
+		      "Thursday",
+		      "Friday"
+		     ],
+		     "opens": "09:00",
+		     "closes": "18:00"
+		    }
+		   ],
+		   "knowsAbout": [
+		    "Active Directory",
+		    "Soporte informático para pymes",
+		    "Microsoft 365",
+		    "Google Workspace",
+		    "Windows Server",
+		    "Directivas de grupo",
+		    "Copias de seguridad",
+		    "Redes corporativas",
+		    "Desarrollo de software a medida",
+		    "Consultoría tecnológica"
+		   ],
+		   "hasOfferCatalog": {
+		    "@type": "OfferCatalog",
+		    "name": "Servicios de Iber-STRategia",
+		    "itemListElement": [
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Soporte informático gestionado"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Active Directory y administración de sistemas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Consultoría estratégica"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Diseño y maquetado de puestos"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Despliegue funcional de empresas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Desarrollo de software a medida"
+		      }
+		     }
+		    ]
+		   }
+		  },
+		  {
+		   "@type": "BlogPosting",
+		   "@id": "https://www.iber-strategia.es/blog/limpiar-cuentas-obsoletas-active-directory.html#articulo",
+		   "headline": "Cuentas olvidadas en Active Directory: el agujero de seguridad que nadie mira",
+		   "description": "Cómo localizar y dar de baja cuentas de usuario y de equipo obsoletas en Active Directory sin romper nada, y por qué son uno de los principales riesgos de una pyme.",
+		   "image": "https://www.iber-strategia.es/images/blog-04.svg",
+		   "datePublished": "2026-08-03",
+		   "dateModified": "2026-08-03",
+		   "inLanguage": "es-ES",
+		   "articleSection": "Seguridad",
+		   "author": {
+		    "@type": "Organization",
+		    "name": "Iber-STRategia",
+		    "url": "https://www.iber-strategia.es/"
+		   },
+		   "publisher": {
+		    "@id": "https://www.iber-strategia.es/#empresa"
+		   },
+		   "mainEntityOfPage": {
+		    "@type": "WebPage",
+		    "@id": "https://www.iber-strategia.es/blog/limpiar-cuentas-obsoletas-active-directory.html"
+		   }
+		  },
+		  {
+		   "@type": "BreadcrumbList",
+		   "itemListElement": [
+		    {
+		     "@type": "ListItem",
+		     "position": 1,
+		     "name": "Inicio",
+		     "item": "https://www.iber-strategia.es/"
+		    },
+		    {
+		     "@type": "ListItem",
+		     "position": 2,
+		     "name": "Blog",
+		     "item": "https://www.iber-strategia.es/blog.html"
+		    },
+		    {
+		     "@type": "ListItem",
+		     "position": 3,
+		     "name": "Cuentas olvidadas en Active Directory",
+		     "item": "https://www.iber-strategia.es/blog/limpiar-cuentas-obsoletas-active-directory.html"
+		    }
+		   ]
+		  }
+		 ]
+		}
+		</script>
+	</head>
+	<body class="is-preload">
+		<a class="salto-contenido" href="#main">Ir al contenido principal</a>
+		<div id="page-wrapper">
+
+			<!-- Cabecera -->
+				<header id="header">
+					<div id="logo"><a href="../index.html"><img src="../images/logo.svg" alt="" width="40" height="40" /><span>Iber-STRategia</span></a></div>
+					<nav id="nav">
+						<ul>
+							<li><a href="../index.html">Inicio</a></li>
+							<li>
+								<a href="../servicios.html">Servicios</a>
+								<ul>
+									<li><a href="../servicios.html#soporte">Soporte informático gestionado</a></li>
+									<li><a href="../servicios.html#directorio-activo">Active Directory y sistemas</a></li>
+									<li><a href="../servicios.html#consultoria">Consultoría estratégica</a></li>
+									<li><a href="../servicios.html#maquetado">Diseño y maquetado</a></li>
+									<li><a href="../servicios.html#despliegue">Despliegue de empresas</a></li>
+									<li><a href="../servicios.html#desarrollo">Desarrollo de software</a></li>
+									<li><a href="../faq.html">Preguntas frecuentes</a></li>
+								</ul>
+							</li>
+							<li><a href="../blog.html">Blog</a></li>
+							<li><a href="../talento.html">Talento</a></li>
+							<li><a href="../nosotros.html">Nosotros</a></li>
+							<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Contenido principal -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<nav class="migas" aria-label="Ruta de navegación">
+							<ol>
+								<li><a href="../index.html">Inicio</a></li>
+								<li><a href="../blog.html">Blog</a></li>
+								<li aria-current="page">Cuentas olvidadas en Active Directory</li>
+							</ol>
+						</nav>
+						<header class="major">
+							<h1>Cuentas olvidadas en Active Directory: el agujero de seguridad que nadie mira</h1>
+							<p class="meta-entrada"><span class="categoria">Seguridad</span> · Publicado el 3 de agosto de 2026 · Lectura de 6 min</p>
+						</header>
+
+						<!-- Artículo -->
+							<article id="content" class="articulo">
+								<span class="image fit"><img src="../images/blog-04.svg" alt="" /></span>
+								<nav class="sumario" aria-label="Contenido del artículo">
+									<h4>En este artículo</h4>
+									<ol>
+										<li><a href="#por-que-importa">Por qué importa más de lo que parece</a></li>
+										<li><a href="#encontrarlas">Cómo encontrarlas</a></li>
+										<li><a href="#darlas-de-baja">Cómo darlas de baja sin romper nada</a></li>
+										<li><a href="#procedimiento">Y sobre todo: que no vuelva a acumularse</a></li>
+									</ol>
+								</nav>
+								<p class="entradilla">En casi todos los directorios que auditamos aparece lo mismo: cuentas de gente que se fue hace años, usuarios de becarios de tres veranos atrás, accesos creados para un proveedor que ya no trabaja con la empresa. Siguen activas, siguen teniendo permisos y nadie las mira. Cada una es una puerta abierta que no vigila nadie.</p>
+								<figure class="ilustracion">
+									<img src="../images/ilustracion-terminal.svg" alt="Consola de PowerShell mostrando el listado de cuentas deshabilitadas con su última fecha de acceso" />
+									<figcaption>Una consulta de treinta segundos suele revelar decenas de cuentas sin uso.</figcaption>
+								</figure>
+								<h3 id="por-que-importa">Por qué importa más de lo que parece</h3>
+								<p>Una cuenta antigua no es un problema estético. Es una credencial válida con permisos reales, normalmente con una contraseña que nunca caduca porque nadie la usa, y que no genera sospechas si alguien la utiliza: no hay nadie al otro lado para notar nada raro.</p>
+								<ul>
+									<li>Un ex empleado que conserve su contraseña puede seguir entrando a la VPN o al correo.</li>
+									<li>Las cuentas de servicio antiguas suelen tener permisos excesivos y contraseñas que no se han cambiado en años.</li>
+									<li>En un incidente, esas cuentas son el primer sitio donde mira quien ataca, precisamente porque nadie las vigila.</li>
+									<li>Muchas licencias se siguen pagando por usuarios que ya no existen. La limpieza a veces se paga sola.</li>
+								</ul>
+								<h3 id="encontrarlas">Cómo encontrarlas</h3>
+								<p>Estas consultas dan una foto bastante clara en menos de un minuto. Conviene ejecutarlas desde un equipo con las herramientas de administración instaladas:</p>
+								<pre><code># Usuarios habilitados sin iniciar sesión en más de 180 días
+Search-ADAccount -AccountInactive -TimeSpan 180.00:00:00 -UsersOnly `
+    | Where-Object { $_.Enabled -eq $true } `
+    | Select-Object Name, SamAccountName, LastLogonDate
+
+# Cuentas cuya contraseña nunca caduca
+Get-ADUser -Filter { PasswordNeverExpires -eq $true -and Enabled -eq $true } `
+    | Select-Object Name, SamAccountName
+
+# Equipos que llevan más de 90 días sin aparecer
+Search-ADAccount -AccountInactive -TimeSpan 90.00:00:00 -ComputersOnly</code></pre>
+								<h3 id="darlas-de-baja">Cómo darlas de baja sin romper nada</h3>
+								<p>El error clásico es borrar directamente. Si esa cuenta resulta ser el usuario con el que se ejecuta el servicio de facturación, te enteras el día 1 del mes siguiente y de la peor manera posible. Nosotros seguimos siempre esta secuencia:</p>
+								<ol>
+									<li><strong>Documentar antes de tocar.</strong> Exportar la lista con los permisos y grupos de cada cuenta candidata.</li>
+									<li><strong>Descartar cuentas de servicio.</strong> Cualquier cuenta que ejecute un servicio, una tarea programada o una aplicación se trata aparte y con su responsable delante.</li>
+									<li><strong>Deshabilitar, no borrar.</strong> Y mover a una unidad organizativa de cuarentena creada a tal efecto.</li>
+									<li><strong>Esperar entre treinta y noventa días.</strong> Si nadie reclama, no hacía falta.</li>
+									<li><strong>Entonces sí, eliminar</strong>, guardando previamente una copia exportada por si acaso.</li>
+								</ol>
+								<pre><code># Deshabilitar y mover a cuarentena
+$cuentas = Search-ADAccount -AccountInactive -TimeSpan 180.00:00:00 -UsersOnly |
+    Where-Object { $_.Enabled -eq $true }
+
+foreach ($c in $cuentas) {
+    Disable-ADAccount -Identity $c
+    Set-ADUser -Identity $c -Description "Deshabilitada por inactividad el $(Get-Date -f yyyy-MM-dd)"
+    Move-ADObject -Identity $c.DistinguishedName -TargetPath "OU=Cuarentena,DC=midominio,DC=local"
+}</code></pre>
+								<h3 id="procedimiento">Y sobre todo: que no vuelva a acumularse</h3>
+								<p>La limpieza puntual sirve de poco si al año siguiente el directorio está otra vez igual. Lo que de verdad funciona es un procedimiento aburrido y sostenido en el tiempo:</p>
+								<ul>
+									<li>Que Recursos Humanos avise de cada baja el mismo día, con un procedimiento escrito.</li>
+									<li>Una revisión trimestral de cuentas inactivas, con responsable y fecha.</li>
+									<li>Cuentas de proveedor con caducidad puesta desde el momento de crearlas.</li>
+									<li>Revisión anual de los grupos con permisos elevados, que es donde más daño se puede hacer.</li>
+								</ul>
+								<aside class="cta-articulo">
+									<h4>¿Cuántas cuentas activas hay ahora mismo en tu dominio que no debería haber?</h4>
+									<p>Hacemos auditorías de Active Directory con informe entendible: qué cuentas sobran, qué permisos están de más y qué procedimiento hace falta para que no se repita. Si además quieres que nos ocupemos del mantenimiento, también.</p>
+									<ul class="actions">
+										<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+										<li><a href="../servicios.html#directorio-activo" class="button">Ver el servicio</a></li>
+									</ul>
+								</aside>
+
+								<div class="relacionados">
+									<h4>Seguir leyendo</h4>
+									<ul>
+								<li><a href="directivas-gpo-no-se-aplican.html">Las directivas de grupo (GPO) no se aplican</a></li>
+								<li><a href="copias-seguridad-que-no-funcionan.html">Copias de seguridad que no sirven de nada</a></li>
+								<li><a href="error-relacion-confianza-dominio.html">Error de relación de confianza con el dominio</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="../blog.html" class="button">Volver al blog</a></li>
+									</ul>
+								</div>
+							</article>
+
+					</div>
+				</div>
+
+			<!-- Llamada a la acción -->
+				<section class="wrapper style2 special">
+					<div class="container">
+						<header>
+							<h2>Esto lo resolvemos nosotros todos los días</h2>
+							<p>Somos el departamento de informática de más de cincuenta pymes en toda España. Cuéntanos tu caso y te decimos con franqueza si podemos ayudarte.</p>
+						</header>
+						<ul class="actions special">
+							<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+							<li><a href="../servicios.html" class="button">Ver servicios</a></li>
+						</ul>
+						<p class="marcas-aviso">O llámanos directamente al
+						<a href="tel:+34911122334">911 122 334</a>,
+						de lunes a viernes de 9:00 a 18:00.</p>
+					</div>
+				</section>
+
+			<!-- Pie -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="mailto:Iber-STRategia@gmail.com" class="icon solid alt fa-envelope"><span class="label">Correo electrónico</span></a></li>
+						<li><a href="tel:+34911122334" class="icon solid alt fa-phone"><span class="label">Teléfono</span></a></li>
+						<li><a href="../contacto.html" class="icon solid alt fa-map-marker-alt"><span class="label">Dónde estamos</span></a></li>
+						<li><a href="../servicios.html" class="icon solid alt fa-headset"><span class="label">Servicios</span></a></li>
+						<li><a href="../blog.html" class="icon solid alt fa-rss"><span class="label">Blog</span></a></li>
+						<!-- PENDIENTE: sustituir "#" por las URL reales de los perfiles y descomentar.
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						-->
+					</ul>
+					<ul class="pie-datos">
+						<li>Plaza Carlos Trías Bertrán, 4 · 28020 Madrid · Tetuán</li>
+						<li><a href="tel:+34911122334">911 122 334</a></li>
+						<li><a href="mailto:Iber-STRategia@gmail.com">Iber-STRategia@gmail.com</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; 2026 Iber-STRategia, S.L.. Todos los derechos reservados.</li>
+						<li><a href="../aviso-legal.html">Aviso legal</a></li>
+						<li><a href="../privacidad.html">Privacidad</a></li>
+						<li><a href="../cookies.html">Cookies</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

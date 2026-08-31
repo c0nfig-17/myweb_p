@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="Iber-STRategia">
+	<title>Iber-STRategia</title>
+	<defs>
+		<linearGradient id="disco" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0" stop-color="#2e3042"/>
+			<stop offset="0.55" stop-color="#22232f"/>
+			<stop offset="1" stop-color="#141520"/>
+		</linearGradient>
+		<linearGradient id="trayecto" x1="0" y1="1" x2="1" y2="0">
+			<stop offset="0" stop-color="#5480f1"/>
+			<stop offset="0.55" stop-color="#39c088"/>
+			<stop offset="1" stop-color="#e44c65"/>
+		</linearGradient>
+		<radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+			<stop offset="0" stop-color="#e44c65" stop-opacity="0.45"/>
+			<stop offset="1" stop-color="#e44c65" stop-opacity="0"/>
+		</radialGradient>
+		<radialGradient id="halo2" cx="0.5" cy="0.5" r="0.5">
+			<stop offset="0" stop-color="#5480f1" stop-opacity="0.35"/>
+			<stop offset="1" stop-color="#5480f1" stop-opacity="0"/>
+		</radialGradient>
+		<clipPath id="recorte"><circle cx="160" cy="160" r="160"/></clipPath>
+	</defs>
+
+	<g clip-path="url(#recorte)">
+		<circle cx="160" cy="160" r="160" fill="url(#disco)"/>
+		<circle cx="236" cy="92" r="118" fill="url(#halo)"/>
+		<circle cx="72" cy="248" r="110" fill="url(#halo2)"/>
+
+		<!-- Anillos concentricos: el radar de la consultoria. -->
+		<g fill="none" stroke="#ffffff" stroke-opacity="0.10">
+			<circle cx="160" cy="160" r="132"/>
+			<circle cx="160" cy="160" r="104" stroke-dasharray="3 9"/>
+			<circle cx="160" cy="160" r="72" stroke-opacity="0.06"/>
+		</g>
+
+		<!-- Trayectoria ascendente: de proyecto a historia. -->
+		<polyline points="72,240 118,196 164,214 214,148 250,86" fill="none"
+			stroke="url(#trayecto)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+
+		<!-- Nodos de la red. -->
+		<g fill="#1c1d26" stroke="#ffffff" stroke-width="5">
+			<circle cx="118" cy="196" r="10"/>
+			<circle cx="164" cy="214" r="10"/>
+			<circle cx="214" cy="148" r="10"/>
+		</g>
+		<circle cx="72" cy="240" r="13" fill="#5480f1"/>
+		<circle cx="250" cy="86" r="26" fill="#e44c65" fill-opacity="0.18"/>
+		<circle cx="250" cy="86" r="15" fill="#e44c65"/>
+	</g>
+	<circle cx="160" cy="160" r="158.5" fill="none" stroke="#ffffff" stroke-opacity="0.22" stroke-width="3"/>
+</svg>
