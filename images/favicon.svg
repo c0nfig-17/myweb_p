@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Iber-STRategia">
+	<title>Iber-STRategia</title>
+	<defs>
+		<linearGradient id="f-bg" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0" stop-color="#2e3042"/>
+			<stop offset="1" stop-color="#141520"/>
+		</linearGradient>
+		<linearGradient id="f-tr" x1="0" y1="1" x2="1" y2="0">
+			<stop offset="0" stop-color="#5480f1"/>
+			<stop offset="0.55" stop-color="#39c088"/>
+			<stop offset="1" stop-color="#e44c65"/>
+		</linearGradient>
+	</defs>
+	<rect width="64" height="64" rx="14" fill="url(#f-bg)"/>
+	<polyline points="14,47 25,37 36,42 50,17" fill="none" stroke="url(#f-tr)"
+		stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+	<circle cx="50" cy="17" r="7" fill="#e44c65"/>
+	<circle cx="14" cy="47" r="5.5" fill="#5480f1"/>
+</svg>

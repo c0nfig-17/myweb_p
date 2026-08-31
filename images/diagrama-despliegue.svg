@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="Despliegue funcional de una empresa: fases del proyecto">
+<title>Despliegue funcional de una empresa: fases del proyecto</title>
+<defs>
+<linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22232f"/><stop offset="1" stop-color="#15161e"/></linearGradient>
+<marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" fill-opacity="0.45"/></marker>
+<pattern id="malla" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="400" fill="url(#fondo)"/>
+<rect width="1200" height="400" fill="url(#malla)"/>
+<text x="40" y="42" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="400" fill="#ffffff" fill-opacity="0.35">DESPLIEGUE FUNCIONAL</text>
+<rect x="40" y="120" width="200" height="110" rx="7" fill="#ffffff" fill-opacity="0.045" stroke="#5480f1" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="40" y="120" width="200" height="4" rx="2" fill="#5480f1"/>
+<text x="140.0" y="168.0" text-anchor="middle" dominant-baseline="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="23" font-weight="400" fill="#ffffff" fill-opacity="0.92">Análisis</text>
+<text x="140.0" y="195.0" text-anchor="middle" dominant-baseline="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#ffffff" fill-opacity="0.50">Inventario y requisitos</text>
+<text x="140.0" y="104" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="300" fill="#ffffff" fill-opacity="0.32">FASE 1</text>
+<line x1="240" y1="175" x2="266" y2="175" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.6" marker-end="url(#flecha)"/>
+<rect x="270" y="120" width="200" height="110" rx="7" fill="#ffffff" fill-opacity="0.045" stroke="#5480f1" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="270" y="120" width="200" height="4" rx="2" fill="#5480f1"/>
+<text x="370.0" y="168.0" text-anchor="middle" dominant-baseline="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="23" font-weight="400" fill="#ffffff" fill-opacity="0.92">Diseño</text>
+<text x="370.0" y="195.0" text-anchor="middle" dominant-baseline="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#ffffff" fill-opacity="0.50">Arquitectura y maquetado</text>
+<text x="370.0" y="104" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="300" fill="#ffffff" fill-opacity="0.32">FASE 2</text>
+<line x1="470" y1="175" x2="496" y2="175" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.6" marker-end="url(#flecha)"/>
+<rect x="500" y="120" width="200" height="110" rx="7" fill="#ffffff" fill-opacity="0.045" stroke="#39c088" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="500" y="120" width="200" height="4" rx="2" fill="#39c088"/>
+<text x="600.0" y="168.0" text-anchor="middle" dominant-baseline="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="23" font-weight="400" fill="#ffffff" fill-opacity="0.92">Despliegue</text>
+<text x="600.0" y="195.0" text-anchor="middle" dominant-baseline="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#ffffff" fill-opacity="0.50">Red, servidores y puestos</text>
+<text x="600.0" y="104" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="300" fill="#ffffff" fill-opacity="0.32">FASE 3</text>
+<line x1="700" y1="175" x2="726" y2="175" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.6" marker-end="url(#flecha)"/>
+<rect x="730" y="120" width="200" height="110" rx="7" fill="#ffffff" fill-opacity="0.045" stroke="#39c088" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="730" y="120" width="200" height="4" rx="2" fill="#39c088"/>
+<text x="830.0" y="168.0" text-anchor="middle" dominant-baseline="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="23" font-weight="400" fill="#ffffff" fill-opacity="0.92">Puesta en marcha</text>
+<text x="830.0" y="195.0" text-anchor="middle" dominant-baseline="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#ffffff" fill-opacity="0.50">Formación y arranque</text>
+<text x="830.0" y="104" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="300" fill="#ffffff" fill-opacity="0.32">FASE 4</text>
+<line x1="930" y1="175" x2="956" y2="175" stroke="#ffffff" stroke-opacity="0.35" stroke-width="1.6" marker-end="url(#flecha)"/>
+<rect x="960" y="120" width="200" height="110" rx="7" fill="#ffffff" fill-opacity="0.045" stroke="#e44c65" stroke-opacity="0.55" stroke-width="1.5"/>
+<rect x="960" y="120" width="200" height="4" rx="2" fill="#e44c65"/>
+<text x="1060.0" y="168.0" text-anchor="middle" dominant-baseline="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="23" font-weight="400" fill="#ffffff" fill-opacity="0.92">Soporte</text>
+<text x="1060.0" y="195.0" text-anchor="middle" dominant-baseline="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#ffffff" fill-opacity="0.50">Mantenimiento continuo</text>
+<text x="1060.0" y="104" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="300" fill="#ffffff" fill-opacity="0.32">FASE 5</text>
+<line x1="40" y1="285" x2="1160" y2="285" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1"/>
+<text x="40" y="320" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="300" fill="#ffffff" fill-opacity="0.55">Un único interlocutor durante todo el proyecto</text>
+<text x="1160" y="320" text-anchor="end" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="300" fill="#ffffff" fill-opacity="0.55">Entrega documentada y garantía de soporte</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Fondo abstracto de red corporativa">
+<defs>
+<linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#20212c"/><stop offset="0.5" stop-color="#191a23"/><stop offset="1" stop-color="#101119"/></linearGradient>
+<radialGradient id="g1"><stop offset="0" stop-color="#39c088" stop-opacity="0.40"/><stop offset="0.55" stop-color="#39c088" stop-opacity="0.10"/><stop offset="1" stop-color="#39c088" stop-opacity="0"/></radialGradient>
+<radialGradient id="g2"><stop offset="0" stop-color="#5480f1" stop-opacity="0.26"/><stop offset="1" stop-color="#5480f1" stop-opacity="0"/></radialGradient>
+<pattern id="rejilla" width="44" height="44" patternUnits="userSpaceOnUse"><path d="M 44 0 L 0 0 0 44" fill="none" stroke="#ffffff" stroke-opacity="0.028" stroke-width="1"/></pattern>
+</defs>
+<rect width="100%" height="100%" fill="url(#base)"/>
+<rect width="100%" height="100%" fill="url(#rejilla)"/>
+<ellipse cx="420" cy="112" rx="330" ry="248" fill="url(#g1)"/>
+<ellipse cx="132" cy="312" rx="252" ry="200" fill="url(#g2)"/>
+<g stroke="#ffffff" stroke-opacity="0.10" stroke-width="1">
+<line x1="153" y1="286" x2="239" y2="296"/>
+<line x1="239" y1="296" x2="270" y2="248"/>
+<line x1="442" y1="221" x2="486" y2="288"/>
+<line x1="442" y1="221" x2="455" y2="128"/>
+<line x1="328" y1="72" x2="237" y2="80"/>
+<line x1="328" y1="72" x2="419" y2="91"/>
+<line x1="237" y1="80" x2="207" y2="131"/>
+<line x1="455" y1="128" x2="419" y2="91"/>
+</g>
+<circle cx="153" cy="286" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
+<circle cx="239" cy="296" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
+<circle cx="442" cy="221" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
+<circle cx="328" cy="72" r="16" fill="#5480f1" fill-opacity="0.14"/>
+<circle cx="328" cy="72" r="4.5" fill="#5480f1"/>
+<circle cx="486" cy="288" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
+<circle cx="237" cy="80" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
+<circle cx="270" cy="248" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
+<circle cx="455" cy="128" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
+<circle cx="207" cy="131" r="16" fill="#39c088" fill-opacity="0.14"/>
+<circle cx="207" cy="131" r="4.5" fill="#39c088"/>
+<circle cx="419" cy="91" r="16" fill="#5480f1" fill-opacity="0.14"/>
+<circle cx="419" cy="91" r="4.5" fill="#5480f1"/>
+<rect width="100%" height="100%" fill="#0e0f16" fill-opacity="0.18"/>
+</svg>

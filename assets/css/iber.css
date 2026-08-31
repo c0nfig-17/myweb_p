@@ -1,0 +1,258 @@
+/*
+	Iber-STRategia — estilos propios
+	Se carga DESPUÉS de main.css. Aquí van solo los añadidos al diseño base
+	(Landed de HTML5 UP), para no tocar los archivos de la plantilla y poder
+	seguir actualizándola sin perder estos cambios.
+*/
+
+/* Marcador de dato pendiente ------------------------------------------------
+	Resalta en rojo los datos legales que aún faltan por confirmar. Cuando se
+	completen todos, esta regla puede eliminarse junto con las etiquetas
+	<span class="pendiente"> del HTML. */
+
+	.pendiente {
+		background-color: rgba(228, 76, 101, 0.15);
+		border-bottom: dotted 1px #e44c65;
+		color: #e44c65;
+		padding: 0 0.25em;
+		white-space: nowrap;
+	}
+
+/* Datos de contacto del pie -------------------------------------------------- */
+
+	#footer .pie-datos {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 0.9em;
+		line-height: 1.5em;
+		list-style: none;
+		margin: 1.5em 0 0 0;
+		padding: 0;
+		text-align: center;
+	}
+
+		#footer .pie-datos li {
+			display: inline-block;
+			list-style: none;
+			margin: 0 0.75em;
+			padding: 0;
+		}
+
+		#footer .pie-datos a {
+			border-bottom: dotted 1px rgba(255, 255, 255, 0.3);
+			color: inherit;
+		}
+
+			#footer .pie-datos a:hover {
+				border-bottom-color: transparent;
+				color: #ffffff;
+			}
+
+/* Ficha de contacto ---------------------------------------------------------- */
+
+	.ficha-contacto {
+		list-style: none;
+		padding: 0;
+	}
+
+		.ficha-contacto li {
+			border-top: solid 1px rgba(255, 255, 255, 0.15);
+			padding: 1.15em 0 1.15em 3.25em;
+			position: relative;
+		}
+
+			.ficha-contacto li:first-child {
+				border-top: 0;
+				padding-top: 0;
+			}
+
+			.ficha-contacto li:first-child .icon {
+				top: 0;
+			}
+
+		.ficha-contacto .icon {
+			color: #e44c65;
+			font-size: 1.35em;
+			left: 0;
+			position: absolute;
+			top: 1.15em;
+		}
+
+		.ficha-contacto strong {
+			color: #ffffff;
+			display: block;
+			font-weight: 300;
+		}
+
+		.ficha-contacto span,
+		.ficha-contacto a {
+			color: rgba(255, 255, 255, 0.6);
+		}
+
+			.ficha-contacto a:hover {
+				color: #ffffff;
+			}
+
+/* Cifras destacadas ---------------------------------------------------------- */
+
+	.cifras {
+		list-style: none;
+		padding: 0;
+		text-align: center;
+	}
+
+		.cifras li {
+			padding: 0;
+		}
+
+		.cifras .dato {
+			color: #ffffff;
+			display: block;
+			font-size: 3em;
+			font-weight: 100;
+			line-height: 1.1em;
+		}
+
+		.cifras .concepto {
+			color: rgba(255, 255, 255, 0.5);
+			display: block;
+			font-size: 0.9em;
+			letter-spacing: 0.15em;
+			margin-top: 0.75em;
+			text-transform: uppercase;
+		}
+
+/* Textos legales ------------------------------------------------------------- */
+
+	.legal h3 {
+		margin-top: 2.5em;
+	}
+
+		.legal h3:first-of-type {
+			margin-top: 0;
+		}
+
+	.legal h4 {
+		color: rgba(255, 255, 255, 0.9);
+		margin-bottom: 0.75em;
+	}
+
+	.legal .actualizacion {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 0.9em;
+	}
+
+	.legal table {
+		font-size: 0.9em;
+	}
+
+/* Aviso de cookies ----------------------------------------------------------- */
+
+	#aviso-cookies {
+		background-color: rgba(23, 24, 32, 0.97);
+		border-top: solid 2px #e44c65;
+		bottom: 0;
+		box-shadow: 0 -0.25em 1em 0 rgba(0, 0, 0, 0.35);
+		display: none;
+		left: 0;
+		padding: 1.5em;
+		position: fixed;
+		right: 0;
+		z-index: 100001;
+	}
+
+		#aviso-cookies.visible {
+			display: block;
+		}
+
+		#aviso-cookies .contenido {
+			align-items: center;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 1.5em;
+			justify-content: center;
+			margin: 0 auto;
+			max-width: 70em;
+		}
+
+		#aviso-cookies p {
+			flex: 1 1 22em;
+			font-size: 0.9em;
+			margin: 0;
+		}
+
+		#aviso-cookies .actions {
+			margin: 0;
+		}
+
+			#aviso-cookies .actions li {
+				padding: 0 0 0 1em;
+			}
+
+	@media screen and (max-width: 736px) {
+
+		#aviso-cookies .contenido {
+			gap: 1em;
+		}
+
+		#aviso-cookies .actions {
+			width: 100%;
+		}
+
+	}
+
+/* Accesibilidad: salto al contenido ------------------------------------------ */
+
+	.salto-contenido {
+		background-color: #e44c65;
+		color: #ffffff;
+		left: -9999px;
+		padding: 0.75em 1.5em;
+		position: absolute;
+		top: 0;
+		z-index: 100002;
+	}
+
+		.salto-contenido:focus {
+			left: 0;
+		}
+
+/* Anclas: evita que la cabecera fija tape el título de destino ---------------- */
+
+	h2[id], h3[id], section[id] {
+		scroll-margin-top: 5em;
+	}
+
+/* Campos de formulario no contemplados por la plantilla -----------------------
+	Landed solo da estilo a input[type="text"|"password"|"email"], select y
+	textarea. El formulario de contacto usa además un campo de teléfono, que sin
+	esto se mostraría con el aspecto por defecto del navegador (fondo blanco).
+	Se replican aquí exactamente las mismas reglas de main.css. */
+
+	input[type="tel"] {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: border-color 0.2s ease-in-out;
+		-webkit-transition: border-color 0.2s ease-in-out;
+		-ms-transition: border-color 0.2s ease-in-out;
+		transition: border-color 0.2s ease-in-out;
+		background: transparent;
+		border-radius: 4px;
+		border: solid 1px rgba(255, 255, 255, 0.3);
+		color: inherit;
+		display: block;
+		height: 3em;
+		outline: 0;
+		padding: 0 1em;
+		text-decoration: none;
+		width: 100%;
+	}
+
+		input[type="tel"]:invalid {
+			box-shadow: none;
+		}
+
+		input[type="tel"]:focus {
+			border-color: #e44c65;
+		}
