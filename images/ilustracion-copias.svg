@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-label="Esquema de copias de seguridad con tres copias, dos soportes distintos, una fuera del edificio y retención escalonada">
+<title>Esquema de copias de seguridad con tres copias, dos soportes distintos, una fuera del edificio y retención escalonada</title>
+<defs>
+<linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#23242f"/><stop offset="1" stop-color="#14151d"/></linearGradient>
+<marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#ffffff" fill-opacity="0.5"/></marker>
+<pattern id="malla" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/></pattern>
+<radialGradient id="brillo"><stop offset="0" stop-color="#5480f1" stop-opacity="0.22"/><stop offset="1" stop-color="#5480f1" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="480" fill="url(#fondo)"/>
+<rect width="1200" height="480" fill="url(#malla)"/>
+<ellipse cx="864" cy="96" rx="540" ry="264" fill="url(#brillo)"/>
+<text x="40" y="44" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400" fill="#ffffff" fill-opacity="0.38" letter-spacing="2">COPIAS QUE SÍ SIRVEN EL DÍA QUE HACEN FALTA</text>
+<rect x="70" y="110" width="260" height="96" rx="6" fill="#ffffff" fill-opacity="0.055" stroke="#5480f1" stroke-opacity="0.5" stroke-width="1.5"/>
+<rect x="70" y="110" width="260" height="3.5" rx="2" fill="#5480f1"/>
+<text x="200.0" y="154.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Datos en producción</text>
+<text x="200.0" y="178.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Servidor y puestos</text>
+<path d="M 334 158 L 424 158" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="3" marker-end="url(#flecha)"/>
+<rect x="430" y="110" width="260" height="96" rx="6" fill="#ffffff" fill-opacity="0.055" stroke="#39c088" stroke-opacity="0.5" stroke-width="1.5"/>
+<rect x="430" y="110" width="260" height="3.5" rx="2" fill="#39c088"/>
+<text x="560.0" y="154.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Copia local</text>
+<text x="560.0" y="178.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Restauración rápida</text>
+<path d="M 694 158 L 784 158" fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="3" marker-end="url(#flecha)"/>
+<rect x="790" y="110" width="300" height="96" rx="6" fill="#ffffff" fill-opacity="0.055" stroke="#39c088" stroke-opacity="0.5" stroke-width="1.5"/>
+<rect x="790" y="110" width="300" height="3.5" rx="2" fill="#39c088"/>
+<text x="940.0" y="154.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="300" fill="#ffffff" fill-opacity="0.92">Copia fuera del edificio</text>
+<text x="940.0" y="178.0" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">Inmutable, aislada de la red</text>
+<text x="200" y="232" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#ffffff" fill-opacity="0.45">1 · Origen</text>
+<text x="560" y="232" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#ffffff" fill-opacity="0.45">2 · Otro soporte</text>
+<text x="940" y="232" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="300" fill="#ffffff" fill-opacity="0.45">3 · Otra ubicación</text>
+<line x1="70" y1="262" x2="1130" y2="262" stroke="#ffffff" stroke-opacity="0.14" stroke-width="1"/>
+<text x="70" y="300" text-anchor="start" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#ffffff" fill-opacity="0.4" letter-spacing="1.8">RETENCIÓN ESCALONADA</text>
+<rect x="70" y="320" width="300" height="76" rx="6" fill="#ffffff" fill-opacity="0.045" stroke="#39c088" stroke-opacity="0.5" stroke-width="1.5"/>
+<text x="220" y="352" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="300" fill="#ffffff" fill-opacity="0.9">7 diarias</text>
+<text x="220" y="376" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">La última semana</text>
+<rect x="420" y="320" width="300" height="76" rx="6" fill="#ffffff" fill-opacity="0.045" stroke="#5480f1" stroke-opacity="0.5" stroke-width="1.5"/>
+<text x="570" y="352" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="300" fill="#ffffff" fill-opacity="0.9">4 semanales</text>
+<text x="570" y="376" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">El último mes</text>
+<rect x="770" y="320" width="300" height="76" rx="6" fill="#ffffff" fill-opacity="0.045" stroke="#e44c65" stroke-opacity="0.5" stroke-width="1.5"/>
+<text x="920" y="352" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="300" fill="#ffffff" fill-opacity="0.9">12 mensuales</text>
+<text x="920" y="376" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="16" font-weight="300" fill="#ffffff" fill-opacity="0.5">El último año</text>
+<text x="600" y="448" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="18" font-weight="300" fill="#ffffff" fill-opacity="0.5">Y una prueba de restauración real cada trimestre: una copia que nunca se ha restaurado no es una copia, es una suposición</text>
+</svg>

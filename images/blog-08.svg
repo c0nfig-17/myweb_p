@@ -1,39 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Fondo abstracto de red corporativa">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="1200" height="420" role="img" aria-label="La regla de las copias de seguridad: tres copias, dos soportes y una fuera de la oficina">
+<title>La regla de las copias de seguridad: tres copias, dos soportes y una fuera de la oficina</title>
 <defs>
-<linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#20212c"/><stop offset="0.5" stop-color="#191a23"/><stop offset="1" stop-color="#101119"/></linearGradient>
-<radialGradient id="g1"><stop offset="0" stop-color="#e44c65" stop-opacity="0.40"/><stop offset="0.55" stop-color="#e44c65" stop-opacity="0.10"/><stop offset="1" stop-color="#e44c65" stop-opacity="0"/></radialGradient>
-<radialGradient id="g2"><stop offset="0" stop-color="#39c088" stop-opacity="0.26"/><stop offset="1" stop-color="#39c088" stop-opacity="0"/></radialGradient>
-<pattern id="rejilla" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M 48 0 L 0 0 0 48" fill="none" stroke="#ffffff" stroke-opacity="0.028" stroke-width="1"/></pattern>
+<linearGradient id="base" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22232f"/><stop offset="1" stop-color="#101119"/></linearGradient>
+<radialGradient id="g1"><stop offset="0" stop-color="#e44c65" stop-opacity="0.30"/><stop offset="1" stop-color="#e44c65" stop-opacity="0"/></radialGradient>
+<radialGradient id="g2"><stop offset="0" stop-color="#39c088" stop-opacity="0.20"/><stop offset="1" stop-color="#39c088" stop-opacity="0"/></radialGradient>
+<pattern id="malla" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M 48 0 L 0 0 0 48" fill="none" stroke="#ffffff" stroke-opacity="0.028" stroke-width="1"/></pattern>
+<marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#c9ccd8" fill-opacity="0.7"/></marker>
 </defs>
-<rect width="100%" height="100%" fill="url(#base)"/>
-<rect width="100%" height="100%" fill="url(#rejilla)"/>
-<ellipse cx="936" cy="109" rx="660" ry="260" fill="url(#g1)"/>
-<ellipse cx="264" cy="311" rx="504" ry="210" fill="url(#g2)"/>
-<g stroke="#ffffff" stroke-opacity="0.10" stroke-width="1">
-<line x1="529" y1="277" x2="576" y2="274"/>
-<line x1="639" y1="209" x2="576" y2="274"/>
-<line x1="1114" y1="215" x2="1100" y2="157"/>
-<line x1="798" y1="121" x2="786" y2="220"/>
-<line x1="1100" y1="157" x2="1090" y2="62"/>
-<line x1="382" y1="248" x2="359" y2="161"/>
-</g>
-<circle cx="529" cy="277" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
-<circle cx="639" cy="209" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
-<circle cx="955" cy="128" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
-<circle cx="1114" cy="215" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
-<circle cx="167" cy="281" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
-<circle cx="307" cy="352" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
-<circle cx="798" cy="121" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
-<circle cx="1100" cy="157" r="16" fill="#39c088" fill-opacity="0.14"/>
-<circle cx="1100" cy="157" r="4.5" fill="#39c088"/>
-<circle cx="1090" cy="62" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
-<circle cx="382" cy="248" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
-<circle cx="359" cy="161" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
-<circle cx="786" cy="220" r="16" fill="#39c088" fill-opacity="0.14"/>
-<circle cx="786" cy="220" r="4.5" fill="#39c088"/>
-<circle cx="815" cy="359" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
-<circle cx="576" cy="274" r="2.6" fill="#ffffff" fill-opacity="0.30"/>
-<circle cx="1138" cy="355" r="16" fill="#e44c65" fill-opacity="0.14"/>
-<circle cx="1138" cy="355" r="4.5" fill="#e44c65"/>
-<rect width="100%" height="100%" fill="#0e0f16" fill-opacity="0.18"/>
+<rect width="1200" height="420" fill="url(#base)"/>
+<rect width="1200" height="420" fill="url(#malla)"/>
+<ellipse cx="264" cy="84" rx="600" ry="315" fill="url(#g1)"/>
+<ellipse cx="1008" cy="357" rx="504" ry="294" fill="url(#g2)"/>
+<line x1="396" y1="256" x2="325" y2="96" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="396" y1="256" x2="444" y2="330" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="396" y1="256" x2="213" y2="152" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="30" y1="393" x2="48" y2="283" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="30" y1="393" x2="55" y2="266" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="974" y1="400" x2="1117" y2="393" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="325" y1="96" x2="213" y2="152" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="325" y1="96" x2="240" y2="77" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="325" y1="96" x2="191" y2="114" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="83" y1="94" x2="48" y2="283" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="83" y1="94" x2="213" y2="152" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="83" y1="94" x2="55" y2="266" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="83" y1="94" x2="240" y2="77" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="83" y1="94" x2="191" y2="114" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="48" y1="283" x2="55" y2="266" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="902" y1="153" x2="1051" y2="186" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="902" y1="153" x2="790" y2="115" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="902" y1="153" x2="874" y2="214" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="213" y1="152" x2="55" y2="266" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="213" y1="152" x2="240" y2="77" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="213" y1="152" x2="191" y2="114" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="55" y1="266" x2="191" y2="114" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="240" y1="77" x2="191" y2="114" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="1051" y1="186" x2="874" y2="214" stroke="#ffffff" stroke-opacity="0.05"/>
+<line x1="790" y1="115" x2="874" y2="214" stroke="#ffffff" stroke-opacity="0.05"/>
+<circle cx="396" cy="256" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="30" cy="393" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="974" cy="400" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="325" cy="96" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="83" cy="94" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="48" cy="283" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="444" cy="330" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="902" cy="153" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="213" cy="152" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="55" cy="266" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="240" cy="77" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="1051" cy="186" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="1117" cy="393" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="790" cy="115" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="191" cy="114" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<circle cx="874" cy="214" r="2.2" fill="#ffffff" fill-opacity="0.14"/>
+<rect x="204.0" y="131.0" width="92" height="118" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#5480f1" stroke-opacity="0.7" stroke-width="2.5"/>
+<line x1="216.0" y1="151.0" x2="284.0" y2="151.0" stroke="#5480f1" stroke-opacity="0.35" stroke-width="2.5"/>
+<line x1="216.0" y1="167.0" x2="284.0" y2="167.0" stroke="#5480f1" stroke-opacity="0.35" stroke-width="2.5"/>
+<line x1="216.0" y1="183.0" x2="284.0" y2="183.0" stroke="#5480f1" stroke-opacity="0.35" stroke-width="2.5"/>
+<circle cx="250" cy="235.0" r="4" fill="#39c088" fill-opacity="0.8"/>
+<text x="250" y="300" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="300" fill="#c9ccd8" fill-opacity="0.6">Datos en producción</text>
+<rect x="554.0" y="131.0" width="92" height="118" rx="6" fill="#ffffff" fill-opacity="0.05" stroke="#39c088" stroke-opacity="0.7" stroke-width="2.5"/>
+<line x1="566.0" y1="151.0" x2="634.0" y2="151.0" stroke="#39c088" stroke-opacity="0.35" stroke-width="2.5"/>
+<line x1="566.0" y1="167.0" x2="634.0" y2="167.0" stroke="#39c088" stroke-opacity="0.35" stroke-width="2.5"/>
+<line x1="566.0" y1="183.0" x2="634.0" y2="183.0" stroke="#39c088" stroke-opacity="0.35" stroke-width="2.5"/>
+<circle cx="600" cy="235.0" r="4" fill="#39c088" fill-opacity="0.8"/>
+<text x="600" y="300" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="300" fill="#c9ccd8" fill-opacity="0.6">Copia local</text>
+<line x1="410" y1="190" x2="522" y2="190" stroke="#c9ccd8" stroke-opacity="0.5" stroke-width="3" marker-end="url(#flecha)"/>
+<path d="M 860.3 219.9 a 39.099999999999994 39.099999999999994 0 0 1 11.5 -73.6 a 52.9 52.9 0 0 1 98.89999999999999 -16.099999999999998 a 36.8 36.8 0 0 1 29.9 71.3 Z" fill="#ffffff" fill-opacity="0.04" stroke="#39c088" stroke-opacity="0.75" stroke-width="3.4499999999999997" stroke-linejoin="round"/>
+<text x="950" y="300" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="19" font-weight="300" fill="#c9ccd8" fill-opacity="0.6">Copia fuera de la oficina</text>
+<line x1="760" y1="190" x2="808" y2="190" stroke="#c9ccd8" stroke-opacity="0.5" stroke-width="3" marker-end="url(#flecha)"/>
+<text x="600" y="366" text-anchor="middle" font-family="Roboto, Helvetica, Arial, sans-serif" font-size="21" font-weight="300" fill="#ffffff" fill-opacity="0.75">3 copias · 2 soportes distintos · 1 fuera del edificio</text>
+<rect width="1200" height="420" fill="#0e0f16" fill-opacity="0.10"/>
 </svg>

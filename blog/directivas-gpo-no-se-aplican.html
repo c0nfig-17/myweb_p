@@ -251,6 +251,10 @@ gpresult /r /scope:user
 # Informe completo en HTML, mucho más legible
 gpresult /h C:\informe-gpo.html /f</code></pre>
 								<p>Ese informe tiene dos apartados que resuelven la mayoría de los casos: las directivas aplicadas y, sobre todo, las <strong>directivas denegadas con el motivo del rechazo</strong>. Si tu GPO aparece en la lista de denegadas, ya sabes por dónde seguir.</p>
+								<figure class="ilustracion">
+									<img src="../images/diagrama-directorio-activo.svg" alt="Esquema de un directorio activo: bosque, dominio, unidades organizativas y servicios asociados" />
+									<figcaption>Una directiva solo alcanza a los objetos que cuelgan de la unidad donde está enlazada.</figcaption>
+								</figure>
 								<h3 id="razones">Las seis razones por las que una GPO no llega</h3>
 								<h4>1. Está enlazada donde no toca</h4>
 								<p>Es el error más común y el más humillante. Las directivas se aplican a la unidad organizativa donde está el objeto, no donde a uno le parece lógico. Si el usuario está en «UO Usuarios» y has enlazado la directiva a «UO Equipos», no se va a aplicar jamás.</p>
