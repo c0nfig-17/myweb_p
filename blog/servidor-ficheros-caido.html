@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<!--
+	Iber-STRategia — Finalizar un proyecto, comenzar una historia
+	Diseño base: plantilla «Landed» de HTML5 UP (html5up.net | @ajlkn),
+	utilizada bajo licencia Creative Commons Attribution 3.0 (html5up.net/license).
+	La atribución figura además en el aviso legal del sitio.
+-->
+<html lang="es">
+	<head>
+		<title>Se ha caído el servidor de ficheros | Blog de Iber-STRategia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Protocolo de actuación cuando el servidor de ficheros deja de responder: qué comprobar, en qué orden y qué no hacer nunca bajo presión." />
+		<meta name="author" content="Iber-STRategia" />
+		<meta name="robots" content="index, follow" />
+		<!-- PENDIENTE: revisar que el dominio de las etiquetas canónica y Open Graph sea el definitivo. -->
+		<link rel="canonical" href="https://www.iber-strategia.es/blog/servidor-ficheros-caido.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Iber-STRategia" />
+		<meta property="og:title" content="Se ha caído el servidor de ficheros | Blog de Iber-STRategia" />
+		<meta property="og:description" content="Protocolo de actuación cuando el servidor de ficheros deja de responder: qué comprobar, en qué orden y qué no hacer nunca bajo presión." />
+		<meta property="og:url" content="https://www.iber-strategia.es/blog/servidor-ficheros-caido.html" />
+		<meta property="og:image" content="https://www.iber-strategia.es/images/blog-07.svg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../images/favicon.svg" />
+		<meta name="theme-color" content="#1c1d26" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/iber.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<script type="application/ld+json">
+		{
+		 "@context": "https://schema.org",
+		 "@graph": [
+		  {
+		   "@type": "ProfessionalService",
+		   "@id": "https://www.iber-strategia.es/#empresa",
+		   "name": "Iber-STRategia",
+		   "legalName": "Iber-STRategia, S.L.",
+		   "slogan": "Finalizar un proyecto, comenzar una historia",
+		   "description": "Consultora tecnológica española especializada en soporte informático para pequeñas y medianas empresas: Active Directory, consultoría estratégica, despliegue de infraestructura y desarrollo de software.",
+		   "url": "https://www.iber-strategia.es/",
+		   "logo": "https://www.iber-strategia.es/images/logo.svg",
+		   "image": "https://www.iber-strategia.es/images/banner.jpg",
+		   "telephone": "+34911122334",
+		   "email": "Iber-STRategia@gmail.com",
+		   "priceRange": "€€",
+		   "address": {
+		    "@type": "PostalAddress",
+		    "streetAddress": "Plaza Carlos Trías Bertrán, 4",
+		    "postalCode": "28020",
+		    "addressLocality": "Madrid",
+		    "addressRegion": "Madrid",
+		    "addressCountry": "ES"
+		   },
+		   "areaServed": {
+		    "@type": "Country",
+		    "name": "España"
+		   },
+		   "openingHoursSpecification": [
+		    {
+		     "@type": "OpeningHoursSpecification",
+		     "dayOfWeek": [
+		      "Monday",
+		      "Tuesday",
+		      "Wednesday",
+		      "Thursday",
+		      "Friday"
+		     ],
+		     "opens": "09:00",
+		     "closes": "18:00"
+		    }
+		   ],
+		   "knowsAbout": [
+		    "Active Directory",
+		    "Soporte informático para pymes",
+		    "Microsoft 365",
+		    "Google Workspace",
+		    "Windows Server",
+		    "Directivas de grupo",
+		    "Copias de seguridad",
+		    "Redes corporativas",
+		    "Desarrollo de software a medida",
+		    "Consultoría tecnológica"
+		   ],
+		   "hasOfferCatalog": {
+		    "@type": "OfferCatalog",
+		    "name": "Servicios de Iber-STRategia",
+		    "itemListElement": [
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Soporte informático gestionado"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Active Directory y administración de sistemas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Consultoría estratégica"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Diseño y maquetado de puestos"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Despliegue funcional de empresas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Desarrollo de software a medida"
+		      }
+		     }
+		    ]
+		   }
+		  },
+		  {
+		   "@type": "BlogPosting",
+		   "@id": "https://www.iber-strategia.es/blog/servidor-ficheros-caido.html#articulo",
+		   "headline": "Se ha caído el servidor de ficheros: qué hacer en la primera hora",
+		   "description": "Protocolo de actuación cuando el servidor de ficheros deja de responder: qué comprobar, en qué orden y qué no hacer nunca bajo presión.",
+		   "image": "https://www.iber-strategia.es/images/blog-07.svg",
+		   "datePublished": "2026-07-13",
+		   "dateModified": "2026-07-13",
+		   "inLanguage": "es-ES",
+		   "articleSection": "Infraestructura",
+		   "author": {
+		    "@type": "Organization",
+		    "name": "Iber-STRategia",
+		    "url": "https://www.iber-strategia.es/"
+		   },
+		   "publisher": {
+		    "@id": "https://www.iber-strategia.es/#empresa"
+		   },
+		   "mainEntityOfPage": {
+		    "@type": "WebPage",
+		    "@id": "https://www.iber-strategia.es/blog/servidor-ficheros-caido.html"
+		   }
+		  },
+		  {
+		   "@type": "BreadcrumbList",
+		   "itemListElement": [
+		    {
+		     "@type": "ListItem",
+		     "position": 1,
+		     "name": "Inicio",
+		     "item": "https://www.iber-strategia.es/"
+		    },
+		    {
+		     "@type": "ListItem",
+		     "position": 2,
+		     "name": "Blog",
+		     "item": "https://www.iber-strategia.es/blog.html"
+		    },
+		    {
+		     "@type": "ListItem",
+		     "position": 3,
+		     "name": "Se ha caído el servidor de ficheros",
+		     "item": "https://www.iber-strategia.es/blog/servidor-ficheros-caido.html"
+		    }
+		   ]
+		  }
+		 ]
+		}
+		</script>
+	</head>
+	<body class="is-preload">
+		<a class="salto-contenido" href="#main">Ir al contenido principal</a>
+		<div id="page-wrapper">
+
+			<!-- Cabecera -->
+				<header id="header">
+					<div id="logo"><a href="../index.html"><img src="../images/logo.svg" alt="" width="40" height="40" /><span>Iber-STRategia</span></a></div>
+					<nav id="nav">
+						<ul>
+							<li><a href="../index.html">Inicio</a></li>
+							<li>
+								<a href="../servicios.html">Servicios</a>
+								<ul>
+									<li><a href="../servicios.html#soporte">Soporte informático gestionado</a></li>
+									<li><a href="../servicios.html#directorio-activo">Active Directory y sistemas</a></li>
+									<li><a href="../servicios.html#consultoria">Consultoría estratégica</a></li>
+									<li><a href="../servicios.html#maquetado">Diseño y maquetado</a></li>
+									<li><a href="../servicios.html#despliegue">Despliegue de empresas</a></li>
+									<li><a href="../servicios.html#desarrollo">Desarrollo de software</a></li>
+									<li><a href="../faq.html">Preguntas frecuentes</a></li>
+								</ul>
+							</li>
+							<li><a href="../blog.html">Blog</a></li>
+							<li><a href="../talento.html">Talento</a></li>
+							<li><a href="../nosotros.html">Nosotros</a></li>
+							<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Contenido principal -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<nav class="migas" aria-label="Ruta de navegación">
+							<ol>
+								<li><a href="../index.html">Inicio</a></li>
+								<li><a href="../blog.html">Blog</a></li>
+								<li aria-current="page">Se ha caído el servidor de ficheros</li>
+							</ol>
+						</nav>
+						<header class="major">
+							<h1>Se ha caído el servidor de ficheros: qué hacer en la primera hora</h1>
+							<p class="meta-entrada"><span class="categoria">Infraestructura</span> · Publicado el 13 de julio de 2026 · Lectura de 6 min</p>
+						</header>
+
+						<!-- Artículo -->
+							<article id="content" class="articulo">
+								<span class="image fit"><img src="../images/blog-07.svg" alt="" /></span>
+								<nav class="sumario" aria-label="Contenido del artículo">
+									<h4>En este artículo</h4>
+									<ol>
+										<li><a href="#antes-de-tocar">Lo primero, antes de tocar nada</a></li>
+										<li><a href="#orden">El orden de comprobación</a></li>
+										<li><a href="#lo-que-no">Lo que no hay que hacer nunca bajo presión</a></li>
+										<li><a href="#restaurar">Cuando toca tirar de la copia de seguridad</a></li>
+										<li><a href="#dia-despues">El día después importa más que la primera hora</a></li>
+									</ol>
+								</nav>
+								<p class="entradilla">Nadie puede abrir sus archivos, el programa de gestión no arranca y en diez minutos tienes a media plantilla parada y a alguien preguntando cada dos minutos si ya está. Es justo el momento en el que peor se piensa, y por eso conviene tener decidido de antemano el orden de las cosas.</p>
+								<figure class="ilustracion">
+									<img src="../images/ilustracion-datacenter.svg" alt="Racks de servidores con servidor de dominio, virtualización, cabina de discos, servidor de copias y sistema de alimentación ininterrumpida" />
+									<figcaption>Cuando la infraestructura está documentada, la primera hora se gestiona; cuando no, se improvisa.</figcaption>
+								</figure>
+								<h3 id="antes-de-tocar">Lo primero, antes de tocar nada</h3>
+								<p>Dos decisiones que valen más que cualquier comando:</p>
+								<ul>
+									<li><strong>Avisa tú antes de que pregunten.</strong> Un mensaje breve diciendo que estáis en ello y que informarás en treinta minutos reduce a la mitad la presión del incidente.</li>
+									<li><strong>Anota la hora y lo que vas viendo.</strong> Con prisa se olvida qué se ha probado ya, y acabas repitiendo cosas o, peor, deshaciendo lo que acababa de funcionar.</li>
+								</ul>
+								<h3 id="orden">El orden de comprobación</h3>
+								<ol>
+									<li><strong>¿Está encendido y responde a ping?</strong> Suena elemental, pero descarta de golpe medio árbol de posibilidades.</li>
+									<li><strong>¿Es el servidor o es la red?</strong> Prueba desde otro equipo y, si puedes, desde otra parte de la red. Si un switch ha caído, el servidor está perfectamente.</li>
+									<li><strong>¿Está el disco lleno?</strong> Un volumen al 100 % deja de aceptar escrituras y el síntoma es exactamente este. Es una de las causas más frecuentes y de las más rápidas de resolver.</li>
+									<li><strong>¿Están los servicios arrancados?</strong> El servicio de servidor, el de estación de trabajo y, si aplica, el del programa de gestión.</li>
+									<li><strong>¿Qué dice el visor de eventos?</strong> Sobre todo los registros de sistema y aplicación en los minutos previos al corte.</li>
+									<li><strong>¿Cómo está el almacenamiento?</strong> Un disco caído en un conjunto redundante no debería tumbar el servicio; dos, sí.</li>
+								</ol>
+								<pre><code># Estado de los volúmenes y espacio libre
+Get-Volume | Select-Object DriveLetter, FileSystemLabel, `
+    @{n='LibreGB';e={[math]::Round($_.SizeRemaining/1GB,1)}}
+
+# Servicios detenidos que deberían estar arrancados
+Get-Service | Where-Object { $_.StartType -eq 'Automatic' -and $_.Status -ne 'Running' }
+
+# Errores del sistema en las últimas dos horas
+Get-WinEvent -FilterHashtable @{LogName='System'; Level=1,2; StartTime=(Get-Date).AddHours(-2)}</code></pre>
+								<h3 id="lo-que-no">Lo que no hay que hacer nunca bajo presión</h3>
+								<ul>
+									<li><strong>Reiniciar sin mirar nada.</strong> A veces arregla el síntoma y borra la prueba de lo que pasó, con lo que volverá a ocurrir y seguirás sin saber por qué.</li>
+									<li><strong>Ejecutar una reparación de disco a lo loco</strong> sobre un volumen con problemas de hardware. Puede convertir un problema recuperable en pérdida de datos.</li>
+									<li><strong>Restaurar una copia encima de los datos actuales</strong> sin haber salvado antes el estado presente. Si la copia era peor de lo que pensabas, ya no hay marcha atrás.</li>
+									<li><strong>Aceptar ayuda improvisada.</strong> El cuñado informático de alguien tocando en paralelo mientras tú diagnosticas es la receta perfecta para un desastre.</li>
+								</ul>
+								<h3 id="restaurar">Cuando toca tirar de la copia de seguridad</h3>
+								<p>Antes de restaurar, tres preguntas: de cuándo es la copia buena más reciente, cuánto tiempo tarda en restaurarse y dónde se va a restaurar. Si la respuesta a la segunda es «no lo sé», el problema es más grande que el incidente de hoy.</p>
+								<p>Siempre que sea posible, restaura a una ubicación distinta y comprueba los datos antes de dar el cambiazo. Y no borres el volumen original hasta que la restauración esté verificada y la gente lleve un día trabajando con normalidad.</p>
+								<h3 id="dia-despues">El día después importa más que la primera hora</h3>
+								<p>Cuando todo vuelve a funcionar, la tentación es pasar página. Es justo el peor momento para hacerlo. Media hora escribiendo qué pasó, por qué, qué se hizo y qué habría evitado la parada convierte una mala tarde en algo útil, y es lo que hace que la siguiente vez no haya siguiente vez.</p>
+								<aside class="cta-articulo">
+									<h4>¿Sabes cuánto tardarías en volver a trabajar si el servidor muriese hoy?</h4>
+									<p>Es la pregunta que casi ninguna pyme puede responder con datos. Nosotros medimos ese tiempo, probamos las restauraciones de verdad y dejamos un plan de continuidad escrito con los pasos y los responsables. Ojalá no haga falta nunca.</p>
+									<ul class="actions">
+										<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+										<li><a href="../servicios.html#despliegue" class="button">Ver infraestructura</a></li>
+									</ul>
+								</aside>
+
+								<div class="relacionados">
+									<h4>Seguir leyendo</h4>
+									<ul>
+								<li><a href="copias-seguridad-que-no-funcionan.html">Copias de seguridad que no sirven de nada</a></li>
+								<li><a href="pantallazo-azul-windows.html">Pantallazo azul en Windows: cómo leer el error</a></li>
+								<li><a href="limpiar-cuentas-obsoletas-active-directory.html">Cuentas olvidadas en Active Directory</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="../blog.html" class="button">Volver al blog</a></li>
+									</ul>
+								</div>
+							</article>
+
+					</div>
+				</div>
+
+			<!-- Llamada a la acción -->
+				<section class="wrapper style2 special">
+					<div class="container">
+						<header>
+							<h2>Esto lo resolvemos nosotros todos los días</h2>
+							<p>Somos el departamento de informática de más de cincuenta pymes en toda España. Cuéntanos tu caso y te decimos con franqueza si podemos ayudarte.</p>
+						</header>
+						<ul class="actions special">
+							<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+							<li><a href="../servicios.html" class="button">Ver servicios</a></li>
+						</ul>
+						<p class="marcas-aviso">O llámanos directamente al
+						<a href="tel:+34911122334">911 122 334</a>,
+						de lunes a viernes de 9:00 a 18:00.</p>
+					</div>
+				</section>
+
+			<!-- Pie -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="mailto:Iber-STRategia@gmail.com" class="icon solid alt fa-envelope"><span class="label">Correo electrónico</span></a></li>
+						<li><a href="tel:+34911122334" class="icon solid alt fa-phone"><span class="label">Teléfono</span></a></li>
+						<li><a href="../contacto.html" class="icon solid alt fa-map-marker-alt"><span class="label">Dónde estamos</span></a></li>
+						<li><a href="../servicios.html" class="icon solid alt fa-headset"><span class="label">Servicios</span></a></li>
+						<li><a href="../blog.html" class="icon solid alt fa-rss"><span class="label">Blog</span></a></li>
+						<!-- PENDIENTE: sustituir "#" por las URL reales de los perfiles y descomentar.
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						-->
+					</ul>
+					<ul class="pie-datos">
+						<li>Plaza Carlos Trías Bertrán, 4 · 28020 Madrid · Tetuán</li>
+						<li><a href="tel:+34911122334">911 122 334</a></li>
+						<li><a href="mailto:Iber-STRategia@gmail.com">Iber-STRategia@gmail.com</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; 2026 Iber-STRategia, S.L.. Todos los derechos reservados.</li>
+						<li><a href="../aviso-legal.html">Aviso legal</a></li>
+						<li><a href="../privacidad.html">Privacidad</a></li>
+						<li><a href="../cookies.html">Cookies</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

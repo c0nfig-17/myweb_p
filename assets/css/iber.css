@@ -256,3 +256,435 @@
 		input[type="tel"]:focus {
 			border-color: #e44c65;
 		}
+
+/* =========================================================================
+   Bloques añadidos en la segunda fase: logotipo en cabecera, migas de pan,
+   tecnologías, proceso, sectores, blog y artículos.
+   ========================================================================= */
+
+/* Logotipo en la cabecera ---------------------------------------------------- */
+
+	#header #logo a {
+		align-items: center;
+		border-bottom: 0;
+		/* Al dejar de ser un <h1> el logotipo pierde la regla de la plantilla
+		   que heredaba el color, y el enlace se pintaba con el rojo de acento. */
+		color: #ffffff;
+		display: flex;
+		gap: 0.6em;
+		height: 3.5em;
+		line-height: 1;
+	}
+
+		#header #logo a:hover {
+			color: #ffffff;
+		}
+
+	#titleBar .title a {
+		color: #ffffff;
+	}
+
+		#header #logo img {
+			display: block;
+			height: 2.1em;
+			width: 2.1em;
+		}
+
+	/* Barra superior en móvil: main.js copia el contenido de #logo, así que
+	   el isotipo aparece también ahí y necesita su propio tamaño. */
+	#titleBar .title a {
+		align-items: center;
+		display: inline-flex;
+		gap: 0.45em;
+	}
+
+		#titleBar .title img {
+			display: block;
+			height: 1.4em;
+			width: 1.4em;
+		}
+
+/* Migas de pan --------------------------------------------------------------- */
+
+	.migas {
+		font-size: 0.85em;
+		margin: 0 0 2em 0;
+	}
+
+		.migas ol {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.migas li {
+			color: rgba(255, 255, 255, 0.5);
+			display: inline;
+			padding: 0;
+		}
+
+			.migas li + li::before {
+				color: rgba(255, 255, 255, 0.3);
+				content: "\203A";
+				margin: 0 0.6em;
+			}
+
+			.migas a {
+				border-bottom: dotted 1px rgba(255, 255, 255, 0.3);
+				color: rgba(255, 255, 255, 0.65);
+			}
+
+				.migas a:hover {
+					border-bottom-color: transparent;
+					color: #ffffff;
+				}
+
+/* Tecnologías con las que trabajamos ----------------------------------------- */
+
+	.tecnologias {
+		display: grid;
+		gap: 1em;
+		grid-template-columns: repeat(auto-fit, minmax(11em, 1fr));
+		list-style: none;
+		padding: 0;
+	}
+
+		.tecnologias li {
+			background-color: rgba(255, 255, 255, 0.04);
+			border: solid 1px rgba(255, 255, 255, 0.15);
+			border-radius: 4px;
+			padding: 1.25em 1em;
+			text-align: center;
+			transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		}
+
+			.tecnologias li:hover {
+				background-color: rgba(255, 255, 255, 0.07);
+				border-color: rgba(255, 255, 255, 0.35);
+			}
+
+		.tecnologias .icon {
+			color: #5480f1;
+			display: block;
+			font-size: 1.5em;
+			margin-bottom: 0.5em;
+		}
+
+		.tecnologias .nombre {
+			color: #ffffff;
+			display: block;
+			font-weight: 300;
+			line-height: 1.4em;
+		}
+
+		.tecnologias .categoria {
+			color: rgba(255, 255, 255, 0.45);
+			display: block;
+			font-size: 0.8em;
+			letter-spacing: 0.1em;
+			margin-top: 0.4em;
+			text-transform: uppercase;
+		}
+
+	.marcas-aviso {
+		color: rgba(255, 255, 255, 0.45);
+		font-size: 0.85em;
+		margin-top: 2em;
+		text-align: center;
+	}
+
+/* Proceso de trabajo --------------------------------------------------------- */
+
+	.proceso {
+		counter-reset: paso;
+		list-style: none;
+		padding: 0;
+	}
+
+		.proceso li {
+			border-left: solid 2px rgba(255, 255, 255, 0.15);
+			counter-increment: paso;
+			margin-left: 1.25em;
+			padding: 0 0 2em 2.5em;
+			position: relative;
+		}
+
+			.proceso li:last-child {
+				border-left-color: transparent;
+				padding-bottom: 0;
+			}
+
+			.proceso li::before {
+				background-color: #1c1d26;
+				border: solid 2px #e44c65;
+				border-radius: 100%;
+				color: #ffffff;
+				content: counter(paso);
+				font-size: 0.9em;
+				height: 2.4em;
+				left: -1.25em;
+				line-height: 2.2em;
+				position: absolute;
+				text-align: center;
+				top: -0.35em;
+				width: 2.4em;
+			}
+
+		.proceso h4 {
+			margin-bottom: 0.5em;
+		}
+
+		.proceso p {
+			color: rgba(255, 255, 255, 0.7);
+			margin-bottom: 0;
+		}
+
+/* Sectores ------------------------------------------------------------------- */
+
+	.sectores {
+		display: grid;
+		gap: 0.75em 1.5em;
+		grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+		list-style: none;
+		padding: 0;
+	}
+
+		.sectores li {
+			border-top: solid 1px rgba(255, 255, 255, 0.12);
+			padding: 0.75em 0 0.75em 1.75em;
+			position: relative;
+		}
+
+			.sectores li::before {
+				color: #39c088;
+				content: "\2014";
+				left: 0;
+				position: absolute;
+			}
+
+/* Blog: listado de entradas -------------------------------------------------- */
+
+	.entradas {
+		display: grid;
+		gap: 2em;
+		grid-template-columns: repeat(auto-fit, minmax(19em, 1fr));
+		list-style: none;
+		padding: 0;
+	}
+
+		.entradas > li {
+			background-color: rgba(255, 255, 255, 0.035);
+			border: solid 1px rgba(255, 255, 255, 0.12);
+			border-radius: 4px;
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+			padding: 0;
+			transition: border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+		}
+
+			.entradas > li:hover {
+				border-color: rgba(255, 255, 255, 0.35);
+				transform: translateY(-3px);
+			}
+
+		.entradas .imagen {
+			border-bottom: 0;
+			display: block;
+		}
+
+			.entradas .imagen img {
+				display: block;
+				width: 100%;
+			}
+
+		.entradas .texto {
+			display: flex;
+			flex: 1;
+			flex-direction: column;
+			padding: 1.5em;
+		}
+
+		.entradas h3 {
+			font-size: 1.1em;
+			line-height: 1.4em;
+			margin-bottom: 0.6em;
+		}
+
+			.entradas h3 a {
+				border-bottom: 0;
+				color: #ffffff;
+			}
+
+				.entradas h3 a:hover {
+					color: #e44c65;
+				}
+
+		.entradas p {
+			color: rgba(255, 255, 255, 0.65);
+			flex: 1;
+			font-size: 0.95em;
+		}
+
+	.meta-entrada {
+		color: rgba(255, 255, 255, 0.45);
+		font-size: 0.8em;
+		letter-spacing: 0.1em;
+		margin-bottom: 0.75em;
+		text-transform: uppercase;
+	}
+
+		.meta-entrada .categoria {
+			color: #e44c65;
+		}
+
+/* Artículos ------------------------------------------------------------------ */
+
+	.articulo .entradilla {
+		color: rgba(255, 255, 255, 0.9);
+		font-size: 1.15em;
+		line-height: 1.7em;
+	}
+
+	.articulo h3 {
+		margin-top: 2.25em;
+	}
+
+	.articulo h4 {
+		color: #ffffff;
+		margin: 1.75em 0 0.75em 0;
+	}
+
+	.articulo pre {
+		font-size: 0.85em;
+	}
+
+	.sumario {
+		background-color: rgba(255, 255, 255, 0.035);
+		border-left: solid 3px #5480f1;
+		border-radius: 0 4px 4px 0;
+		margin-bottom: 3em;
+		padding: 1.75em 2em 1.25em 2em;
+	}
+
+		.sumario h4 {
+			margin: 0 0 0.75em 0;
+		}
+
+		.sumario ol {
+			margin-bottom: 0;
+			padding-left: 1.25em;
+		}
+
+		.sumario li {
+			padding-left: 0.4em;
+		}
+
+/* Llamada a la acción dentro de un artículo ---------------------------------- */
+
+	.cta-articulo {
+		background-color: rgba(228, 76, 101, 0.10);
+		border: solid 1px rgba(228, 76, 101, 0.45);
+		border-radius: 4px;
+		margin: 3em 0;
+		padding: 2em;
+	}
+
+		.cta-articulo h4 {
+			color: #ffffff;
+			margin: 0 0 0.75em 0;
+		}
+
+		.cta-articulo p:last-of-type {
+			margin-bottom: 1.5em;
+		}
+
+		.cta-articulo .actions {
+			margin-bottom: 0;
+		}
+
+/* Artículos relacionados ----------------------------------------------------- */
+
+	.relacionados {
+		border-top: solid 1px rgba(255, 255, 255, 0.15);
+		margin-top: 3em;
+		padding-top: 2em;
+	}
+
+		.relacionados ul {
+			list-style: none;
+			padding: 0;
+		}
+
+		.relacionados li {
+			padding: 0.4em 0 0.4em 1.5em;
+			position: relative;
+		}
+
+			.relacionados li::before {
+				color: #5480f1;
+				content: "\203A";
+				left: 0.35em;
+				position: absolute;
+			}
+
+/* Ilustraciones con pie ------------------------------------------------------ */
+
+	figure.ilustracion {
+		margin: 0 0 2em 0;
+	}
+
+		figure.ilustracion img {
+			border-radius: 4px;
+			display: block;
+			width: 100%;
+		}
+
+		figure.ilustracion figcaption {
+			color: rgba(255, 255, 255, 0.5);
+			font-size: 0.85em;
+			margin-top: 0.85em;
+			text-align: center;
+		}
+
+/* Sección intermedia -----------------------------------------------------------
+	Variante de .wrapper apenas más clara, para alternar bloques seguidos sin
+	romper el ritmo visual de la plantilla. */
+
+	.wrapper.style3 {
+		background-color: rgba(255, 255, 255, 0.022);
+	}
+
+/* Jerarquía de encabezados ------------------------------------------------------
+	La plantilla usaba <h1> para el nombre de la empresa en la cabecera, de modo
+	que ninguna página tenía un <h1> propio con su tema. Eso resta en buscadores.
+	Ahora el logotipo es un <div> y cada página tiene un único <h1> con su título.
+	El reset de la plantilla iguala el tamaño de h1 al del texto base, así que
+	aquí se le devuelve el aspecto que tenía el <h2> al que sustituye. */
+
+	#header #logo {
+		height: inherit;
+		left: 1.25em;
+		line-height: inherit;
+		margin: 0;
+		position: absolute;
+		top: 0;
+	}
+
+	header.major h1,
+	#content h1 {
+		font-size: 2em;
+		letter-spacing: -0.025em;
+		line-height: 1.5em;
+	}
+
+	header h1 + p {
+		font-size: 1.25em;
+		line-height: 1.75em;
+		margin-top: -1em;
+	}
+
+	#banner .content header h1 {
+		font-size: 2.5em;
+		margin: 0;
+	}

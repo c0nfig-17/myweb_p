@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<!--
+	Iber-STRategia — Finalizar un proyecto, comenzar una historia
+	Diseño base: plantilla «Landed» de HTML5 UP (html5up.net | @ajlkn),
+	utilizada bajo licencia Creative Commons Attribution 3.0 (html5up.net/license).
+	La atribución figura además en el aviso legal del sitio.
+-->
+<html lang="es">
+	<head>
+		<title>Migrar el correo de la empresa a la nube | Blog de Iber-STRategia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Cómo planificar una migración de correo corporativo a Microsoft 365 o Google Workspace: fases, riesgos, registros DNS y errores que cuestan caro." />
+		<meta name="author" content="Iber-STRategia" />
+		<meta name="robots" content="index, follow" />
+		<!-- PENDIENTE: revisar que el dominio de las etiquetas canónica y Open Graph sea el definitivo. -->
+		<link rel="canonical" href="https://www.iber-strategia.es/blog/migrar-correo-nube.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Iber-STRategia" />
+		<meta property="og:title" content="Migrar el correo de la empresa a la nube | Blog de Iber-STRategia" />
+		<meta property="og:description" content="Cómo planificar una migración de correo corporativo a Microsoft 365 o Google Workspace: fases, riesgos, registros DNS y errores que cuestan caro." />
+		<meta property="og:url" content="https://www.iber-strategia.es/blog/migrar-correo-nube.html" />
+		<meta property="og:image" content="https://www.iber-strategia.es/images/blog-09.svg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../images/favicon.svg" />
+		<meta name="theme-color" content="#1c1d26" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/iber.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<script type="application/ld+json">
+		{
+		 "@context": "https://schema.org",
+		 "@graph": [
+		  {
+		   "@type": "ProfessionalService",
+		   "@id": "https://www.iber-strategia.es/#empresa",
+		   "name": "Iber-STRategia",
+		   "legalName": "Iber-STRategia, S.L.",
+		   "slogan": "Finalizar un proyecto, comenzar una historia",
+		   "description": "Consultora tecnológica española especializada en soporte informático para pequeñas y medianas empresas: Active Directory, consultoría estratégica, despliegue de infraestructura y desarrollo de software.",
+		   "url": "https://www.iber-strategia.es/",
+		   "logo": "https://www.iber-strategia.es/images/logo.svg",
+		   "image": "https://www.iber-strategia.es/images/banner.jpg",
+		   "telephone": "+34911122334",
+		   "email": "Iber-STRategia@gmail.com",
+		   "priceRange": "€€",
+		   "address": {
+		    "@type": "PostalAddress",
+		    "streetAddress": "Plaza Carlos Trías Bertrán, 4",
+		    "postalCode": "28020",
+		    "addressLocality": "Madrid",
+		    "addressRegion": "Madrid",
+		    "addressCountry": "ES"
+		   },
+		   "areaServed": {
+		    "@type": "Country",
+		    "name": "España"
+		   },
+		   "openingHoursSpecification": [
+		    {
+		     "@type": "OpeningHoursSpecification",
+		     "dayOfWeek": [
+		      "Monday",
+		      "Tuesday",
+		      "Wednesday",
+		      "Thursday",
+		      "Friday"
+		     ],
+		     "opens": "09:00",
+		     "closes": "18:00"
+		    }
+		   ],
+		   "knowsAbout": [
+		    "Active Directory",
+		    "Soporte informático para pymes",
+		    "Microsoft 365",
+		    "Google Workspace",
+		    "Windows Server",
+		    "Directivas de grupo",
+		    "Copias de seguridad",
+		    "Redes corporativas",
+		    "Desarrollo de software a medida",
+		    "Consultoría tecnológica"
+		   ],
+		   "hasOfferCatalog": {
+		    "@type": "OfferCatalog",
+		    "name": "Servicios de Iber-STRategia",
+		    "itemListElement": [
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Soporte informático gestionado"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Active Directory y administración de sistemas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Consultoría estratégica"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Diseño y maquetado de puestos"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Despliegue funcional de empresas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Desarrollo de software a medida"
+		      }
+		     }
+		    ]
+		   }
+		  },
+		  {
+		   "@type": "BlogPosting",
+		   "@id": "https://www.iber-strategia.es/blog/migrar-correo-nube.html#articulo",
+		   "headline": "Migrar el correo de la empresa a la nube sin parar la actividad",
+		   "description": "Cómo planificar una migración de correo corporativo a Microsoft 365 o Google Workspace: fases, riesgos, registros DNS y errores que cuestan caro.",
+		   "image": "https://www.iber-strategia.es/images/blog-09.svg",
+		   "datePublished": "2026-06-29",
+		   "dateModified": "2026-06-29",
+		   "inLanguage": "es-ES",
+		   "articleSection": "Nube",
+		   "author": {
+		    "@type": "Organization",
+		    "name": "Iber-STRategia",
+		    "url": "https://www.iber-strategia.es/"
+		   },
+		   "publisher": {
+		    "@id": "https://www.iber-strategia.es/#empresa"
+		   },
+		   "mainEntityOfPage": {
+		    "@type": "WebPage",
+		    "@id": "https://www.iber-strategia.es/blog/migrar-correo-nube.html"
+		   }
+		  },
+		  {
+		   "@type": "BreadcrumbList",
+		   "itemListElement": [
+		    {
+		     "@type": "ListItem",
+		     "position": 1,
+		     "name": "Inicio",
+		     "item": "https://www.iber-strategia.es/"
+		    },
+		    {
+		     "@type": "ListItem",
+		     "position": 2,
+		     "name": "Blog",
+		     "item": "https://www.iber-strategia.es/blog.html"
+		    },
+		    {
+		     "@type": "ListItem",
+		     "position": 3,
+		     "name": "Migrar el correo de la empresa a la nube",
+		     "item": "https://www.iber-strategia.es/blog/migrar-correo-nube.html"
+		    }
+		   ]
+		  }
+		 ]
+		}
+		</script>
+	</head>
+	<body class="is-preload">
+		<a class="salto-contenido" href="#main">Ir al contenido principal</a>
+		<div id="page-wrapper">
+
+			<!-- Cabecera -->
+				<header id="header">
+					<div id="logo"><a href="../index.html"><img src="../images/logo.svg" alt="" width="40" height="40" /><span>Iber-STRategia</span></a></div>
+					<nav id="nav">
+						<ul>
+							<li><a href="../index.html">Inicio</a></li>
+							<li>
+								<a href="../servicios.html">Servicios</a>
+								<ul>
+									<li><a href="../servicios.html#soporte">Soporte informático gestionado</a></li>
+									<li><a href="../servicios.html#directorio-activo">Active Directory y sistemas</a></li>
+									<li><a href="../servicios.html#consultoria">Consultoría estratégica</a></li>
+									<li><a href="../servicios.html#maquetado">Diseño y maquetado</a></li>
+									<li><a href="../servicios.html#despliegue">Despliegue de empresas</a></li>
+									<li><a href="../servicios.html#desarrollo">Desarrollo de software</a></li>
+									<li><a href="../faq.html">Preguntas frecuentes</a></li>
+								</ul>
+							</li>
+							<li><a href="../blog.html">Blog</a></li>
+							<li><a href="../talento.html">Talento</a></li>
+							<li><a href="../nosotros.html">Nosotros</a></li>
+							<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Contenido principal -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<nav class="migas" aria-label="Ruta de navegación">
+							<ol>
+								<li><a href="../index.html">Inicio</a></li>
+								<li><a href="../blog.html">Blog</a></li>
+								<li aria-current="page">Migrar el correo de la empresa a la nube</li>
+							</ol>
+						</nav>
+						<header class="major">
+							<h1>Migrar el correo de la empresa a la nube sin parar la actividad</h1>
+							<p class="meta-entrada"><span class="categoria">Nube</span> · Publicado el 29 de junio de 2026 · Lectura de 7 min</p>
+						</header>
+
+						<!-- Artículo -->
+							<article id="content" class="articulo">
+								<span class="image fit"><img src="../images/blog-09.svg" alt="" /></span>
+								<nav class="sumario" aria-label="Contenido del artículo">
+									<h4>En este artículo</h4>
+									<ol>
+										<li><a href="#inventario">Antes de elegir destino, mira lo que tienes</a></li>
+										<li><a href="#calendario">El calendario que funciona</a></li>
+										<li><a href="#dns">Los registros DNS: donde se cometen los errores caros</a></li>
+										<li><a href="#problemas">Lo que siempre da guerra</a></li>
+										<li><a href="#copias">Y no te olvides de la copia de seguridad</a></li>
+									</ol>
+								</nav>
+								<p class="entradilla">El correo es el sistema que más se nota cuando falla. Una migración mal planteada se traduce en mensajes perdidos, firmas descolocadas, móviles que dejan de sincronizar y un lunes entero improductivo. Bien planteada, la mayoría de la plantilla apenas se entera.</p>
+								<figure class="ilustracion">
+									<img src="../images/ilustracion-nube.svg" alt="Esquema de entorno híbrido con Active Directory y servidor de ficheros en la oficina sincronizados con correo, archivos y reuniones en la nube mediante una identidad única" />
+									<figcaption>El objetivo no es solo mover buzones: es que la identidad siga siendo una sola.</figcaption>
+								</figure>
+								<h3 id="inventario">Antes de elegir destino, mira lo que tienes</h3>
+								<p>La decisión entre una suite u otra suele estar tomada de antemano por costumbre o por precio, y no es lo más importante. Lo determinante es el inventario de partida, porque ahí aparecen las sorpresas:</p>
+								<ul>
+									<li>Número de buzones y tamaño real de cada uno, incluidos los archivos históricos que alguien guarda en local.</li>
+									<li>Buzones compartidos, listas de distribución y alias, que casi nunca están documentados.</li>
+									<li>Dispositivos móviles configurados y quién los administra.</li>
+									<li>Aplicaciones que envían correo por su cuenta: el ERP, la web, el escáner de la fotocopiadora, las alertas del servidor. Estas son las que se olvidan y las que fallan después.</li>
+									<li>Reglas de reenvío y respuestas automáticas que la gente configuró y ya no recuerda.</li>
+								</ul>
+								<h3 id="calendario">El calendario que funciona</h3>
+								<ol>
+									<li><strong>Preparación.</strong> Alta del servicio, verificación del dominio y creación de usuarios y grupos, sin tocar todavía el correo en producción.</li>
+									<li><strong>Sincronización de identidades.</strong> Si hay un directorio en la oficina, se conecta para que cada persona conserve un único usuario y una única contraseña.</li>
+									<li><strong>Copia previa.</strong> Se migra el histórico de los buzones con el correo antiguo todavía funcionando. Es la fase más larga y no molesta a nadie.</li>
+									<li><strong>Cambio de entrega.</strong> Se modifican los registros DNS para que el correo nuevo entre por el destino nuevo. Se hace fuera de horario, normalmente un viernes por la tarde.</li>
+									<li><strong>Copia final.</strong> Se sincroniza lo que haya llegado al sistema antiguo después del cambio.</li>
+									<li><strong>Acompañamiento.</strong> El lunes hay alguien disponible desde primera hora, porque las dudas llegan todas juntas entre las 8:30 y las 10:00.</li>
+								</ol>
+								<h3 id="dns">Los registros DNS: donde se cometen los errores caros</h3>
+								<p>Tres registros deciden si tu correo llega y si no acaba en la carpeta de no deseado del destinatario. Conviene revisarlos con calma:</p>
+								<ul>
+									<li><strong>MX:</strong> indica qué servidor recibe el correo de tu dominio. Es el que se cambia el día del cambio de entrega.</li>
+									<li><strong>SPF:</strong> declara qué servidores pueden enviar en tu nombre. Aquí hay que incluir también el ERP, la web y cualquier sistema que mande correo, o sus mensajes empezarán a rebotar.</li>
+									<li><strong>DKIM y DMARC:</strong> firman tus mensajes y dicen qué hacer con los que no pasen la comprobación. Cada vez más proveedores los exigen para aceptar correo.</li>
+								</ul>
+								<p>Un consejo práctico: baja el tiempo de vida de los registros a cinco minutos unos días antes del cambio. Así, si algo sale mal, la marcha atrás es cuestión de minutos y no de horas.</p>
+								<h3 id="problemas">Lo que siempre da guerra</h3>
+								<ul>
+									<li><strong>Las firmas corporativas.</strong> Se descolocan casi siempre. Merece la pena aprovechar para unificarlas de forma centralizada.</li>
+									<li><strong>Los móviles.</strong> Hay que reconfigurar cada dispositivo. Prepara instrucciones con capturas y ahorrarás decenas de llamadas.</li>
+									<li><strong>Los buzones compartidos.</strong> Los permisos no siempre se migran limpios y conviene revisarlos uno a uno.</li>
+									<li><strong>El escáner de la fotocopiadora.</strong> Deja de enviar correos y nadie lo descubre hasta la semana siguiente. Ponlo en la lista desde el principio.</li>
+									<li><strong>Los archivos históricos locales.</strong> Suelen estar en el disco del usuario, sin copia, y son justo lo que más echan de menos.</li>
+								</ul>
+								<h3 id="copias">Y no te olvides de la copia de seguridad</h3>
+								<p>Migrar a la nube no elimina la necesidad de copias. El proveedor garantiza la disponibilidad del servicio, no la recuperación de lo que alguien borró hace dos meses. Es un contrato aparte, es barato y forma parte de hacer las cosas bien.</p>
+								<aside class="cta-articulo">
+									<h4>¿Te toca migrar y prefieres no jugártela?</h4>
+									<p>Hemos acompañado migraciones de correo en empresas de cinco a doscientos usuarios, con fecha comprometida y sin parar la actividad. Te decimos de antemano qué va a doler y cuándo, para que no haya sorpresas.</p>
+									<ul class="actions">
+										<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+										<li><a href="../servicios.html#despliegue" class="button">Ver el servicio</a></li>
+									</ul>
+								</aside>
+
+								<div class="relacionados">
+									<h4>Seguir leyendo</h4>
+									<ul>
+								<li><a href="copias-seguridad-que-no-funcionan.html">Copias de seguridad que no sirven de nada</a></li>
+								<li><a href="limpiar-cuentas-obsoletas-active-directory.html">Cuentas olvidadas en Active Directory</a></li>
+								<li><a href="wifi-lento-oficina.html">Wifi lento en la oficina</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="../blog.html" class="button">Volver al blog</a></li>
+									</ul>
+								</div>
+							</article>
+
+					</div>
+				</div>
+
+			<!-- Llamada a la acción -->
+				<section class="wrapper style2 special">
+					<div class="container">
+						<header>
+							<h2>Esto lo resolvemos nosotros todos los días</h2>
+							<p>Somos el departamento de informática de más de cincuenta pymes en toda España. Cuéntanos tu caso y te decimos con franqueza si podemos ayudarte.</p>
+						</header>
+						<ul class="actions special">
+							<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+							<li><a href="../servicios.html" class="button">Ver servicios</a></li>
+						</ul>
+						<p class="marcas-aviso">O llámanos directamente al
+						<a href="tel:+34911122334">911 122 334</a>,
+						de lunes a viernes de 9:00 a 18:00.</p>
+					</div>
+				</section>
+
+			<!-- Pie -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="mailto:Iber-STRategia@gmail.com" class="icon solid alt fa-envelope"><span class="label">Correo electrónico</span></a></li>
+						<li><a href="tel:+34911122334" class="icon solid alt fa-phone"><span class="label">Teléfono</span></a></li>
+						<li><a href="../contacto.html" class="icon solid alt fa-map-marker-alt"><span class="label">Dónde estamos</span></a></li>
+						<li><a href="../servicios.html" class="icon solid alt fa-headset"><span class="label">Servicios</span></a></li>
+						<li><a href="../blog.html" class="icon solid alt fa-rss"><span class="label">Blog</span></a></li>
+						<!-- PENDIENTE: sustituir "#" por las URL reales de los perfiles y descomentar.
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						-->
+					</ul>
+					<ul class="pie-datos">
+						<li>Plaza Carlos Trías Bertrán, 4 · 28020 Madrid · Tetuán</li>
+						<li><a href="tel:+34911122334">911 122 334</a></li>
+						<li><a href="mailto:Iber-STRategia@gmail.com">Iber-STRategia@gmail.com</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; 2026 Iber-STRategia, S.L.. Todos los derechos reservados.</li>
+						<li><a href="../aviso-legal.html">Aviso legal</a></li>
+						<li><a href="../privacidad.html">Privacidad</a></li>
+						<li><a href="../cookies.html">Cookies</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

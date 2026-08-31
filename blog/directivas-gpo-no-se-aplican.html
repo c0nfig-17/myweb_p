@@ -1,0 +1,360 @@
+<!DOCTYPE HTML>
+<!--
+	Iber-STRategia — Finalizar un proyecto, comenzar una historia
+	Diseño base: plantilla «Landed» de HTML5 UP (html5up.net | @ajlkn),
+	utilizada bajo licencia Creative Commons Attribution 3.0 (html5up.net/license).
+	La atribución figura además en el aviso legal del sitio.
+-->
+<html lang="es">
+	<head>
+		<title>Las directivas de grupo (GPO) no se aplican | Blog de Iber-STRategia</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Por qué una directiva de grupo no llega a los equipos: enlaces, ámbito, herencia, filtros de seguridad y bucle de procesamiento. Diagnóstico ordenado con gpresult." />
+		<meta name="author" content="Iber-STRategia" />
+		<meta name="robots" content="index, follow" />
+		<!-- PENDIENTE: revisar que el dominio de las etiquetas canónica y Open Graph sea el definitivo. -->
+		<link rel="canonical" href="https://www.iber-strategia.es/blog/directivas-gpo-no-se-aplican.html" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:site_name" content="Iber-STRategia" />
+		<meta property="og:title" content="Las directivas de grupo (GPO) no se aplican | Blog de Iber-STRategia" />
+		<meta property="og:description" content="Por qué una directiva de grupo no llega a los equipos: enlaces, ámbito, herencia, filtros de seguridad y bucle de procesamiento. Diagnóstico ordenado con gpresult." />
+		<meta property="og:url" content="https://www.iber-strategia.es/blog/directivas-gpo-no-se-aplican.html" />
+		<meta property="og:image" content="https://www.iber-strategia.es/images/blog-03.svg" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<link rel="icon" href="../images/favicon.svg" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="../images/favicon.svg" />
+		<meta name="theme-color" content="#1c1d26" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/iber.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<script type="application/ld+json">
+		{
+		 "@context": "https://schema.org",
+		 "@graph": [
+		  {
+		   "@type": "ProfessionalService",
+		   "@id": "https://www.iber-strategia.es/#empresa",
+		   "name": "Iber-STRategia",
+		   "legalName": "Iber-STRategia, S.L.",
+		   "slogan": "Finalizar un proyecto, comenzar una historia",
+		   "description": "Consultora tecnológica española especializada en soporte informático para pequeñas y medianas empresas: Active Directory, consultoría estratégica, despliegue de infraestructura y desarrollo de software.",
+		   "url": "https://www.iber-strategia.es/",
+		   "logo": "https://www.iber-strategia.es/images/logo.svg",
+		   "image": "https://www.iber-strategia.es/images/banner.jpg",
+		   "telephone": "+34911122334",
+		   "email": "Iber-STRategia@gmail.com",
+		   "priceRange": "€€",
+		   "address": {
+		    "@type": "PostalAddress",
+		    "streetAddress": "Plaza Carlos Trías Bertrán, 4",
+		    "postalCode": "28020",
+		    "addressLocality": "Madrid",
+		    "addressRegion": "Madrid",
+		    "addressCountry": "ES"
+		   },
+		   "areaServed": {
+		    "@type": "Country",
+		    "name": "España"
+		   },
+		   "openingHoursSpecification": [
+		    {
+		     "@type": "OpeningHoursSpecification",
+		     "dayOfWeek": [
+		      "Monday",
+		      "Tuesday",
+		      "Wednesday",
+		      "Thursday",
+		      "Friday"
+		     ],
+		     "opens": "09:00",
+		     "closes": "18:00"
+		    }
+		   ],
+		   "knowsAbout": [
+		    "Active Directory",
+		    "Soporte informático para pymes",
+		    "Microsoft 365",
+		    "Google Workspace",
+		    "Windows Server",
+		    "Directivas de grupo",
+		    "Copias de seguridad",
+		    "Redes corporativas",
+		    "Desarrollo de software a medida",
+		    "Consultoría tecnológica"
+		   ],
+		   "hasOfferCatalog": {
+		    "@type": "OfferCatalog",
+		    "name": "Servicios de Iber-STRategia",
+		    "itemListElement": [
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Soporte informático gestionado"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Active Directory y administración de sistemas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Consultoría estratégica"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Diseño y maquetado de puestos"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Despliegue funcional de empresas"
+		      }
+		     },
+		     {
+		      "@type": "Offer",
+		      "itemOffered": {
+		       "@type": "Service",
+		       "name": "Desarrollo de software a medida"
+		      }
+		     }
+		    ]
+		   }
+		  },
+		  {
+		   "@type": "BlogPosting",
+		   "@id": "https://www.iber-strategia.es/blog/directivas-gpo-no-se-aplican.html#articulo",
+		   "headline": "Las directivas de grupo no se aplican: cómo averiguar por qué en diez minutos",
+		   "description": "Por qué una directiva de grupo no llega a los equipos: enlaces, ámbito, herencia, filtros de seguridad y bucle de procesamiento. Diagnóstico ordenado con gpresult.",
+		   "image": "https://www.iber-strategia.es/images/blog-03.svg",
+		   "datePublished": "2026-08-10",
+		   "dateModified": "2026-08-10",
+		   "inLanguage": "es-ES",
+		   "articleSection": "Active Directory",
+		   "author": {
+		    "@type": "Organization",
+		    "name": "Iber-STRategia",
+		    "url": "https://www.iber-strategia.es/"
+		   },
+		   "publisher": {
+		    "@id": "https://www.iber-strategia.es/#empresa"
+		   },
+		   "mainEntityOfPage": {
+		    "@type": "WebPage",
+		    "@id": "https://www.iber-strategia.es/blog/directivas-gpo-no-se-aplican.html"
+		   }
+		  },
+		  {
+		   "@type": "BreadcrumbList",
+		   "itemListElement": [
+		    {
+		     "@type": "ListItem",
+		     "position": 1,
+		     "name": "Inicio",
+		     "item": "https://www.iber-strategia.es/"
+		    },
+		    {
+		     "@type": "ListItem",
+		     "position": 2,
+		     "name": "Blog",
+		     "item": "https://www.iber-strategia.es/blog.html"
+		    },
+		    {
+		     "@type": "ListItem",
+		     "position": 3,
+		     "name": "Las directivas de grupo (GPO) no se aplican",
+		     "item": "https://www.iber-strategia.es/blog/directivas-gpo-no-se-aplican.html"
+		    }
+		   ]
+		  }
+		 ]
+		}
+		</script>
+	</head>
+	<body class="is-preload">
+		<a class="salto-contenido" href="#main">Ir al contenido principal</a>
+		<div id="page-wrapper">
+
+			<!-- Cabecera -->
+				<header id="header">
+					<div id="logo"><a href="../index.html"><img src="../images/logo.svg" alt="" width="40" height="40" /><span>Iber-STRategia</span></a></div>
+					<nav id="nav">
+						<ul>
+							<li><a href="../index.html">Inicio</a></li>
+							<li>
+								<a href="../servicios.html">Servicios</a>
+								<ul>
+									<li><a href="../servicios.html#soporte">Soporte informático gestionado</a></li>
+									<li><a href="../servicios.html#directorio-activo">Active Directory y sistemas</a></li>
+									<li><a href="../servicios.html#consultoria">Consultoría estratégica</a></li>
+									<li><a href="../servicios.html#maquetado">Diseño y maquetado</a></li>
+									<li><a href="../servicios.html#despliegue">Despliegue de empresas</a></li>
+									<li><a href="../servicios.html#desarrollo">Desarrollo de software</a></li>
+									<li><a href="../faq.html">Preguntas frecuentes</a></li>
+								</ul>
+							</li>
+							<li><a href="../blog.html">Blog</a></li>
+							<li><a href="../talento.html">Talento</a></li>
+							<li><a href="../nosotros.html">Nosotros</a></li>
+							<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+						</ul>
+					</nav>
+				</header>
+
+			<!-- Contenido principal -->
+				<div id="main" class="wrapper style1">
+					<div class="container">
+						<nav class="migas" aria-label="Ruta de navegación">
+							<ol>
+								<li><a href="../index.html">Inicio</a></li>
+								<li><a href="../blog.html">Blog</a></li>
+								<li aria-current="page">Las directivas de grupo (GPO) no se aplican</li>
+							</ol>
+						</nav>
+						<header class="major">
+							<h1>Las directivas de grupo no se aplican: cómo averiguar por qué en diez minutos</h1>
+							<p class="meta-entrada"><span class="categoria">Active Directory</span> · Publicado el 10 de agosto de 2026 · Lectura de 7 min</p>
+						</header>
+
+						<!-- Artículo -->
+							<article id="content" class="articulo">
+								<span class="image fit"><img src="../images/blog-03.svg" alt="" /></span>
+								<nav class="sumario" aria-label="Contenido del artículo">
+									<h4>En este artículo</h4>
+									<ol>
+										<li><a href="#gpresult">Empieza por preguntarle al equipo, no a la consola</a></li>
+										<li><a href="#razones">Las seis razones por las que una GPO no llega</a></li>
+										<li><a href="#lo-aburrido">Comprueba también lo aburrido</a></li>
+										<li><a href="#recomendacion">Una recomendación de fondo</a></li>
+									</ol>
+								</nav>
+								<p class="entradilla">Has creado la directiva, la has revisado tres veces y estás seguro de que los ajustes son correctos. Pero en el equipo del usuario no pasa absolutamente nada. Antes de volver a repasar la configuración, conviene comprobar si la directiva siquiera está llegando: nueve de cada diez veces el problema no está en lo que dice la GPO, sino en a quién se le aplica.</p>
+								<h3 id="gpresult">Empieza por preguntarle al equipo, no a la consola</h3>
+								<p>La consola de administración te dice lo que tú crees que debería pasar. El equipo te dice lo que realmente pasa. Ejecutado en el equipo afectado con la sesión del usuario abierta:</p>
+								<pre><code>gpresult /r /scope:computer
+gpresult /r /scope:user
+
+# Informe completo en HTML, mucho más legible
+gpresult /h C:\informe-gpo.html /f</code></pre>
+								<p>Ese informe tiene dos apartados que resuelven la mayoría de los casos: las directivas aplicadas y, sobre todo, las <strong>directivas denegadas con el motivo del rechazo</strong>. Si tu GPO aparece en la lista de denegadas, ya sabes por dónde seguir.</p>
+								<h3 id="razones">Las seis razones por las que una GPO no llega</h3>
+								<h4>1. Está enlazada donde no toca</h4>
+								<p>Es el error más común y el más humillante. Las directivas se aplican a la unidad organizativa donde está el objeto, no donde a uno le parece lógico. Si el usuario está en «UO Usuarios» y has enlazado la directiva a «UO Equipos», no se va a aplicar jamás.</p>
+								<h4>2. Estás configurando el ámbito equivocado</h4>
+								<p>Una directiva tiene una parte de equipo y otra de usuario. Los ajustes de la parte de equipo se aplican a equipos y los de usuario a usuarios. Poner una configuración de usuario y enlazarla a una unidad que solo contiene equipos no produce ningún efecto ni ningún error: simplemente no pasa nada.</p>
+								<h4>3. El filtrado de seguridad la está excluyendo</h4>
+								<p>Para que una directiva se aplique, el objeto necesita permisos de lectura y de aplicación. Si has sustituido «Usuarios autenticados» por un grupo concreto y el usuario no está dentro, la directiva se leerá pero no se aplicará.</p>
+								<h4>4. Hay herencia bloqueada o una directiva forzada por encima</h4>
+								<p>Un bloqueo de herencia en una unidad organizativa corta la llegada de todo lo que viene de arriba. Y una directiva marcada como forzada en un nivel superior gana siempre, aunque tu configuración parezca más específica.</p>
+								<h4>5. Otra directiva la está sobrescribiendo</h4>
+								<p>Cuando dos directivas tocan el mismo ajuste gana la que se procesa en último lugar, es decir, la más cercana al objeto y, dentro del mismo nivel, la de menor orden de enlace. El informe HTML muestra el ganador de cada ajuste.</p>
+								<h4>6. Falta el bucle de procesamiento</h4>
+								<p>Caso clásico en servidores de escritorio remoto o en equipos compartidos: quieres aplicar ajustes de usuario en función del equipo en el que inicia sesión, y no al revés. Eso solo funciona activando el modo de procesamiento de bucle invertido.</p>
+								<h3 id="lo-aburrido">Comprueba también lo aburrido</h3>
+								<ul>
+									<li><strong>Replicación entre controladores.</strong> Si has creado la directiva en un controlador y el equipo consulta otro que todavía no la ha recibido, no la verá.</li>
+									<li><strong>Actualización pendiente.</strong> Las directivas se refrescan cada 90 minutos aproximadamente; algunas cosas solo se aplican al iniciar sesión o al arrancar.</li>
+									<li><strong>La carpeta SYSVOL.</strong> Si la replicación de SYSVOL está rota, las plantillas no llegan y las directivas quedan a medias.</li>
+								</ul>
+								<pre><code>gpupdate /force
+# Algunos ajustes exigen cerrar sesión o reiniciar:
+gpupdate /force /logoff
+gpupdate /force /boot</code></pre>
+								<h3 id="recomendacion">Una recomendación de fondo</h3>
+								<p>La mayoría de los directorios que nos encontramos tienen demasiadas directivas, creadas por gente distinta a lo largo de los años, con nombres que no dicen nada y ajustes que se pisan entre sí. Antes o después se llega a un punto en el que nadie se atreve a tocar nada por miedo a romper algo.</p>
+								<p>Cuando eso pasa, no compensa seguir parcheando. Compensa parar, documentar qué hace cada directiva, consolidar las que se solapan y dejar un esquema que se entienda. Suele ser trabajo de unos días y ahorra años de incidencias raras.</p>
+								<aside class="cta-articulo">
+									<h4>¿Tu directorio ha crecido sin control?</h4>
+									<p>Ordenamos directorios que llevan años acumulando directivas, permisos y cuentas sin documentar. Te entregamos el esquema, la documentación y un directorio en el que se puede volver a trabajar sin miedo.</p>
+									<ul class="actions">
+										<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+										<li><a href="../servicios.html#directorio-activo" class="button">Ver Active Directory</a></li>
+									</ul>
+								</aside>
+
+								<div class="relacionados">
+									<h4>Seguir leyendo</h4>
+									<ul>
+								<li><a href="error-relacion-confianza-dominio.html">Error de relación de confianza con el dominio</a></li>
+								<li><a href="limpiar-cuentas-obsoletas-active-directory.html">Cuentas olvidadas en Active Directory</a></li>
+								<li><a href="usuario-no-puede-iniciar-sesion-dominio.html">Un usuario no puede iniciar sesión en el dominio</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="../blog.html" class="button">Volver al blog</a></li>
+									</ul>
+								</div>
+							</article>
+
+					</div>
+				</div>
+
+			<!-- Llamada a la acción -->
+				<section class="wrapper style2 special">
+					<div class="container">
+						<header>
+							<h2>Esto lo resolvemos nosotros todos los días</h2>
+							<p>Somos el departamento de informática de más de cincuenta pymes en toda España. Cuéntanos tu caso y te decimos con franqueza si podemos ayudarte.</p>
+						</header>
+						<ul class="actions special">
+							<li><a href="../contacto.html" class="button primary">¡Contáctanos!</a></li>
+							<li><a href="../servicios.html" class="button">Ver servicios</a></li>
+						</ul>
+						<p class="marcas-aviso">O llámanos directamente al
+						<a href="tel:+34911122334">911 122 334</a>,
+						de lunes a viernes de 9:00 a 18:00.</p>
+					</div>
+				</section>
+
+			<!-- Pie -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="mailto:Iber-STRategia@gmail.com" class="icon solid alt fa-envelope"><span class="label">Correo electrónico</span></a></li>
+						<li><a href="tel:+34911122334" class="icon solid alt fa-phone"><span class="label">Teléfono</span></a></li>
+						<li><a href="../contacto.html" class="icon solid alt fa-map-marker-alt"><span class="label">Dónde estamos</span></a></li>
+						<li><a href="../servicios.html" class="icon solid alt fa-headset"><span class="label">Servicios</span></a></li>
+						<li><a href="../blog.html" class="icon solid alt fa-rss"><span class="label">Blog</span></a></li>
+						<!-- PENDIENTE: sustituir "#" por las URL reales de los perfiles y descomentar.
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						-->
+					</ul>
+					<ul class="pie-datos">
+						<li>Plaza Carlos Trías Bertrán, 4 · 28020 Madrid · Tetuán</li>
+						<li><a href="tel:+34911122334">911 122 334</a></li>
+						<li><a href="mailto:Iber-STRategia@gmail.com">Iber-STRategia@gmail.com</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; 2026 Iber-STRategia, S.L.. Todos los derechos reservados.</li>
+						<li><a href="../aviso-legal.html">Aviso legal</a></li>
+						<li><a href="../privacidad.html">Privacidad</a></li>
+						<li><a href="../cookies.html">Cookies</a></li>
+					</ul>
+				</footer>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrolly.min.js"></script>
+			<script src="../assets/js/jquery.dropotron.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

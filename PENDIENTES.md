@@ -1,197 +1,227 @@
 # Iber-STRategia · Pendientes antes de publicar
 
-Este documento recoge todo lo que queda por confirmar en la web. Está ordenado
-por urgencia: lo del primer bloque conviene resolverlo **antes** de que la web
-sea pública; el resto puede hacerse después sin bloquear la salida.
-
-Los datos que faltan aparecen marcados en las propias páginas, en rojo y entre
-corchetes, con la clase `pendiente`. Son fáciles de localizar:
-
-```sh
-grep -rn "pendiente" *.html
-```
-
-Cuando no quede ninguno, se puede borrar el bloque `.pendiente` de
-`assets/css/iber.css`.
+Estado tras la segunda revisión. Lo del primer bloque conviene resolverlo
+**antes** de que la web sea pública; el resto puede esperar sin bloquear la
+salida.
 
 ---
 
 ## 1. Crítico: antes de que la web sea pública
 
-### 1.1 Dominio definitivo
+### 1.1 Razón social y NIF reales
 
-Toda la web usa provisionalmente `https://www.iber-strategia.es`. Si el dominio
-real es otro, hay que sustituirlo en tres sitios:
+Ahora mismo la web muestra valores **provisionales** puestos a propósito para
+que puedas enseñarla a clientes con aspecto acabado:
 
-- La etiqueta `<link rel="canonical">` y las `og:url` / `og:image` de cada `.html`.
-- La línea `Sitemap:` de `robots.txt`.
-- Las etiquetas `<loc>` de `sitemap.xml`.
+| Dato | Valor provisional actual |
+|---|---|
+| Razón social | `Iber-STRategia, S.L.` |
+| NIF / CIF | `B-00000000` |
 
-Se hace de una vez con:
+Ese NIF es un marcador evidente, no un número real. Publicar la web con él
+incumpliría el artículo 10 de la LSSI, que obliga a identificar al titular con
+datos veraces. En cuanto tu socio te los pase, se cambian de una vez:
 
 ```sh
 cd myweb_p
+grep -rl "B-00000000" . | xargs sed -i 's|B-00000000|TU-NIF-REAL|g'
+grep -rl "Iber-STRategia, S.L." . | xargs sed -i 's|Iber-STRategia, S.L.|TU RAZÓN SOCIAL|g'
+```
+
+Aparecen en `privacidad.html`, `aviso-legal.html`, `contacto.html` y en el pie
+de todas las páginas.
+
+### 1.2 Dominio definitivo
+
+Toda la web usa provisionalmente `https://www.iber-strategia.es`. Si el dominio
+real es otro, hay que cambiarlo en las etiquetas `canonical`, en las `og:url`,
+en `robots.txt` y en `sitemap.xml`:
+
+```sh
 grep -rl "www.iber-strategia.es" . | xargs sed -i 's|www\.iber-strategia\.es|TU-DOMINIO-REAL.es|g'
 ```
 
-> **Importante:** una etiqueta `canonical` apuntando a un dominio equivocado
-> puede impedir que Google indexe la web. Es el primer cambio que hay que hacer.
+> Una etiqueta `canonical` apuntando a un dominio equivocado puede impedir que
+> Google indexe la web. Es el primer cambio que hay que hacer.
 
-### 1.2 Datos legales de la empresa
+### 1.3 Correo corporativo
 
-Los textos legales están redactados conforme al RGPD, la LOPDGDD y la LSSI-CE,
-pero necesitan datos que no tenemos. No los hemos inventado a propósito: un NIF
-o unos datos registrales falsos en un aviso legal son un problema real.
-
-| Dato | Dónde aparece | Estado |
-|---|---|---|
-| Razón social completa (p. ej. «Iber-STRategia, S.L.») | `privacidad.html`, `aviso-legal.html`, `contacto.html` | Pendiente |
-| NIF / CIF | `privacidad.html`, `aviso-legal.html`, `contacto.html` | Pendiente |
-| Datos registrales (Registro Mercantil, tomo, folio, hoja) | `aviso-legal.html` | Pendiente. Si es empresario individual, se borra esa fila |
-| Delegado de Protección de Datos | `privacidad.html` | Solo si se ha designado. Si no, borrar la fila |
-| Lista de encargados del tratamiento (alojamiento, correo, gestoría, CRM) | `privacidad.html`, apartado 5 | Pendiente |
-| Proveedor de alojamiento y país | `cookies.html`, apartado 3 | Pendiente |
-
-También conviene que un asesor legal revise los tres textos antes de publicarlos.
-Están redactados con el contenido que la normativa española exige, pero cada
-empresa tiene particularidades.
-
-### 1.3 Correo y teléfono definitivos
-
-Los datos actuales son los provisionales que nos facilitaste:
-
-- **Correo:** `Iber-STRategia@gmail.com`
-- **Teléfono:** `911 122 3345`
-
-Sobre el teléfono: el número facilitado (`9111223345`) tiene **10 dígitos**,
-mientras que los números fijos españoles tienen 9. Se ha publicado tal cual,
-agrupado para que se lea bien, pero conviene revisarlo. Cuando tengáis los
-definitivos:
+El correo sigue siendo `Iber-STRategia@gmail.com`. Funciona, pero una cuenta de
+Gmail en la web de una consultora tecnológica resta credibilidad justo donde
+más se juega la confianza. Con el dominio ya tendrás `hola@tudominio.es` sin
+coste añadido:
 
 ```sh
-grep -rl "Iber-STRategia@gmail.com" . | xargs sed -i 's|Iber-STRategia@gmail.com|NUEVO@dominio.es|g'
-grep -rn "9111223345\|911 122 3345" .
+grep -rl "Iber-STRategia@gmail.com" . | xargs sed -i 's|Iber-STRategia@gmail.com|hola@tudominio.es|g'
 ```
 
-El correo aparece además dentro de `assets/js/contacto.js` (constante `DESTINO`).
-
-Recomendación: un correo corporativo con el dominio propio
-(`hola@tudominio.es`) transmite bastante más solidez que una cuenta de Gmail en
-la web de una consultora tecnológica.
+Ojo: aparece también dentro de `assets/js/contacto.js` (constante `DESTINO`).
 
 ### 1.4 Certificado HTTPS
 
 La política de privacidad afirma que las comunicaciones van cifradas con TLS.
-Hay que asegurarse de que el alojamiento tiene el certificado activo y de que
-todo el tráfico HTTP redirige a HTTPS.
+Asegúrate de que el alojamiento tiene el certificado activo y de que todo el
+tráfico HTTP redirige a HTTPS.
 
 ---
 
-## 2. Formulario de contacto
+## 2. Resuelto en esta revisión
 
-El formulario de `contacto.html` **todavía no envía a ningún servidor**. Como
-solución provisional para poder publicar hoy, `assets/js/contacto.js` abre el
-programa de correo del visitante con el mensaje ya redactado.
+- **Teléfono corregido** a `911 122 334` (nueve dígitos). Los enlaces usan el
+  formato internacional `+34911122334`.
+- **Datos registrales**: el aviso legal indica que el domicilio y los datos de
+  contacto a efectos registrales son los de la oficina, tal como pediste. Si la
+  sociedad está inscrita en el Registro Mercantil, hay un comentario en el HTML
+  señalando dónde añadir tomo, folio y hoja.
+- **Crédito «Design: HTML5 UP» retirado del pie.** La plantilla se distribuye
+  bajo licencia Creative Commons Attribution 3.0, que exige atribución, así que
+  la he trasladado al apartado 4 del **Aviso Legal** y al comentario de cabecera
+  del código. Conviene que confirmes con la empresa que te hizo el proyecto si
+  compraron licencia comercial; si es así, se puede quitar también de ahí.
+- **Logotipo en la cabecera**, a la izquierda del nombre, en las 21 páginas.
+- **Jerarquía de encabezados corregida**: antes el `<h1>` de cada página era el
+  nombre de la empresa, así que ninguna página tenía un encabezado principal con
+  su tema. Ahora cada una tiene su propio `<h1>`. Esto es de lo que más pesa en
+  posicionamiento.
 
-Funciona sin servidor, pero tiene dos límites: no deja registro de las
-solicitudes y depende de que el visitante tenga un cliente de correo
-configurado. Para dejarlo definitivo:
+---
 
-1. Dar de alta un endpoint de formularios (el del propio hosting, un servicio
-   de formularios o un script en el servidor).
+## 3. Formulario de contacto
+
+Sigue **sin enviar a un servidor**. Como solución provisional,
+`assets/js/contacto.js` abre el programa de correo del visitante con el mensaje
+ya redactado. Funciona sin servidor, pero no deja registro de las solicitudes.
+Para dejarlo definitivo:
+
+1. Dar de alta un endpoint de formularios (el del hosting, un servicio de
+   formularios o un script en el servidor).
 2. En `contacto.html`, poner ese endpoint en `action` y `method="post"`.
 3. Quitar la línea `<script src="assets/js/contacto.js"></script>`.
 4. Añadir protección antispam (captcha o campo trampa).
 5. Firmar el contrato de encargado de tratamiento con ese proveedor y añadirlo
-   a la lista del apartado 5 de `privacidad.html`.
+   al apartado 5 de `privacidad.html`.
 
-Mientras tanto, el correo y el teléfono de la página de contacto sí funcionan y
-son perfectamente utilizables.
-
----
-
-## 3. Decisiones de contenido que conviene que revises
-
-Estas son cosas que hemos escrito nosotros para que la web tuviera sentido.
-Ninguna es un dato que nos hayas dado, así que revísalas y cámbialas si no
-encajan con la realidad de la empresa.
-
-- **«Diseño de maquetados».** Lo hemos interpretado como *maquetación de
-  puestos de trabajo* (imagen maestra para desplegar equipos), que es lo que
-  encaja entre Active Directory y despliegue de infraestructura. Si te referías
-  a maquetación web o de interfaces, avísanos y reescribimos ese apartado de
-  `servicios.html`.
-- **«Respondemos en menos de 24 horas laborables».** Aparece en la portada y en
-  la página de contacto. Es un compromiso público: confírmalo o cámbialo.
-- **Horario de oficina: lunes a viernes, de 9:00 a 18:00** (`contacto.html`).
-- **Cifras de `nosotros.html`:** solo usamos las que nos diste (+50 clientes) y
-  dos que describen el método (6 áreas de servicio, 1 interlocutor por cliente).
-  No hemos inventado años de experiencia ni tamaño del equipo. Si quieres
-  añadirlos, es un buen sitio.
-- **Compromisos del apartado de talento** (formación pagada dentro de la
-  jornada, trabajo en pareja técnica, etc.): son creíbles para una consultora
-  de vuestro perfil, pero sois vosotros quienes tenéis que poder sostenerlos.
-- **Cómo llegar** (`contacto.html` y `nosotros.html`): menciona Nuevos
-  Ministerios y Santiago Bernabéu como estaciones cercanas. Verificadlo.
+Mientras tanto, el correo y el teléfono de la página de contacto sí funcionan.
 
 ---
 
-## 4. Redes sociales
+## 4. Logos de Microsoft y Google Workspace
 
-El pie de página tiene preparados los iconos de LinkedIn y Twitter, comentados
-en el HTML. Para activarlos, buscar `PENDIENTE: sustituir "#"` en cualquier
-`.html`, poner las URL reales y quitar las marcas de comentario. Están en todas
-las páginas.
+Me pediste ponerlos y **no lo he hecho a propósito**. Dos motivos:
+
+1. Reproducir un logotipo de marca a mano incumple sus guías de uso, y las
+   versiones oficiales solo se distribuyen a partners registrados.
+2. Mostrar esos emblemas puede dar a entender una certificación o una relación
+   comercial que no existe. Es un riesgo legal real y, además, un cliente que lo
+   compruebe pierde confianza justo por lo contrario de lo que buscabas.
+
+Lo que sí es correcto y habitual es la sección **«Tecnologías con las que
+trabajamos»** que verás en la portada y en la página de servicios: los nombres
+en tipografía neutra, con iconos genéricos y un descargo de marcas al pie. Eso
+es uso nominativo legítimo.
+
+**Si sois Microsoft Partner o Google Partner de verdad**, los programas os dan
+los badges oficiales con sus condiciones de uso. Pásamelos y los coloco en esa
+misma sección en un momento; quedan mucho mejor que un logo copiado y sí
+transmiten lo que quieres transmitir.
 
 ---
 
-## 5. Recomendaciones técnicas (no bloquean la salida)
+## 5. Contenido nuevo que conviene que revises
+
+- **Blog con 10 artículos.** Están escritos para posicionar por problemas
+  concretos que la gente busca en Google (errores de dominio, equipos lentos,
+  copias que fallan) y todos terminan invitando a contactar. Léelos y cámbialos
+  si algo no encaja con vuestra forma de trabajar: hablan en nombre de la
+  empresa.
+- **Preguntas frecuentes (`faq.html`).** La respuesta sobre precios explica
+  *cómo* cobráis (cuota mensual sobre alcance cerrado) pero **no da cifras**,
+  porque no me las diste. Si añades horquillas de precio, esa página se
+  convierte en una de las que más contactos genera.
+- **Compromisos que aparecen escritos** y que tenéis que poder sostener:
+  respuesta en menos de 24 horas laborables, horario de 9:00 a 18:00, equipos de
+  sustitución incluidos en los contratos de soporte, entrega del código fuente
+  en los desarrollos, sin permanencias abusivas y sin comisiones de fabricante.
+- **Sectores** listados en `nosotros.html`: despachos, distribución, industria
+  ligera, clínicas, ingeniería, comercio, servicios y fundaciones. Ajusta la
+  lista a vuestra cartera real.
+- **Cifras** de `nosotros.html`: solo las que me diste (+50 clientes) y dos que
+  describen el método. No he inventado años de experiencia ni tamaño de equipo;
+  si quieres añadirlos, ese es el sitio.
+
+---
+
+## 6. Lo que más te falta para vender (mi recomendación)
+
+Me preguntabas si se te pasa algo necesario para enseñar la web a clientes.
+Esto es lo que echo en falta, por orden de impacto:
+
+1. **Casos de éxito.** Es, con diferencia, lo que más convence. No los he
+   inventado porque serían falsos y se nota. Con tres fichas de media página
+   (situación de partida, qué hicisteis, resultado medible) la web cambia de
+   categoría. Si me pasas los datos, las monto.
+2. **Testimonios de clientes reales,** con nombre, cargo y empresa, y con su
+   permiso por escrito. Mismo motivo: no se pueden fabricar.
+3. **Fotos del equipo y de la oficina.** Las ilustraciones que he creado
+   funcionan bien y son coherentes con el diseño, pero una foto real de personas
+   genera una confianza que ningún gráfico da. Una sesión de un par de horas
+   resuelve la página de Nosotros y la de Talento.
+4. **Perfil de LinkedIn de la empresa.** El pie ya tiene el icono preparado y
+   comentado: solo hay que poner la URL y descomentarlo.
+5. **Google Business Profile.** Para una empresa con oficina en Madrid es la
+   forma más rápida de aparecer en búsquedas locales del tipo «soporte
+   informático Madrid». Es gratis.
+
+---
+
+## 7. Recomendaciones técnicas
 
 - **Tipografía Roboto.** Se carga desde Google Fonts (`assets/css/main.css`,
-  línea 2). Eso implica una conexión a servidores de Google y la comunicación
-  de la IP del visitante, algo ya declarado en la política de cookies y en la
-  de privacidad. Si preferís evitarlo, se puede descargar la fuente y servirla
-  desde `assets/webfonts/`, sustituyendo el `@import`. Es la opción más limpia
-  desde el punto de vista de protección de datos.
-- **Imagen para redes sociales.** Las etiquetas `og:image` apuntan de momento a
-  `images/banner.jpg`. Lo ideal es una imagen de 1200×630 px con el logotipo y
-  el lema, en JPG o PNG (las redes sociales no leen SVG).
-- **Si algún día añadís analítica** (Google Analytics, píxeles de publicidad,
-  mapas de calor…), pasa a ser **obligatorio** un panel de consentimiento de
-  cookies, y habrá que actualizar `cookies.html`. Los estilos del aviso ya
-  están preparados en `assets/css/iber.css` (bloque `#aviso-cookies`); solo
-  falta el HTML y la lógica de consentimiento.
-- **Página 404.** Existe `404.html`, pero hay que configurar el servidor para
-  que la use. En Apache, añadir a `.htaccess`: `ErrorDocument 404 /404.html`.
-- **Sitemap.** Una vez publicada la web, darla de alta en Google Search Console
-  y enviar `sitemap.xml`.
+  línea 2), lo que comunica la IP del visitante a Google. Está declarado en las
+  políticas de privacidad y de cookies. Si prefieres evitarlo, se descarga la
+  fuente y se sirve desde `assets/webfonts/`.
+- **Imagen para redes sociales.** Las etiquetas `og:image` apuntan a imágenes
+  del sitio. Lo ideal es una de 1200×630 px con el logotipo y el lema, en JPG o
+  PNG (las redes sociales no leen SVG).
+- **Si algún día añadís analítica** (Google Analytics, píxeles, mapas de calor),
+  pasa a ser **obligatorio** un panel de consentimiento de cookies y hay que
+  actualizar `cookies.html`. Los estilos del aviso ya están en
+  `assets/css/iber.css` (bloque `#aviso-cookies`); falta el HTML y la lógica.
+- **Página 404.** Existe `404.html`, pero hay que configurar el servidor. En
+  Apache, en `.htaccess`: `ErrorDocument 404 /404.html`.
+- **Search Console.** Una vez publicada, dar de alta la web y enviar
+  `sitemap.xml`. Los datos estructurados se pueden comprobar en la prueba de
+  resultados enriquecidos de Google.
 
 ---
 
-## 6. Cómo está organizada la web
+## 8. Cómo está organizada la web
 
 | Archivo | Contenido |
 |---|---|
-| `index.html` | Portada: lema, quiénes somos, servicios, talento y llamada a la acción |
-| `servicios.html` | Los seis servicios en detalle, con anclas propias para enlazar desde el menú |
+| `index.html` | Portada: lema, empresa, servicios, talento, proceso, tecnologías y últimos artículos |
+| `servicios.html` | Los seis servicios en detalle, con anclas para enlazar desde el menú |
+| `blog.html` + `blog/` | Índice del blog y los 10 artículos |
+| `faq.html` | Preguntas frecuentes (con marcado FAQ para buscadores) |
 | `talento.html` | Apartado de talento |
-| `nosotros.html` | Quiénes somos, cómo trabajamos, en qué creemos y cifras |
+| `nosotros.html` | Quiénes somos, método, valores, sectores y cifras |
 | `contacto.html` | Formulario, datos de contacto e información básica de protección de datos |
 | `privacidad.html` | Política de Privacidad y Protección de Datos (RGPD / LOPDGDD) |
-| `aviso-legal.html` | Aviso legal (LSSI-CE) |
+| `aviso-legal.html` | Aviso legal (LSSI-CE), incluida la atribución de la plantilla |
 | `cookies.html` | Política de cookies |
 | `404.html` | Página de error |
-| `robots.txt`, `sitemap.xml` | Indexación en buscadores |
-| `assets/css/iber.css` | Estilos propios. **La plantilla original no se ha modificado**, para poder actualizarla sin perder estos cambios |
+| `robots.txt`, `sitemap.xml` | Indexación en buscadores (20 URL) |
+| `assets/css/iber.css` | Estilos propios. **La plantilla original no se ha modificado** |
 | `assets/js/contacto.js` | Envío provisional del formulario |
-| `images/*.svg` | Logotipo, favicon, fondos y diagramas, creados para esta web |
+| `images/ilustracion-*.svg` | Sala técnica, montaje de equipos, red de oficina, consola de administración, nube híbrida y ciclo de soporte |
+| `images/diagrama-*.svg` | Directorio activo, fases de despliegue y ciclo de desarrollo |
+| `images/blog-*.svg` | Cabeceras de los artículos |
+
+**Qué lleva cada página para posicionar:** título y descripción propios,
+etiqueta canónica, Open Graph, un único `<h1>`, migas de pan y datos
+estructurados de schema.org (ficha de empresa en todas; artículo, blog,
+preguntas frecuentes y migas donde corresponde).
 
 La cabecera y el pie están repetidos en cada archivo `.html`: es lo normal en
-una web estática como esta. Si se cambia un enlace del menú, hay que cambiarlo
-en las nueve páginas.
-
-Las páginas de demostración de la plantilla (`elements.html`, `left-sidebar.html`,
-`right-sidebar.html`, `no-sidebar.html`) y sus imágenes de relleno se han
-eliminado, porque contenían texto de ejemplo en latín y no deben quedar
-accesibles en una web publicada. Siguen estando en el historial de Git si se
-necesitan como referencia de estilos.
+una web estática. Si se cambia un enlace del menú, hay que cambiarlo en las 21
+páginas.
